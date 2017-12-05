@@ -1,10 +1,6 @@
-## Variables i operados
+# Variables
 
----
-
-
-
-### Variables
+## Introducció
 
 * En PHP les variables comencen amb el símbol de `$`
 
@@ -20,9 +16,7 @@ $pes=61.5;		//Variable de tipus Float
 $casat=true;		//Variable de tipus Boolena
 ```
 
----
-
-### Variables
+## Variables
 * Exemple canvi de tipus:
 
 ```php
