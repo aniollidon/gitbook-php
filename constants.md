@@ -1,6 +1,6 @@
 # Constants
 
-Per definir una constant utilitzem la instrucció  `define("NOMCONSTANT",valor)`
+Per definir una **constant** utilitzem la instrucció  `define("NOMCONSTANT",valor)`
 
 ```php
 <?php
@@ -13,7 +13,7 @@ Per definir una constant utilitzem la instrucció  `define("NOMCONSTANT",valor)`
 ?>
 ```
 
-> **IMPORTANT**: Fixeu-vos en què per encadenar text (entre cometes) i les variables utilitzem el **punt** ```.```
+
 
 
 

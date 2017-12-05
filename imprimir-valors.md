@@ -30,6 +30,8 @@ echo $x + $y;
 ```
 [Provar l'exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_echo2)
 
+> **IMPORTANT**: Fixeu-vos en què per encadenar text (entre cometes) i les variables utilitzem el **punt** ```.```
+
 ## print
 
 Es pot utilitzar sense o amb parèntesis: `print` o `print()`.
