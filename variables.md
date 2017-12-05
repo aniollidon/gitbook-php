@@ -2,18 +2,21 @@
 
 ## Introducció
 
-* En PHP les variables comencen amb el símbol de `$`
+* En PHP les variables comencen amb el símbol de **$** seguit pel nom de la variable.
 
-* PHP distingeix entre majúscules i minúscules. Les variables `$persona` i `$Persona` són diferents.
+* PHP distingeix entre majúscules i minúscules (case-sensitive). Les variables `$persona` i `$Persona` són diferents.
+
 * **No cal declarar les variables.**
 * **No cal definir el seu tipus.**
 	* PHP converteix automàticament la variable al tipus correcte depenet del valor assignat.
 
 ```php
-$nom="Sergi";		//Variable de tipus String
-$edat=35;		//Variable de tipus Integer
-$pes=61.5;		//Variable de tipus Float
-$casat=true;		//Variable de tipus Boolena
+  <?php
+  $nom="Sergi";      //Variable de tipus String
+  $edat=35;          //Variable de tipus Integer
+  $pes=61.5;         //Variable de tipus Float
+  $casat=true;       //Variable de tipus Boolena
+  ?>
 ```
 
 ## Variables
