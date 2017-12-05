@@ -11,6 +11,21 @@
 * [Formularis](form.md)
 * [Cookies](cookie.md)
 * [Sessions](session.md)
+* [Accés a dades](acces-dades.md)
+  * [MYSQLi](mysqli.md) 
+  * [PDO](pdo.md)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
