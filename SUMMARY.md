@@ -11,5 +11,5 @@
 * [Formularis](form.md)
 * [Cookies](cookie.md)
 * [Sessions](session.md)
-
+* [Arrays](arrays.md)
 
