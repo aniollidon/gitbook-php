@@ -1,6 +1,6 @@
 # Arrays
 
-* Els **arrays** són colleccions ordenades d’elements.
+* Els **arrays** són col·leccions ordenades d'elements.
 * Cada element té un **valor** i és identificat per una **clau** que és única a l’array.
 
 
@@ -23,6 +23,7 @@ $color[]="vermell";	//Si no posem índex,
 * A les caselles dels arrays podem guardar dades de qualsevol tipus.
 * Els array en PHP podem guardar diferents tipus de dades en les caselles d'un mateix array.
 	*  S’anomenen **arrays heterogenis**.
+	
 ```php
 a[0] = 1;
 a[1] = "Hola";
