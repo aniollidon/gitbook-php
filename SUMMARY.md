@@ -1,5 +1,5 @@
 # Summary
 
 * [Index](README.md)
-* [Introducció](introduccio.md)
+* [Introducció a PHP](introduccio.md)
 
