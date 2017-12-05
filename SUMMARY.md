@@ -2,11 +2,10 @@
 
 * [Index](README.md)
 * [Introducció a PHP](introduccio.md)
-* [Sintaxi](sintaxi.php)
+* [Sintaxi](sintaxi.md)
 * [Variables](variables.md)
 * [Imprimir valors](imprimir-valors.md)
 * [Constants](constants.md)
 * [Operadors](operadors.md)
-
-
+* [Control de flux](control-de-flux.md)
 

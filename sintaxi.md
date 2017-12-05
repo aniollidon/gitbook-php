@@ -1,4 +1,4 @@
-#Sintaxi
+# Sintaxi
 
 ## El primer PHP
 El llenguatge php s'insereix en un pàgina HTML.
@@ -37,18 +37,18 @@ El llenguatge php s'insereix en un pàgina HTML.
 Cal distingir els comentaris en HTML dels PHP.
 ```php
 <html>
-<body>
-   <h1>Primer arxiu PHP</h1>
-   <!-- Això és un comentari HTML -->
-
-   <?php
-      // Això és un comentari d'una línia
-      echo "<p>Hola, Món</p>";
-
-      /* Amb barra i asterisc podem fer
-         comentaris de varies línies. */
-   ?>
-</body>
+   <body>
+      <h1>Primer arxiu PHP</h1>
+      <!-- Això és un comentari HTML -->
+   
+      <?php
+         // Això és un comentari d'una línia
+         echo "<p>Hola, Món</p>";
+   
+         /* Amb barra i asterisc podem fer
+            comentaris de varies línies. */
+      ?>
+   </body>
 </html>
 ```
 ---
