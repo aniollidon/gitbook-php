@@ -1,0 +1,31 @@
+{
+    "title": "PHP",
+    "author": "Sergi Coll",
+    "language": "ca",
+    "plugins": [
+        "etoc",
+        "-highlight",
+        "sunlight-highlighter"
+        "collapsible-chapters",
+        "back-to-top-button"
+    ],
+    "styles": {
+        "pdf": "./styles/pdf.css",
+        "website": "./styles/website.css"
+    },
+    "pluginsConfig": {
+        "etoc": {
+            "mindepth": 2,
+            "maxdepth": 4,
+            "notoc": false
+        },
+        "theme-default": {
+            "showLevel": true
+        },
+        "sunlight-highlighter": {
+            "theme": "light",
+            "lineNumber": false
+         },
+        "collapsible-chapters":{}
+    }
+}
