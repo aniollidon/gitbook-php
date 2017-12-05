@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Variables
 
 * En PHP les variables comencen amb el símbol de **$** seguit pel nom de la variable.
@@ -18,7 +20,7 @@
   ?>
 ```
 
-Les variables poden **canviar de tipus**:
+* Les variables poden **canviar de tipus**:
 
 ```php
 $nomPersona = "Àlex";
@@ -39,14 +41,14 @@ echo "$nomPersona té $edat anys";
 * **gettype(variable)**: torna el tipus de dada de la variable.
 * **settype(variable,tipus)**: converteix la variable al tipus indicat.
 * **isset(variable)**: indica si la variable s'ha inicialitzat.
+
 ```php
 $a = "10";
-echo gettype($a); 	//Mostrarà String
-settype($a,"integer");  //Convertim el string a number
-echo gettype ($a);	//Mostrarà integer
+echo gettype($a);        //Mostrarà String
+settype($a,"integer");   //Convertim el string a number
+echo gettype ($a);       //Mostrarà integer
 settype($a,"number");	//Convertim el string a number
-echo isset($b);		//Mostrarà false perquè la
-			//variable no s'ha inicialitzat        
+echo isset($b);	//Mostrarà false perquè la variable no s'ha inicialitzat        
 ```
 ---
 
