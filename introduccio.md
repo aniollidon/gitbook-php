@@ -37,6 +37,7 @@ $ sudo apt-get install apache2 php5 mysql-server phpmyadmin
 ```
 
 ## Treballant amb Apache i Windows
+
 Es recomana instal·lar el **_WAMPP_** o **_XAMPP for Windows_**.
 
 http://www.apachefriends.org/en/xampp-windows.html
