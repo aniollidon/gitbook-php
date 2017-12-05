@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Operadors
 
 Els **operadors** permeten manipular el valor de les variables, realitzar operacions matemàtiques o comparar-les.

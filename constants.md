@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Constants
 
 Per definir una **constant** utilitzem la instrucció  `define("NOMCONSTANT",valor)`
