@@ -4,8 +4,6 @@
 
 El llenguatge PHP s'insereix en una pàgina HTML.
 
-Els scripts PHP comencen amb **&lt;?php** i acaben amb **?>**
-
 ```php
 <html>
 <body>
@@ -19,11 +17,11 @@ Els scripts PHP comencen amb **&lt;?php** i acaben amb **?>**
 * Per indicar que incrustem codi PHP cal **obrir amb `<?php`** finalment **tancar amb** `?>`
 * La **instrucció** `echo` imprimeix text a l'arxiu que rep el client (el text va entre cometes dobles).
 * Les **instruccions acaben amb punt i coma ";"** (és molt important!)
+* L'extensió del fitxer PHP és **.php**.
 
+> El codi PHP és interpretat pel servidor i el client **MAI REBRÀ CODI PHP**.
 
-> El client **MAI REP CODI PHP**.
-
-* El resultat que ha de rebre el client és TOT HTML:
+* El resultat que ha de rebre el client és **TOT HTML**:
 
 ```html
 <html>
@@ -34,10 +32,10 @@ Els scripts PHP comencen amb **&lt;?php** i acaben amb **?>**
 </html>
 ```
 
-
 ## Comentaris
 
 Cal distingir els comentaris en HTML dels PHP.
+
 ```php
 <html>
    <body>
@@ -45,13 +43,12 @@ Cal distingir els comentaris en HTML dels PHP.
       <!-- Això és un comentari HTML -->
    
       <?php
-         // Això és un comentari d'una línia
+         // Això és un comentari PHP d'una línia
          echo "<p>Hola, Món</p>";
    
          /* Amb barra i asterisc podem fer
-            comentaris de varies línies. */
+            comentaris PHP de varies línies. */
       ?>
    </body>
 </html>
 ```
----
