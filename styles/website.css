@@ -1,0 +1,57 @@
+/* CSS for website */
+img
+{
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* blockquote */
+.markdown-section blockquote
+{
+    background: #d6e5ec;
+    color: #333; 
+    padding: 8px 15px;
+    border-left: 5px solid #78a8d8;
+    font-size: 1.7rem;
+    border-radius: 3px;
+
+}
+
+.markdown-section blockquote p:last-child
+{
+    margin-bottom: 0px;
+}
+
+
+/* code */
+.markdown-section code, .markdown-section pre {
+    background-color: #ddd;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+
+/* summary */ 
+
+/*
+.book-summary{
+   width: 400px;
+}
+*/
+
+.book-summary ul.summary li a, .book-summary ul.summary li span {
+    white-space: normal;        //perquè salti de línia si és molt llarg
+}
+
+
+/* footer */
+
+footer{
+    float: right;
+    padding-top: 1em;
+    font-size: 0.9em !important;
+    color: #333;
+    font-family: arial;
+    font-weight: bold;
+}
