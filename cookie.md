@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Cookies
 
 ## Protocol HTTP
