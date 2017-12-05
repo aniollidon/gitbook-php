@@ -1,6 +1,15 @@
 # Sessions
 
-PHP proporciona un altre mecanisme per mantenir la sessió : les **variables de sessió**.
+## Protocol HTTP
+
+* El  **protocol http** és un [protocol sense estat (*stateless*)](https://es.wikipedia.org/wiki/Protocolo_sin_estado).
+* Es tracta cada petició com un transacció independent que no té relació amb cap altre petició anterior.
+* S'han creat tècniques per mantenir informació entre peticions.
+* Una d'aquestes tècniques són les [**cookies**](http://php.net/manual/es/features.cookies.php).
+
+## Variables de sessió
+
+**PHP** proporciona un altre mecanisme per mantenir la sessió : les **variables de sessió**.
 
 Són variables que estan disponibles a qualsevol lloc dels scripts i en totes les pàgines **mentre la sessió no s'acabi**. Un sessió es tanca quan:
   * L'usuari no tanqui el navegador.
