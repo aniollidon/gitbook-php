@@ -4,7 +4,7 @@
 
 **if...else**
 
-```php
+```
 if (condició) {
     //codi a executar si la condició és true;
 } else {
@@ -14,7 +14,7 @@ if (condició) {
 
 **if...elseif....else**
 
-```php
+```
 if (condició) {
     //codi a executar si la condició és true;
 } elseif (condició) {
@@ -75,7 +75,4 @@ switch ($variable) {
         //a tots els valors;
 }
 ```
-
-## Més informació
-
-* 
+ 

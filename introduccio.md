@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Introducció al Llenguatge PHP
 
 > **PHP** és un llenguatge de scripting open source per generar codi HTML.
