@@ -17,9 +17,9 @@ El llenguatge php s'insereix en un pàgina HTML.
 * La **instrucció** `echo` imprimeix text a l'arxiu que rep el client (el text va entre cometes dobles).
 * Les **instruccions acaben amb punt i coma ";"** (és molt important!)
 
----
 
-* El client **MAI REP CODI PHP**.
+> El client **MAI REP CODI PHP**.
+
 * El resultat que ha de rebre el client és TOT HTML:
 
 ```html
@@ -30,7 +30,7 @@ El llenguatge php s'insereix en un pàgina HTML.
 </body>
 </html>
 ```
----
+
 
 ## Comentaris
 
