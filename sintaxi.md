@@ -1,7 +1,10 @@
 # Sintaxi
 
 ## El primer PHP
-El llenguatge php s'insereix en un pàgina HTML.
+
+El llenguatge PHP s'insereix en una pàgina HTML.
+
+Els scripts PHP comencen amb **&lt;?php** i acaben amb **?>**
 
 ```php
 <html>
