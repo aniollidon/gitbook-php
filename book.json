@@ -1,11 +1,12 @@
 {
-    "title": "PHP",
+    "title": "Sistemes Operatius en Xarxa",
     "author": "Sergi Coll",
     "language": "ca",
     "plugins": [
         "etoc",
         "-highlight",
-        "sunlight-highlighter"
+        "sunlight-highlighter",
+        "quiz",
         "collapsible-chapters",
         "back-to-top-button"
     ],
@@ -26,6 +27,22 @@
             "theme": "light",
             "lineNumber": false
          },
+        "quiz": {
+            "labels": {
+                "check"             : "Verificar resposta",
+                "showExplanation"   : "Explain", 
+                "showCorrect"       : "Solució",   
+                "explanationHeader" : "Explanation"
+            },
+            "text": {
+                "noChosen"    : "Tria com a mínim una resposta",  
+                "incomplete"  : "Some correct answers are missing" 
+            },
+            "buttons": {
+                "showCorrect"       : true, 
+                "showExplanation"   : true 
+            }
+        },
         "collapsible-chapters":{}
     }
 }
