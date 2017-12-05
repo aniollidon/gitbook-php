@@ -1,0 +1,66 @@
+## Variables i operados
+
+---
+
+
+
+### Variables
+
+* En PHP les variables comencen amb el símbol de `$`
+
+* PHP distingeix entre majúscules i minúscules. Les variables `$persona` i `$Persona` són diferents.
+* **No cal declarar les variables.**
+* **No cal definir el seu tipus.**
+	* PHP converteix automàticament la variable al tipus correcte depenet del valor assignat.
+
+```php
+$nom="Sergi";		//Variable de tipus String
+$edat=35;		//Variable de tipus Integer
+$pes=61.5;		//Variable de tipus Float
+$casat=true;		//Variable de tipus Boolena
+```
+
+---
+
+### Variables
+* Exemple canvi de tipus:
+
+```php
+$nomPersona = "Àlex";
+$edat = "35";
+// la variable edat és de tipus string
+
+echo "$nomPersona té $edat anys<br>";
+
+$edat = 34;
+//Ara la variable edat és de tipus integer:
+
+$edat++;
+echo "$nomPersona té $edat anys";
+```
+
+---
+### Funcions pels tipus de variables
+
+* **gettype(variable)**: torna el tipus de dada de la variable.
+* **settype(variable,tipus)**: converteix la variable al tipus indicat.
+* **isset(variable)**: indica si la variable s'ha inicialitzat.
+```php
+$a = "10";
+echo gettype($a); 	//Mostrarà String
+settype($a,"integer");  //Convertim el string a number
+echo gettype ($a);	//Mostrarà integer
+settype($a,"number");	//Convertim el string a number
+echo isset($b);		//Mostrarà false perquè la
+			//variable no s'ha inicialitzat        
+```
+---
+
+### Operadors
+Permeten manipular el valor de les variables, realitzar operacions matemàtiques o comparar-les.
+* Operadors aritmètics: +, -, *, /, % (Mòdul)
+* Operadors d'increment i decrement `++$a` `$a++` `--$a` `$a--`
+* Operadors d’assignació: =, +=, -=, .=
+* Operadors de cadenes: **.** `"Hola" . "Món"`
+* Operadors lògics: !(NEGACIÓ), && (AND), || (OR)
+* Operadors condicionals: ==, !=, >, <, >=, <=
