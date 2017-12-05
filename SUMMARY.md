@@ -1,7 +1,7 @@
 # Summary
 
 * [Índex](README.md)
-* [Introducció a PHP](introduccio.md)
+* [Introducció](introduccio.md)
 * [Sintaxi](sintaxi.md)
 * [Variables](variables.md)
 * [Imprimir valors](imprimir-valors.md)
