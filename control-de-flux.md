@@ -2,6 +2,8 @@
 
 ## IF, ELSE
 
+**if...else**
+
 ```php
 if (condició) {
     //codi a executar si la condició és true;
@@ -9,6 +11,9 @@ if (condició) {
    //codi a executar si la condició és false;
 }
 ```
+
+**if...elseif....else**
+
 ```php
 if (condició) {
     //codi a executar si la condició és true;
@@ -18,6 +23,8 @@ if (condició) {
     //codi a executar si la condició és false;
 }
 ```
+
+**Més informació:** w3schools: PHP 5 if...else...elseif Statement [https://www.w3schools.com/php/php_if_else.asp](https://www.w3schools.com/php/php_if_else.asp)
 
 ## FOR
 
@@ -68,3 +75,7 @@ switch ($variable) {
         //a tots els valors;
 }
 ```
+
+## Més informació
+
+* 
