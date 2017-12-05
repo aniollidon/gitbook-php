@@ -1,31 +1,29 @@
 # Variables
 
-## Introducció
-
 * En PHP les variables comencen amb el símbol de **$** seguit pel nom de la variable.
 
 * PHP distingeix entre majúscules i minúscules (case-sensitive). Les variables `$persona` i `$Persona` són diferents.
 
 * **No cal declarar les variables.**
 * **No cal definir el seu tipus.**
-	* PHP converteix automàticament la variable al tipus correcte depenet del valor assignat.
+
+* PHP converteix automàticament la variable al tipus correcte depenet del valor assignat.
 
 ```php
   <?php
   $nom="Sergi";      //Variable de tipus String
   $edat=35;          //Variable de tipus Integer
   $pes=61.5;         //Variable de tipus Float
-  $casat=true;       //Variable de tipus Boolena
+  $casat=true;       //Variable de tipus Boolean
   ?>
 ```
 
-## Variables
-* Exemple canvi de tipus:
+Les variables poden **canviar de tipus**:
 
 ```php
 $nomPersona = "Àlex";
 $edat = "35";
-// la variable edat és de tipus string
+//La variable edat és de tipus string
 
 echo "$nomPersona té $edat anys<br>";
 
@@ -36,8 +34,7 @@ $edat++;
 echo "$nomPersona té $edat anys";
 ```
 
----
-### Funcions pels tipus de variables
+## Funcions pels tipus de variables
 
 * **gettype(variable)**: torna el tipus de dada de la variable.
 * **settype(variable,tipus)**: converteix la variable al tipus indicat.
