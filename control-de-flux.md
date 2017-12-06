@@ -28,8 +28,10 @@ if (condició) {
 
 ## FOR
 
+S'utilitza quan sabem d'entrada el nombre de vegades que cal repetir el bloc de codi.
+
 ```
-for (inicialització contador; condició de final ; increment contador) {
+for (inicialització contador; condició ; increment contador) {
    //codi a executar;
 }
 ```
@@ -40,7 +42,11 @@ for  ($i=1; $i<5; $i++) {
 }
 ```
 
+[Exemple For](https://www.w3schools.com/php/showphp.asp?filename=demo_loop_for)
+
 ## WHILE
+
+Executa un bloc de codi mentre es compleix la condició.
 
 ```
 while (condició) {
@@ -48,7 +54,11 @@ while (condició) {
 }
 ```
 
+[Exemple While](https://www.w3schools.com/php/showphp.asp?filename=demo_loop_while)
+
 ## DO ... WHILE
+
+Sempre s'executa el bloc de codi una vegada, es comprova la condició i es repeteix el bloc de codi mentre la condició sigui certa.
 
 ```
 do {
@@ -56,6 +66,7 @@ do {
 } while (condició);
 ```
 
+[Exemple do...while](https://www.w3schools.com/php/showphp.asp?filename=demo_loop_do_while)
 ## SWITCH
 
 ```php
@@ -75,4 +86,6 @@ switch ($variable) {
         //a tots els valors;
 }
 ```
+
+[Exemple Switch](https://www.w3schools.com/php/showphp.asp?filename=demo_switch)
  
