@@ -8,22 +8,12 @@
 * [Constants](constants.md)
 * [Operadors](operadors.md)
 * [Control de flux](control-de-flux.md)
-* [**Funcions](funcions.md)
+* [Funcions](funcions.md)
 * [Arrays](arrays.md)
 * [Formularis](form.md)
 * [Cookies](cookie.md)
 * [Sessions](session.md)
 * [Accés a dades](acces-dades.md)
-  * [MYSQLi](mysqli.md) 
+  * [MYSQLi](mysqli.md)
   * [PDO](pdo.md)
-
-
-
-
-
-
-
-
-
-
 

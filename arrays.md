@@ -1,8 +1,8 @@
 # Arrays
 
-* Els **arrays** són col·leccions ordenades d'elements.
-* Cada element té un **valor** i és identificat per una **clau** que és única a l’array.
+> Els **arrays** són col·leccions ordenades d'elements.
 
+Cada element té un **valor** i és identificat per una **clau** que és única a l’array.
 
 ## Declaració d'un Array
 
