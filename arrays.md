@@ -71,20 +71,25 @@ in_array('Maria', $a);	//retorna true
 
 * **unset($a[‘clau’])**: ens elimina l'element que té la clau indicada
 
-* **sort($a)**: ordena els valors de menor a majors.
+* **sort($a)**: ordena els valors de menor a majors (ascendentment). [Exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_array_sort_num)
 
-* **rsort($a)**: ordena els valors de major a menor.
+* **rsort($a)**: ordena els valors de major a menor (descendentment). [Exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_array_rsort_num)
 
-* **array_push($a,'valor1','valor2')**: afegeix un valor o més al final d'un array.
+* **array_push($a,'valor1','valor2')**: afegeix un valor o més al final d'un array. [Exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_func_array_push)
 
 ```php
   array_push($a,'Dani', 'Raquel');
 ```
-* **array_pop($a')**: elimina l'últim element de l'array i retorna el seu valor.
+* **array_pop($a')**: elimina l'últim element de l'array i retorna el seu valor. [Exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_func_array_pop)
 
 ```php
   $valor = array_pop($a);
 ```
+
+**Més funcions amb arrays a** [https://www.w3schools.com/php/php_ref_array.asp
+](https://www.w3schools.com/php/php_ref_array.asp
+)
+
 ## Recórrer un array indexat
 
 ```php
@@ -144,5 +149,5 @@ $temperatures[0][2]		//Retorna 18
 $temperatures[2][1]		//Retorna 19
 ```
 
-
+[Exemple array multidimensional](https://www.w3schools.com/php/showphp.asp?filename=demo_array_multi)
 
