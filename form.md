@@ -1,6 +1,6 @@
-# Formularis
+<!-- notoc -->
 
-## Introducció
+# Formularis
 
 ```html
 <form method="post" action="processa.php">
