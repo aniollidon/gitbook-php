@@ -8,6 +8,7 @@
 * [Constants](constants.md)
 * [Operadors](operadors.md)
 * [Control de flux](control-de-flux.md)
+* [**Funcions](funcions.md)
 * [Arrays](arrays.md)
 * [Formularis](form.md)
 * [Cookies](cookie.md)
