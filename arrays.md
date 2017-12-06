@@ -2,18 +2,20 @@
 
 > Els **arrays** són col·leccions ordenades d'elements.
 
-Cada element té un **valor** i és identificat per una **clau** que és única a l’array.
+Permeten guardar varis valors en una única variable.
+
+Cada element té un **valor** i és identificat per una **clau** que és única a l'array.
 
 ## Declaració d'un Array
 
 ```php
 //Declaració amb constructor
 $colors=array("verd","groc","vermell");
-$colors=array(1=>"verd", 2=>groc, 3=>"vermell");
+$colors=array(0=>"verd", 1=>groc, 2=>"vermell");
 
 //Declaració explícita
-$color[1]="verd";
-$color[2]="groc";
+$color[0]="verd";
+$color[1]="groc";
 $color[]="vermell";	//Si no posem índex, s'assigna a la següent posició.
 ```
 
@@ -51,6 +53,8 @@ $a = array("id"=>1,"name"=>"Sayeed","age"=>24);
 
 ## Funcions amb Arrays
 
+Donat un array $a:
+
 `$a=array(‘Nom1’=>'Maria’,'Nom2’=>’Joan’,…);`
 
 * **count($a)**: ens diu quants elements té l’array.
@@ -81,6 +85,36 @@ in_array('Maria', $a);	//retorna true
 ```php
   $valor = array_pop($a);
 ```
+## Recórrer un array indexat
+
+```php
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+$arrlength = count($cars);
+
+for($x = 0; $x < $arrlength; $x++) {
+    echo $cars[$x];
+    echo "<br>";
+}
+?>
+```
+
+[Provar l'exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_array_num_loop)
+
+## Recórrer un array associatiu
+
+```php
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+
+foreach($age as $x => $x_value) {
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+?>
+```
+
+[Provar l'exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_array_assoc_loop)
 
 ## Arrays multidimensionals
 
