@@ -14,15 +14,16 @@ $colors=array(1=>"verd", 2=>groc, 3=>"vermell");
 //Declaració explícita
 $color[1]="verd";
 $color[2]="groc";
-$color[]="vermell";	//Si no posem índex,
-			//s'assigna a la següent posició.
+$color[]="vermell";	//Si no posem índex, s'assigna a la següent posició.
 ```
 
 ## Tipus de dades en un array
 
-* A les caselles dels arrays podem guardar dades de qualsevol tipus.
-* Els array en PHP podem guardar diferents tipus de dades en les caselles d'un mateix array.
-	*  S’anomenen **arrays heterogenis**.
+> A les caselles dels arrays podem guardar **dades de qualsevol tipus**.
+
+Els array en PHP podem guardar diferents tipus de dades en les caselles d'un mateix array.
+
+S’anomenen **arrays heterogenis**.
 	
 ```php
 a[0] = 1;
@@ -36,8 +37,9 @@ $a = array(1, "Hola", 0.75, true);
 
 ## Array associatius
 
-* També s'anomenen diccionaris o mapes.
-* Són un conjunt d'elements **clau** - **valor**
+> Són un conjunt d'elements **clau** - **valor**.
+
+També s'anomenen **diccionaris** o **mapes**.
 
 ```php
 $a = array("id"=>1,"name"=>"Sayeed","age"=>24);
@@ -51,42 +53,42 @@ $a = array("id"=>1,"name"=>"Sayeed","age"=>24);
 
 `$a=array(‘Nom1’=>'Maria’,'Nom2’=>’Joan’,…);`
 
-* **count($a)**: ens diu quants elements té l’array
+* **count($a)**: ens diu quants elements té l’array.
+
 * **array_key_exists('clau', $a)**: ens diu si existeix la clau en l'array.
 
 ```php
-array_key_exists('Nom1', $a);	//retorna true
+  array_key_exists('Nom1', $a);	//retorna true
 ```
 * **in_array(‘valor', $a)**: ens diu si existeix el valor en l'array.
 ```php
 in_array('Maria', $a);	//retorna true
 ```
 
-## Funcions amb Arrays
-
 * **unset($a[‘clau’])**: ens elimina l'element que té la clau indicada
+
 * **sort($a)**: ordena els valors de menor a majors.
+
 * **rsort($a)**: ordena els valors de major a menor.
+
 * **array_push($a,'valor1','valor2')**: afegeix un valor o més al final d'un array.
 
 ```php
-array_push($a,'Dani', 'Raquel');
+  array_push($a,'Dani', 'Raquel');
 ```
 * **array_pop($a')**: elimina l'últim element de l'array i retorna el seu valor.
 
 ```php
-$valor = array_pop($a);
+  $valor = array_pop($a);
 ```
 
 ## Arrays multidimensionals
 
-* En **PHP**, els tots arrays són de una única dimensió.
-	* Podem crear arrays multidimesionals creant arrays d’arrays, com si els elements de l'array fossin al seu torn altres arrays. 
+> En **PHP**, els tots arrays són de una única dimensió.
 
+Podem **crear arrays multidimesionals** creant **arrays d’arrays**, com si els elements de l'array fossin al seu torn altres arrays. 
 
-### Declaració Arrays multidimensionals
-
-* Podem declarar arrays de **qualsevol dimensió**. 
+Podem **declarar arrays de qualsevol dimensió**: 
 
 ```php
 //DECLARACIÓ ARRAY DUES DIMENSIONS
@@ -100,13 +102,13 @@ $temperatures = [$ciutat1,$ciutat2,$ciutat3];
 $temperatures = array(array(20, 22, 18),array(25, 29, 23),array(15, 19, 15));
 ```
 
+Podem **accedir a les dades**:
+
 ```php
 //Accés a les dades
-$temperatures[0][2]			//Retorna 18
-$temperatures[2][1]			//Retorna 19
+$temperatures[0][2]		//Retorna 18
+$temperatures[2][1]		//Retorna 19
 ```
-
->
 
 
 
