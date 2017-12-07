@@ -2,7 +2,15 @@
 
 ## El primer PHP
 
-El llenguatge PHP s'insereix en una pàgina HTML.
+Els scripts en llenguatge **PHP** s'insereixen en una pàgina **HTML**.
+
+En **un mateix document** conviuen informacions destinades a diferents intèrprets: 
+   * El **codi HTML** que ha de ser interpretat pel navegador.
+   * Els **scripts PHP** que han d'ésser executats pel intèrpret de PHP. 
+
+La manera de diferenciar els continguts és delimitar els scripts PHP marcant el seu començament amb una etiqueta d'**obertura** `<?php` i senyalant el final amb una etiqueta de **tancament** `?>`.
+
+El que no està contingut entre aquestes etiquetes es considerarà codi **HTML**.
 
 ```php
 <html>
@@ -14,7 +22,7 @@ El llenguatge PHP s'insereix en una pàgina HTML.
 </body>
 </html>
 ```
-* Per indicar que incrustem codi PHP cal **obrir amb `<?php`** finalment **tancar amb** `?>`
+
 * La **instrucció** `echo` imprimeix text a l'arxiu que rep el client (el text va entre cometes dobles).
 * Les **instruccions acaben amb punt i coma ";"** (és molt important!)
 * L'extensió del fitxer PHP és **.php**.

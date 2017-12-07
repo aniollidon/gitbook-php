@@ -4,12 +4,14 @@
 
 > **PHP** és un llenguatge de scripting open source per generar codi HTML.
 
-De fet, les sigles PHP signifiquen ***PHP: Hypertext Preprocessor*** (definició recursiva).
+> **Scripts**: conjunt d'instruccions escrites en un llenguatge determinat que, en el cas de PHP, van incrustades dintre d'una pàgina WEB.
+
+Les sigles PHP signifiquen ***PHP: Hypertext Preprocessor*** (definició recursiva).
 
 Els arxius **PHP** combinen codi HTML i PHP:
 
   * Els scripts **PHP** són processats pel servidor (com pot ser Apache, IIS, etc).
-  * El resultat generat (codi HTML) s'envia al client.
+  * El resultat generat (codi HTML) s'envia al client i és processat pel navegador web.
 
 ![php](https://sdz-upload.s3.amazonaws.com/prod/upload/p1ch1_JavaScript%20client%20-%20New%20Page.png)
 
