@@ -42,7 +42,7 @@ El que no està contingut entre aquestes etiquetes es considerarà codi **HTML**
 
 ## Comentaris
 
-Cal distingir els comentaris en HTML dels PHP.
+Cal distingir els comentaris en HTML dels de PHP.
 
 ```php
 <html>

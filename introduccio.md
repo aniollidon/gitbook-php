@@ -15,7 +15,9 @@ Els arxius **PHP** combinen codi HTML i PHP:
 
 ![php](https://sdz-upload.s3.amazonaws.com/prod/upload/p1ch1_JavaScript%20client%20-%20New%20Page.png)
 
-## Entorn client vs entorn servidor
+## LLENGUATGES DE PROGRAMACIÓ DE LA WEB (D’SCRIPT)
+
+Els llenguatges de script poden classificar-se en dos tipus:
 
 * Un **llenguatge és entorn client** quan l'intèrpret que ha d'executar els scripts és accessible des del client sense fer cap petició al servidor.
   * Per exemple, **_Javascript_**. 	
