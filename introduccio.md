@@ -44,13 +44,13 @@ Per tal que el servidor conegui què ha de fer en cada cas, cal indicar-li mitja
 
 * En canvi amb l’extensió **_.php_** el codi PHP serà executat i substituït per la seva sortida (codi HTML generat) en el document HTML que s'envia al client (navegador).
 
-
-
 ## Requisits per a l'ús del llenguatge PHP
 
 **PHP** requereix tenir instal·lat:
 * Un servidor web que suporti el protocol HTTP i configurat per interactuar amb l'intèrpret PHP. Per exemple, l'**_Apache_**.
 * Un **intèrpret de PHP**.
+* Opcionalment, un programari de **servidor de bases de dades** capaç de ser gestionat mitjançant funcions pròpies de PHP (MySQL, Oracle, etc).
+
 
 ## Treballant amb Apache i Linux
 
