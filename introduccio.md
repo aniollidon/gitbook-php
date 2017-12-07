@@ -40,7 +40,7 @@ Mentre que en altres casos ha de **retornar el resultat de l'execució dels scri
 
 Per tal que el servidor conegui què ha de fer en cada cas, cal indicar-li mitjançant l'**extensió del document**.
 
-* Si en la petició es demana a un document amb extensió **_.htm_** o **_.html_** el servidor entendrà que aquesta pàgina no requereix la intervenció prèvia de cap intèrpret del seu costat i entregarà la pàgina tal qual.
+* Si en la petició es demana a un document amb extensió **_.htm_** o **_.html_** el servidor entendrà que aquesta pàgina no requereix la intervenció prèvia de cap intèrpret del costat del seridor i entregarà la pàgina tal qual.
 
 * En canvi amb l’extensió **_.php_** el codi PHP serà executat i substituït per la seva sortida (codi HTML generat) en el document HTML que s'envia al client (navegador).
 
