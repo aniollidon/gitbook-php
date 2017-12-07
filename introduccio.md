@@ -35,8 +35,7 @@ Els llenguatges de script poden classificar-se en dos tipus:
 ## Requisits per a l'ús del llenguatge PHP
 
 **PHP** requereix tenir instal·lat:
-* Un servidor web que suporti el protocol HTTP i configurat per interactuar amb l'intèrpret PHP.
-	* Per exemple, l'Apache.
+* Un servidor web que suporti el protocol HTTP i configurat per interactuar amb l'intèrpret PHP. Per exemple, l'**_Apache_**.
 * Un **intèrpret de PHP**.
 
 ## Treballant amb Apache i Linux
@@ -44,7 +43,7 @@ Els llenguatges de script poden classificar-se en dos tipus:
 En **_Ubuntu_** o **_Debian_** podem instal·lar els paquets necessaris amb:
 
 ```
-$ sudo apt-get install apache2 php5 mysql-server phpmyadmin
+$ sudo apt-get install apache2 php7.0 libapache2-mod-php7.0 mysql-server phpmyadmin
 ```
 
 ## Treballant amb Apache i Windows
