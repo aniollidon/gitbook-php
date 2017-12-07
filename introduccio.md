@@ -15,7 +15,7 @@ Els arxius **PHP** combinen codi HTML i PHP:
 
 ![php](https://sdz-upload.s3.amazonaws.com/prod/upload/p1ch1_JavaScript%20client%20-%20New%20Page.png)
 
-## LLENGUATGES DE PROGRAMACIÓ DE LA WEB
+## Llenguatges de programació de la web
 
 Els llenguatges de script poden classificar-se en dos tipus:
 
@@ -27,7 +27,7 @@ Els llenguatges de script poden classificar-se en dos tipus:
   
 > Un **llenguatge és entorn servidor** quan l'execució dels scripts s'efectua al servidor abans d'enviar la resposta al client. 
 
-* El client **no** rep el codi PHP original, només rep el codi HTML generat al servidor.
+* El client (el navegador web) **no** rep el codi PHP original, només rep el codi HTML generat al servidor.
 * Els usuaris no podran veure el codi font.
 * Per exemple, **_PHP_**.
 
