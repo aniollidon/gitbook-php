@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Sintaxi
 
 ## El primer PHP
