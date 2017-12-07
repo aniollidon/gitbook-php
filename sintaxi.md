@@ -14,7 +14,7 @@ La manera de diferenciar els continguts és delimitar els scripts PHP marcant el
 
 El que no està contingut entre aquestes etiquetes es considerarà codi **HTML**.
 
-```php
+```html
 <html>
 <body>
    <h1>Primer arxiu PHP</h1>
