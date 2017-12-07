@@ -31,7 +31,7 @@ El que no està contingut entre aquestes etiquetes es considerarà codi **HTML**
 
 > El codi PHP és interpretat pel servidor i el client **MAI REBRÀ CODI PHP**.
 
-* El resultat que ha de rebre el client és **TOT HTML**:
+El resultat que ha de rebre el client és **TOT HTML**:
 
 ```html
 <html>
@@ -62,3 +62,5 @@ Cal distingir els comentaris en HTML dels de PHP.
    </body>
 </html>
 ```
+
+> Els **comentaris HTML** es podran veure des del client, en canvi, els **comentaris PHP** no seran visibles.
