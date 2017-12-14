@@ -26,7 +26,7 @@ I un perillós hacker omple un formulari amb aquestes dades:
 ![](/assets/SQLinjection.png)
 
 
-### **Exemple 1 SQL Injection:**
+### Exemple 1 SQL Injection
 
 
 Si introdueix `' OR 1=1 --` en el camp user.
@@ -49,7 +49,7 @@ SELECT * FROM users WHERE username='' OR 1=1 --' AND password=''
 
 I podrà autenticar-se a l'aplicació!!!
 
-### **Exemple 2 SQL Injection:**
+### Exemple 2 SQL Injection
 
 Si introdueix `' OR 1=1` en el camp password.
 
@@ -69,7 +69,7 @@ SELECT * FROM users WHERE username='sergi' AND password='' OR 1=1;
 
 I podrà autenticar-se a l'aplicació!!!
 
-### **Exemple 3 SQL Injection:**
+### Exemple 3 SQL Injection
 
 Si introdueix `'; DROP TABLE users --` en el camp user.
 
