@@ -60,13 +60,17 @@ En **_Ubuntu_** o **_Debian_** podem instal·lar els paquets necessaris amb:
 $ sudo apt-get install apache2 php7.0 libapache2-mod-php7.0 mysql-server phpmyadmin
 ```
 
+O bé instal·lar **_XAMPP for Linux_**
+
+https://www.apachefriends.org/es/index.html
+
 ## Treballant amb Apache i Windows
 
 Es recomana instal·lar el **_WAMPP_** o **_XAMPP for Windows_**.
 
-http://www.apachefriends.org/en/xampp-windows.html
+https://www.apachefriends.org/es/index.html
 
-* Aquest paquet ho porta tot integrat: Apache, PHP5 i MySQL.
+* Aquest paquet ho porta tot integrat: Apache + MariaDB + PHP7 + Perl.
 * Els arxius \*.php els haureu de guardar al directori htdocs (del Apache).
 
 A la web oficial de PHP (**PHP.net**) trobareu instruccions d'instal·lació de PHP: [http://php.net/manual/en/install.php](http://php.net/manual/en/install.php)
