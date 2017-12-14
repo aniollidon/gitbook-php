@@ -98,11 +98,11 @@ La consulta que s'executarà serà:
 SELECT * FROM users WHERE username=''; DROP TABLE users --' AND password=''
 ```
 
-**I s'eliminarà tot la taula _users_!!!**
+**I s'eliminarà tota la taula _users_!!!**
 
 ## PDO PREPARED STATEMENTS
 
-> Una **instrucció preparada** es tracta d'una instrucció SQL pre-compilada que pot ser executada varies vegades només enviant les dades al servidor.
+> Una **instrucció preparada (_prepared statement_)** es tracta d'una instrucció SQL pre-compilada que pot ser executada varies vegades només enviant les dades al servidor.
 
 * Permet evitar el *SQL injection*.
 
