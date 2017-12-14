@@ -47,7 +47,7 @@ Per tal que el servidor conegui què ha de fer en cada cas, cal indicar-li mitja
 ## Requisits per a l'ús del llenguatge PHP
 
 **PHP** requereix tenir instal·lat:
-* Un servidor web que suporti el protocol HTTP i configurat per interactuar amb l'intèrpret PHP. Per exemple, l'**_Apache_**.
+* Un servidor web que suporti el protocol HTTP i configurat per interactuar amb l'intèrpret PHP. Per exemple, l'**_Apache_**, **_IIS_**.
 * Un **intèrpret de PHP**.
 * Opcionalment, un programari de **servidor de bases de dades** capaç de ser gestionat mitjançant funcions pròpies de PHP (MySQL, Oracle, etc).
 
