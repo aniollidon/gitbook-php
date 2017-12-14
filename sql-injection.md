@@ -23,7 +23,7 @@ if ($result){
 
 I un perillós hacker omple un formulari amb aquestes dades:
 
-![Formulari login](http://i.imgur.com/MMftsdg.png)
+![](/assets/SQLinjection.png)
 
 
 ### **Exemple 1 SQL Injection:**
@@ -67,7 +67,6 @@ SELECT * FROM users WHERE username='sergi' AND password='' OR 1=1;
 ```sql
 SELECT * FROM users WHERE username=''; DROP TALBE users --' AND password=''
 ```
-
 
 ## PDO PREPARED STATEMENTS
 
