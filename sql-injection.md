@@ -47,7 +47,17 @@ La consulta que s'executarà serà:
 SELECT * FROM users WHERE username='' OR 1=1 --' AND password=''
 ```
 
-I podrà autenticar-se a l'aplicació!!!
+**Com interpreta això la base de dades? **
+Primer de tot busca un nom amb una cadena buida, no troba cap i per tant és fals. A continuació mira la segona condició ( 1 = 1) i evidentment és certa. 
+Com l'operador **or** funciona que si una de les condicions és certa el resultat és cert.
+
+```sql
+SELECT * FROM users WHERE true
+```
+
+Amb la qual cosa ens retornarà tots els usuaris!!
+
+**I el perillós hacker podrà autenticar-se a l'aplicació!!!**
 
 ### Exemple 2 SQL Injection
 
@@ -67,7 +77,7 @@ La consulta que s'executarà serà:
 SELECT * FROM users WHERE username='sergi' AND password='' OR 1=1;
 ```
 
-I podrà autenticar-se a l'aplicació!!!
+**I podrà autenticar-se a l'aplicació!!!**
 
 ### Exemple 3 SQL Injection
 
@@ -88,7 +98,7 @@ La consulta que s'executarà serà:
 SELECT * FROM users WHERE username=''; DROP TABLE users --' AND password=''
 ```
 
-I s'eliminarà tot la taula _users_!!!
+**I s'eliminarà tot la taula _users_!!!**
 
 ## PDO PREPARED STATEMENTS
 
@@ -147,4 +157,7 @@ El métode fetch() es pot definir per tal que retorni un array, un objecte, una 
 * PDO::FETCH_BOUND
 * PDO::FETCH_CLASS
 * PDO::FETCH_OBJ  
+
+
+![](/assets/sqlinjection-acudit.png)
 
