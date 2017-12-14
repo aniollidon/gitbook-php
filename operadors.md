@@ -4,6 +4,8 @@
 
 Els **operadors** permeten manipular el valor de les variables, realitzar operacions matemàtiques o comparar-les.
 
+Els operadors no s'utilitzen aïlladament, sinó que en una expressió. `4+5`
+
 * **Operadors aritmètics**: +, -, *, /, % (Mòdul)
 
 * **Operadors d’assignació**: =, +=, -=, .=
@@ -12,7 +14,7 @@ Els **operadors** permeten manipular el valor de les variables, realitzar operac
 
 * **Operadors lògics**: !(NEGACIÓ), && (AND), || (OR)
 
-* **Operadors condicionals**: ==, !=, >, <, >=, <=
+* **Operadors condicionals**: ==, ===, !=, >, <, >=, <=
 
 * **Operadors d'increment i decrement**: `++$a` `$a++` `--$a` `$a--`
 

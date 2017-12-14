@@ -38,9 +38,9 @@ echo "$nomPersona té $edat anys";
 
 ## Funcions pels tipus de variables
 
-* **gettype(variable)**: torna el tipus de dada de la variable.
-* **settype(variable,tipus)**: converteix la variable al tipus indicat.
-* **isset(variable)**: indica si la variable s'ha inicialitzat.
+* **gettype($variable)**: torna el tipus de dada de la variable.
+* **settype($variable,"tipus")**: converteix la variable al tipus indicat entre cometes.
+* **isset($variable)**: indica si la variable s'ha inicialitzat.
 
 ```php
 $a = "10";
@@ -50,5 +50,11 @@ echo gettype ($a);       //Mostrarà integer
 settype($a,"number");	//Convertim el string a number
 echo isset($b);	//Mostrarà false perquè la variable no s'ha inicialitzat        
 ```
----
+
+* **unset($variable)**: elimina de memòria una determinada variable
+* **empty($variable)**: indica si una variable és buida
+* **is_int, is_float, is_numeric, is_bool, is_array, is_string**: Indiquen si la variable en qüestió és del tipus.
+
+
+
 
