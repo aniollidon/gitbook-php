@@ -27,6 +27,10 @@ I un perillós hacker omple un formulari amb aquestes dades:
 
 
 ### **Exemple 1 SQL Injection:**
+
+
+Si introdueix `' OR 1=1 --` en el camp user.
+
 ```php
 <?php
 	$user = "' OR 1=1 --"
@@ -34,13 +38,20 @@ I un perillós hacker omple un formulari amb aquestes dades:
 	$sql = "SELECT * FROM users WHERE username='$user' AND password='$pass'";
 ?>
 ```
-El **--** en MySQL indica que és un comentari .
+
+> El **--** en MySQL indica que és un comentari .
+
+La consulta que s'executarà serà:
 
 ```sql
 SELECT * FROM users WHERE username='' OR 1=1 --' AND password=''
 ```
 
+I podrà autenticar-se a l'aplicació!!!
+
 ### **Exemple 2 SQL Injection:**
+
+Si introdueix `' OR 1=1` en el camp password.
 
 ```php
 <?php
@@ -50,23 +61,34 @@ SELECT * FROM users WHERE username='' OR 1=1 --' AND password=''
 ?>
 ```
 
+La consulta que s'executarà serà:
+
 ```sql
 SELECT * FROM users WHERE username='sergi' AND password='' OR 1=1;
 ```
 
+I podrà autenticar-se a l'aplicació!!!
+
 ### **Exemple 3 SQL Injection:**
+
+Si introdueix `'; DROP TABLE users --` en el camp user.
+
 
 ```php
 <?php
-	$user = "'; DROP TALBE users --"
+	$user = "'; DROP TABLE users --"
 	$pass = ""
 	$sql = "SELECT * FROM users WHERE username='$user' AND password='$pass'";
 ?>
 ```
 
+La consulta que s'executarà serà:
+
 ```sql
-SELECT * FROM users WHERE username=''; DROP TALBE users --' AND password=''
+SELECT * FROM users WHERE username=''; DROP TABLE users --' AND password=''
 ```
+
+I s'eliminarà tot la taula _users_!!!
 
 ## PDO PREPARED STATEMENTS
 
