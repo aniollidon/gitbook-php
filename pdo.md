@@ -10,64 +10,87 @@
 * Requereix característiques de OO (Orientació Objectes) del nucli de PHP 5.
   * Per tant, no funcionarà en versions anteriors a 5.1.
   
+## PDO CONNEXIÓ A BD
+
+```php
+<?php
+$servername= "localhost";
+$username = "username";
+$password = "password";
+
+try{
+	//creem una nova connexió instancinat l'objecte PDO
+	$conn = new PDO("mysql:host=$servername;dbname=myDB",
+			$username, $password);
+  // establim el mode PDO error a exception per poder
+  // recuperar les excepccions
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully";
+}
+catch(PDOException $e)
+{
+	//Si falla la connexió amb la BD es mostra l'error.
+	echo "Connection failed: " . $e->getMessage();
+}
+//Close connection
+$conn=null;
+?>
+```
+
+## PDO SELECT
+
+```php
+<?php
+// sql to select a record
+$sql = 'SELECT firstname, lastname, email FROM MyGuest ORDER BY firstname';
+
+//obtenir les files de la BD
+$rows = $conn->query($sql);	// use query() because results are returned
+
+//recorrem cadauna de les files per mostrar les dades
+foreach ($rows as $row) {
+	 echo $row['firstname'] . "\t";
+	 echo $row['lastname'] . "\t";
+	 echo $row['email'] . "\n";
+}
+?>
+```
+
+Si realitzem un INSERT en una taula amb un **camp AUTO_INCREMENT**, podem obtenir el ID de lúltim registre inserit.
+
+```php
+<?php
+$sql= "INSERT INTO MyGuests(firstname, lastname, email)
+VALUES ('John', 'Doe', 'john@example.com')";
+
+// use exec() because no results are returned
+$conn->exec($sql);
+$last_id = $conn->lastInsertId();
+
+echo "New record created successfully. ";
+echo "Last inserted ID is: " . $last_id;
+?>
+```
+
+Si volem inserir les **dades enviades per POST** des d'un formulari:
+
+```php
+<?php
+$firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
+$email = $_POST['email'];
+
+$sql= "INSERT INTO MyGuests(firstname, lastname, email)
+VALUES ($firstname, $lastname, $email)";
+
+// use exec() because no results are returned
+$conn->exec($sql);
+echo "New record created successfully. ";
+?>
+```
+
   
-## PDO PREPARED STATEMENTS
 
-> Una **instrucció preparada** es tracta d'una instrucció SQL pre-compilada que pot ser executada varies vegades només enviant les dades al servidor.
-
-* Permet evitar el *SQL injection*.
-
-### Exemple INSERT amb Prepared Statements
-
-```php
-<?php
-  // prepare sql statement
-	$stmt = $conn->prepare("INSERT INTO MyGuests (firstname, lastname, email)
-					VALUES (:firstname, :lastname, :email)");
-
-	// execute to insert a row
-	$stmt->execute(array(':firstname'=>'John',
-						':lastname'=>'Doe',
-						':email'=>"john@example.com"));
-
-	// execute to insert a row
-	$stmt->execute(array(':firstname'=>'Mary',
-						':lastname'=>'Moe',
-						':email'=>"mary@example.comm"));
-?>
-```
-
-### Exemple SELECT amb Prepared Statements
-
-```php
-<?php
-  // 1. prepare sql statement
-	$sql = 'SELECT firstname, lastname, email FROM MyGuest WHERE firstname = :firstname';
-	$stmt = $conn->prepare($sql);
-
-	// 2. execute to insert a row
-	$stmt->execute(array(':firstname'=>'John'));
-
-	// 3. get all rows
-	$rows = $stmt->fetchAll();
-
-	// 4. show rows
-	foreach ($rows as $row) {
-		echo $row['firstname'];
-		echo $row['lastname'];
-	}
-?>
-```
-El métode fetch() es pot definir per tal que retorni un array, un objecte, una instància d’una classe, etc.
-
-`$rows = $stmt->fetch(PDO::FETCH_ASSOC);`
-
-Únicament cal passar com a paràmetre:
-* PDO::FETCH_ASSOC: Retorna un array associatiu. És el valor per defecte.
-* PDO::FETCH_BOTH
-* PDO::FETCH_BOUND
-* PDO::FETCH_CLASS
-* PDO::FETCH_OBJ  
 
 ## PDO DELETE
 

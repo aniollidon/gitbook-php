@@ -12,8 +12,11 @@
 * [Cookies](cookie.md)
 * [Sessions](session.md)
 * [Accés a dades](acces-dades.md)
-  * [MYSQLi](mysqli.md) 
+  * [MYSQLi](mysqli.md)
   * [PDO](pdo.md)
+  * [SQL Injection](sql-injection.md)
+
+
 
 
 
