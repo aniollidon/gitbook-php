@@ -15,5 +15,27 @@
 * [Formularis](form.md)
 * [Cookies](cookie.md)
 * [Sessions](session.md)
-* Cadenes
+* [Accés a dades](acces-dades.md)
+  * [MYSQLi](mysqli.md)
+  * [PDO](pdo.md)
+  * [SQL Injection](sql-injection.md)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
