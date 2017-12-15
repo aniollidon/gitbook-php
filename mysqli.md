@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 #MYSQLi
 
 ```php
