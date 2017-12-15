@@ -5,6 +5,7 @@
 * [Sintaxi](sintaxi.md)
 * [Variables](variables.md)
 * [Imprimir valors](imprimir-valors.md)
+* [Cadenes](cadenes.md)
 * [Constants](constants.md)
 * [Operadors](operadors.md)
 * [Control de flux](control-de-flux.md)
@@ -14,5 +15,5 @@
 * [Formularis](form.md)
 * [Cookies](cookie.md)
 * [Sessions](session.md)
-* Superglobals
+* Cadenes
 

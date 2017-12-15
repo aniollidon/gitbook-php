@@ -49,6 +49,3 @@ function nomFuncio() {
 Estem cridant a la funció i aquesta ens retorna un valor
 També podem cridar funcions que no ens retornen cap valor
 
-
-[Exemple funció amb valor de retorn](https://www.w3schools.com/php/showphp.asp?filename=demo_function5)
-
