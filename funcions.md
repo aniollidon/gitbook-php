@@ -42,10 +42,16 @@ function nomFuncio() {
 
 ```php
 <?php
+    //Definició de la funció
+    function nomFuncio() {
+       return 3;
+    }
+
+    //Crida a la funció
     $variable = nomFuncio();
 ?>
 ```
 
-Estem cridant a la funció i aquesta ens retorna un valor
-També podem cridar funcions que no ens retornen cap valor
+Estem cridant a la funció i aquesta ens retorna un valor.
+També podem cridar funcions que no ens retornen cap valor.
 
