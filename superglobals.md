@@ -4,7 +4,7 @@
 
 # Variables globals (Superglobals)
 
-PHP disposa d'un conjunt de **variables predefinides** que guarden informació relativa a l'entorn d'execució i a la configuració del php. Per tant, dependràn del servidor on estan instal·lades. 
+> PHP disposa d'un conjunt de **variables globals predefinides (superglobals)** que guarden informació relativa a l'entorn d'execució i a la configuració del php. Per tant, dependràn del servidor on estan instal·lades. 
 
 Per veure-les es pot utilitzar la funció `phpinfo();`
 
