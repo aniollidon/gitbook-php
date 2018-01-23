@@ -37,12 +37,14 @@ Fixeu-vos que:
 
 ```php
 <html>
-<body>
+  <body>
+  <!-- Codi HTML per aquí... -->
   <? php
       $nom = $_REQUEST['nom'];  //Obtenim el nom introduït
       echo "Hola, $nom!";       //Mostrem una salutació
   ?>
-</body>
+  <!-- Més codi HTML per allà... -->
+  </body>
 </html>
 ```
 * Obtenim el valor entrat al formulari a partir de l'array associatiu `$_REQUEST` i indicant la clau **nom** `$_REQUEST['nom'].
