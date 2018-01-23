@@ -1,6 +1,6 @@
 <!-- notoc -->
 
-# Sessions
+# *Sessions
 
 **PHP** proporciona un mecanisme per mantenir la sessió : les **variables de sessió**.
 
