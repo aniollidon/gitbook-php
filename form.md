@@ -2,6 +2,8 @@
 
 # Formularis
 
+## Enviar dades amb formularis
+
 **Exemple:**
 
 ```html
@@ -29,7 +31,7 @@ Fixeu-vos que:
     * Si no el posem no podrem enviar les dades al servidor.
     *  El atribut `value` és el text que mostrarà el botó. 
 
-## Processament
+## Obtenir dades enviades
 
 *  La pàgina destí pot utilitzar un **array associatiu (PHP superglobals) ** (`$_REQUEST, $_POST o $_GET`) del qual el **name** del camp serà una **clau** que contidrà el **valor** entrat al formulari.
 
