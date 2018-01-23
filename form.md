@@ -2,6 +2,8 @@
 
 # Formularis
 
+**Exemple:**
+
 ```html
 <html>
 <body>
@@ -22,20 +24,26 @@
 *  La pàgina destí pot utilitzar un **array associatiu (PHP superglobals) ** (`$_REQUEST, $_POST o $_GET`) del qual el **name** del camp serà una **clau** que contidrà el **valor** entrat al formulari.
 
 * El fitxer que recollirà la informació `processa.php` pot contenir el següent:
+
 ```php
-<? php
-    $nom = $_REQUEST['nom'];  //Obtenim el nom introduït
-    echo "Hola, $nom!";       //Mostrem una salutació
-?>
+<html>
+<body>
+  <? php
+      $nom = $_REQUEST['nom'];  //Obtenim el nom introduït
+      echo "Hola, $nom!";       //Mostrem una salutació
+  ?>
+</body>
+</html>
 ```
-* Obtenim el valor entrat al formulari a partir de l'array associatiu `$_REQUEST` i indicant la clau **nom**.
+* Obtenim el valor entrat al formulari a partir de l'array associatiu `$_REQUEST` i indicant la clau **nom** `$_REQUEST['nom'].
+* També podríem haver utilitzat `$_POST['nom']` perquè el formulari s'han enviat utilitzant el mètode post.
 
 ## POST i GET
 
 Quan un formulari envia dades ho pot fer mitjançant dos mètodes diferents:
 
   * **POST**:  els valors del formulari es transmeten de manera oculta (no aparèixen a la barra d'adreces del navegador).
-  * **GET**:	els valors aperèixen a l'adreça URL.
+  * **GET**: els valors aperèixen a l'adreça URL i són visibles per tothom.
   
   Per exemple: 
   `http://localhost/processa.php/nom=jaume&curs=1` 
@@ -58,5 +66,7 @@ Característiques del mètode **POST**:
 * Les dades s'afegeixen en el cos de la petició HTTP.
 * Les sol·licitud POST NO es guarden en l'historial del navegador.
 * Les sol·licitud POST NO poden ser *bookmarked*.
+
+> En general, els desenvolupadors prefereixen POST per enviar dades de formularis.
 
 ---
