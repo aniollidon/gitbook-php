@@ -3,19 +3,24 @@
 # Formularis
 
 ```html
-<form method="post" action="processa.php">
-    <label for="name"/>
-    <input type="text" name="nom"/>
+<html>
+<body>
+<form action="processa.php" method="post">
+    <label for="name">Nom:</label><input type="text" name="nom"><br>
     <input type="submit" value="Enviar">
 </form>
+</body>
+</html>
 ```
+
 * **method**: indica la forma d'enviament de la informació (POST o GET).
 * **action**: indica el fitxer on s'enviaran les dades
 * **name**: per cada camp del formulari indica el nom que l'identifica i que ens permetrà recuperar el valor introduït. 
 
 ## Processament
 
-*  La pàgina destí rebrà un **array associatiu** (`$_REQUEST, $_POST o $_GET`) del qual el **name** del camp serà una **clau** que contidrà el **valor** entrat al formulari.
+*  La pàgina destí pot utilitzar un **array associatiu (PHP superglobals) ** (`$_REQUEST, $_POST o $_GET`) del qual el **name** del camp serà una **clau** que contidrà el **valor** entrat al formulari.
+
 * El fitxer que recollirà la informació `processa.php` pot contenir el següent:
 ```php
 <? php
