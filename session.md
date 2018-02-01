@@ -12,7 +12,7 @@ Per tant, si l'usuari deshabilita aquesta possibilitat, es tanca la porta a aque
 
 **PHP** proporciona un altre mecanisme per mantenir la sessió: les **variables de sessió**.
 
-> Les **variables de sessió** són un conjunt de variables que estan disponibles a qualsevol lloc dels scripts php i en totes les pàgines **mentre la sessió no s'acabi**. 
+> Les **variables de sessió** són un conjunt de variables que estan disponibles a totes les pàgines del site **mentre la sessió no s'acabi**. 
 
 Una **sessió comença** quan l'usuari es connecta a l'aplicació.
 Una **sessió es tanca** quan:
