@@ -10,7 +10,7 @@ Per tant, es tracta cada petició d'una pàgina com un transacció independent q
 
 S'han creat tècniques per **mantenir informació entre peticions**, com per exemple les [**cookies**](http://php.net/manual/es/features.cookies.php)
 
-## Cookies
+## Cookie
 
 > Una *galeta* o ***cookie*** és un fitxer de text de mida limitada que permet guardar localment informacions diverses.
 
