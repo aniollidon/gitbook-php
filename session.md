@@ -2,14 +2,22 @@
 
 # *Sessions
 
+Hem vist que els **cookies** ens permetien mantenir una informació de variables més enllà d'un únic script. 
 
-**PHP** proporciona un mecanisme per mantenir la sessió : les **variables de sessió**.
+Però tenen alguns **inconvenients**:
+* Cal que el navegador tingui aquesta opció habilitada.
+* Es desa en l'ordinador local o client.
 
-Són variables que estan disponibles a qualsevol lloc dels scripts i en totes les pàgines **mentre la sessió no s'acabi**. 
+Per tant, si l'usuari deshabilita aquesta possibilitat, es tanca la porta a aquest manteniment de valors entre scripts. 
 
-Una sessió es tanca quan:
-  * L'usuari no tanqui el navegador.
-  * Passa un cert temps (definit pel sistema) sense que l'usuari interaccioni.
+**PHP** proporciona un altre mecanisme per mantenir la sessió: les **variables de sessió**.
+
+> Les **variables de sessió** són variables que estan disponibles a qualsevol lloc dels scripts i en totes les pàgines **mentre la sessió no s'acabi**. 
+
+Una **sessió comença** quan l'usuari es connecta a l'aplicació.
+Una **sessió es tanca** quan:
+  * L'usuari tanqui el navegador.
+  * Passa un cert temps (definit pel sistema) sense que l'usuari interaccioni amb l'aplicació.
 
 Les variables de sessió, a diferència de les cookies, **es guarden al servidor**.
 
