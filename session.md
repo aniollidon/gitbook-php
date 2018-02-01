@@ -12,7 +12,7 @@ Per tant, si l'usuari deshabilita aquesta possibilitat, es tanca la porta a aque
 
 **PHP** proporciona un altre mecanisme per mantenir la sessió: les **variables de sessió**.
 
-> Les **variables de sessió** són variables que estan disponibles a qualsevol lloc dels scripts i en totes les pàgines **mentre la sessió no s'acabi**. 
+> Les **variables de sessió** són un conjunt de variables que estan disponibles a qualsevol lloc dels scripts php i en totes les pàgines **mentre la sessió no s'acabi**. 
 
 Una **sessió comença** quan l'usuari es connecta a l'aplicació.
 Una **sessió es tanca** quan:
@@ -21,44 +21,54 @@ Una **sessió es tanca** quan:
 
 Les variables de sessió, a diferència de les cookies, **es guarden al servidor**.
 
+Podem desar amb aquest sistema, per **exemple**, l'identificador d'un usuari, l'idioma preferent, un curs o grup, etc., i tenir-los disponibles en qualsevol script mentre no es tanqui la sessió. 
+
 ## Creació de la sessió
+
+Per iniciar o continuar una sessió, s'utilitza la funció **session_start()**, que cal posar a l’inici de cada pàgina que faci referència a la mateixa sessió. 
+
+A cada sessió se li assigna un **identificador (ID) de sessió** exclusiu i aleatori, que conté tota la informació actual.
 
 **pagina1.php**
 
-```html
+```php
 <?php
-// Start the session
-session_start();
+  // Start the session
+  session_start();
 ?>
 <!DOCTYPE html>
 <html>
-<body>
-<?php
-// Set session variables
-$_SESSION["favcolor"] = "green";
-$_SESSION["favanimal"] = "cat";
-echo "Session variables are set.";
-?>
-</body>
+  <body>
+  <?php
+    // Set session variables
+    $_SESSION["username"] = "sergi";
+    $_SESSION["favcolor"] = "red";
+    echo "Session variables are set.";
+   ?>
+  </body>
 </html>
 ```
 
 ## Recuperació variables de sessió
 
+Primerament, cal **reobrir la sessió** identificada amb un ID deteminat amb la funció **_session_start()_**.
+* L'**identificador de sessió** actual s'ha guardat en una **cookie**, pel que únicament si les tenim activades, podrem utilitzar les sessions d'aquesta manera.
+* Si per el contrari no tenim les cookies activades, podem passar l'ID de sessió per la URL.
+
 **pagina2.php**
 
-```html
+```php
 <?php
-// Restart de session
-session_start();
+  // Restart de session
+  session_start();
 ?>
 <!DOCTYPE html>
 <html>
 <body>
 <?php
-// Echo session variables that were set on previous page
-echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
-echo "Favorite animal is " . $_SESSION["favanimal"] . ".";
+  // Echo session variables that were set on previous page
+  echo "Username is " . $_SESSION["username"] . ".<br>";
+  echo "Favorite color is " . $_SESSION["favcolor"] . ".";
 ?>
 </body>
 </html>
