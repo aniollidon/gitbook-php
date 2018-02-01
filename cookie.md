@@ -1,6 +1,6 @@
 <!-- notoc -->
 
-# *Cookies
+# Cookies
 
 ## Protocol HTTP
 
@@ -41,19 +41,34 @@ setcookie(name, value, expire)
   // Expiració = 30 dies (30d * 24h * 3600s)
 ?>
 ```
-* **Important!!!** quan volguem enviar una cookie hem de començar el codi php just al començament del fitxer, abans de qualsevol etiqueta html o espai en blanc.
+
+[Provar l'exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_cookie1)
+
+
+> **Important!!!** quan volguem enviar una cookie hem de començar el codi php just al començament del fitxer, abans de qualsevol etiqueta html o espai en blanc.
 
 ## Recuperar cookies
-* Per recuperar els valors desats en **cookies** s'utilitzar l'array associatiu `$_COOKIE["nom_cookie"]`
+
+Per recuperar els valors desats en **cookies** s'utilitzar l'array associatiu `$_COOKIE["nom_cookie"]`.
 
 ```php
 <?php
-if(!isset($_COOKIE["user"])) {
-    echo "La cookie amb nom 'user' no existeix!";
-} else {
-    echo "Benvingut " . $_COOKIE["user"];
-}
+  if(!isset($_COOKIE["user"])) {
+      echo "La cookie amb nom 'user' no existeix!";
+  } else {
+      echo "Benvingut " . $_COOKIE["user"];
+  }
 ?>
 ```
 
----
+## Eliminar cookies
+
+Per eliminar una **cookie** s'utilitza la funció **setcookie()** amb una data d'expiració que ja hagi passat.
+
+```php
+<?php
+  // posem un data d'expiració una hora enrera
+  setcookie("user", "", time() - 3600);
+?>
+```
+
