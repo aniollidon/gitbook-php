@@ -15,7 +15,8 @@ Les variables de sessió, a diferència de les cookies, **es guarden al servidor
 
 ## Creació de la sessió
 
-pagina1.php
+**pagina1.php**
+
 ```html
 <?php
 // Start the session
@@ -36,7 +37,8 @@ echo "Session variables are set.";
 
 ## Recuperació variables de sessió
 
-pagina2.php
+**pagina2.php**
+
 ```html
 <?php
 // Restart de session
