@@ -73,3 +73,23 @@ Primerament, cal **reobrir la sessió** identificada amb un ID deteminat amb la 
 </body>
 </html>
 ```
+
+## Funcions de gestió de sessions
+
+**bool session_start (void)  **
+Crea o continua una sessió amb l'ID passat com a paràmetre via GET o COOKIE. 
+
+**bool session_destroy (void)**
+Destrueix i tanca totes les dades relacionades amb una sessió. 
+Retorna TRUE si ha anat bé o FALSE en cas contrari
+
+**void session_unset (void)**
+Allibera totes les variables de sessió actualment registrades.
+
+**string session_name ([string name])**
+Retorna el nom de la sessió actual. 
+Si s'especifica nom es modifica l'actual pel nou valor.
+
+**string session_id ([string id])**
+Retorna l'identificador de la sessió actual. 
+Si s'especifica un identificador, l'actual es modificarà pel nou valor. 
