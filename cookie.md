@@ -23,16 +23,22 @@ Cada vegada que el mateix equip sol·licita una determinada pàgina, envia tamb�
 
 ## Crear cookies
 
+Una **cookie** es crea amb la funció **setcookie()**.
+
 ```php
 setcookie(name, value, expire)
 ```
+* Només el **name** és obligatori, els altres paràmetres són opcionals.
 * El **temps d'expiració** s'expressa amb segons.
-* Exemple:
+
+**Exemple**
 
 ```php
 <? php
-setcookie("user", "sergi", time() + (30 * 24 * 3600)); 
-// Expiració = 30 dies (30d * 24h * 3600s)
+  $cookie_name = "user";
+  $cookie_value = "Sergi";
+  setcookie($cookie_name, $cookie_value, time() + (30 * 24 * 3600)); 
+  // Expiració = 30 dies (30d * 24h * 3600s)
 ?>
 ```
 * **Important!!!** quan volguem enviar una cookie hem de començar el codi php just al començament del fitxer, abans de qualsevol etiqueta html o espai en blanc.
