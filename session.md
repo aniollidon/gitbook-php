@@ -2,9 +2,12 @@
 
 # *Sessions
 
+
 **PHP** proporciona un mecanisme per mantenir la sessió : les **variables de sessió**.
 
-Són variables que estan disponibles a qualsevol lloc dels scripts i en totes les pàgines **mentre la sessió no s'acabi**. Un sessió es tanca quan:
+Són variables que estan disponibles a qualsevol lloc dels scripts i en totes les pàgines **mentre la sessió no s'acabi**. 
+
+Una sessió es tanca quan:
   * L'usuari no tanqui el navegador.
   * Passa un cert temps (definit pel sistema) sense que l'usuari interaccioni.
 
