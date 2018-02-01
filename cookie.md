@@ -12,11 +12,13 @@ S'han creat tècniques per **mantenir informació entre peticions**, com per exe
 
 ## Cookie
 
-> Una *galeta* o ***cookie*** és un fitxer de text de mida limitada que permet guardar localment informacions diverses.
+> Una *galeta* o ***cookie*** és un fitxer de text de mida limitada que permet guardar localment (en l'equip client) informacions diverses.
 
-La **finalitat** és guardar informació d'un visitant **en el seu ordinador** per poder utilitzar en futures visites.
+La **finalitat** és guardar informació d'un visitant **en el seu ordinador** per poder-les recuperar i utilitzar en futures visites.
  
 Per exemple: data i hora última visita, nom d'usuaris, etc.
+
+Totes els cookies d'un mateix web es desen seqüencialment en un mateix fitxer de text.
 
 Cada vegada que el mateix equip sol·licita una determinada pàgina, envia també la cookie.
 
@@ -64,7 +66,7 @@ Per recuperar els valors desats en **cookies** s'utilitzar l'array associatiu `$
 
 ## Eliminar cookies
 
-Per eliminar una **cookie** s'utilitza la funció **setcookie()** amb una data d'expiració que ja hagi passat.
+Per eliminar una **cookie** s'utilitza la funció **setcookie()** amb una data d'expiració anterior al temps actual.
 
 ```php
 <?php
