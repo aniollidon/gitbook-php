@@ -6,7 +6,7 @@
 
 > El  **protocol http** és un [protocol sense estat (*stateless*)](https://es.wikipedia.org/wiki/Protocolo_sin_estado).
 
-Per tant, es tracta cada petició d'una pàgina com un transacció independent que no té relació amb cap altre petició anterior.
+Per tant, es tracta cada petició d'una pàgina com un transacció independent que **no té relació** amb cap altre petició anterior.
 
 S'han creat tècniques per **mantenir informació entre peticions**, com per exemple les [**cookies**](http://php.net/manual/es/features.cookies.php)
 
