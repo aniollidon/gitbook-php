@@ -5,16 +5,21 @@
 ## Protocol HTTP
 
 * El  **protocol http** és un [protocol sense estat (*stateless*)](https://es.wikipedia.org/wiki/Protocolo_sin_estado).
-* Es tracta cada petició com un transacció independent que no té relació amb cap altre petició anterior.
+* Es tracta cada petició d'una pàgina com un transacció independent que no té relació amb cap altre petició anterior.
 * S'han creat tècniques per mantenir informació entre peticions.
 * Una d'aquestes tècniques són les [**cookies**](http://php.net/manual/es/features.cookies.php)
 
 ## Cookies
 
-* Una *galeta* o ***cookie*** és un fitxer de text de mida limitada que permet guardar localment informacions diverses.
-* La finalitat és guardar informació d'un visitant **en el seu ordinador** per poder utilitzar en futures visites.
-  * Per exemple: data i hora última visita, nom d'usuaris, etc.
-* Cal que el navegador tingui les **cookies habilitades**.
+> Una *galeta* o ***cookie*** és un fitxer de text de mida limitada que permet guardar localment informacions diverses.
+
+La **finalitat** és guardar informació d'un visitant **en el seu ordinador** per poder utilitzar en futures visites.
+ 
+Per exemple: data i hora última visita, nom d'usuaris, etc.
+
+Cada vegada que el mateix equip sol·licita una determinada pàgina, envia també la cookie.
+
+> Cal que el navegador tingui les **cookies habilitades**.
 
 ## Crear cookies
 
