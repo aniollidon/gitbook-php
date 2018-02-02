@@ -35,10 +35,8 @@ Totes els cookies d'un mateix web es guarden seqüencialment en un mateix fitxer
 Una **cookie** es crea amb la funció **setcookie()**.
 
 ```php
-setcookie(name, value, expire)
+setcookie(nom, valor, expiració)
 ```
-* Només el **name** és obligatori, els altres paràmetres són opcionals.
-* El **temps d'expiració** s'expressa amb segons.
 
 **Exemple**
 
@@ -52,6 +50,15 @@ setcookie(name, value, expire)
 ```
 
 [Provar l'exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_cookie1)
+
+*  **_nom_**: és el nom o l’identificador amb què ens referirem a aquella cookie.
+*  **_valor_**: és el valor concret que li donem a aquella cookie.
+*  **_temps d'expiració_**: és un data expressada amb segons (nombre enter), per això és útil fer servir la funció **_time()_** de PHP.
+* **_domini_**: estableix el domini per al qual la cookie serà vàlida.
+
+Només el **name** és obligatori, els altres paràmetres són opcionals.
+
+* El **temps d'expiració** s'expressa amb segons.
 
 
 > **Important!!!** quan volguem enviar una cookie hem de començar el codi php just al començament del fitxer, abans de qualsevol etiqueta html o espai en blanc.
