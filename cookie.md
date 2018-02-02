@@ -18,13 +18,18 @@ La **finalitat** és guardar informació d'un visitant, **en el seu ordinador**,
  
 Per exemple: data i hora última visita, nom d'usuari, etc.
 
-Totes els cookies d'un mateix web es desen seqüencialment en un mateix fitxer de text.
+Totes els cookies d'un mateix web es guarden seqüencialment en un mateix fitxer de text.
 
-Cada vegada que el mateix equip sol·licita una determinada pàgina, envia també la cookie.
+> Cal que el navegador tingui les **cookies habilitades**.
+
+## Funcionament
+
+2. La cookie és enviada del servidor al client la primera vegada que es connecta a una pàgina (sempre i quan el client accepti galetes) i es guarda en el disc dur.
+
+3. Cada vegada que el mateix equip accedeix a la pàgina web, si la cookie no ha caducat, s'envia també la cookie al servidor per recuperar les dades.
 
 ![](/assets/php-cookies.png)
 
-> Cal que el navegador tingui les **cookies habilitades**.
 
 ## Crear cookies
 
