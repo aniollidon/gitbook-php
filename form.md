@@ -62,15 +62,6 @@ El fitxer que recollirà la informació `processa.php` pot contenir el següent:
 
 * També podríem haver utilitzat `$_POST['nom']` perquè el formulari s'han enviat utilitzant el mètode post.
 
- Són uns arrays associatius, , 
-• Array $_GET
-– Array que conté les variables si el formulari ha estat enviat pel mètode GET.
-• Array $_POST
-– Array que conté les variables si el formulari ha estat enviat pel mètode POST.
-• Array $_REQUEST
-– Conté les variables passades per qualsevol dels 2 mètodes explicats.
-
-
 ## POST i GET
 
 Quan un formulari envia dades ho pot fer mitjançant dos mètodes diferents:
