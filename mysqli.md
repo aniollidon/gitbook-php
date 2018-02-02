@@ -1,6 +1,6 @@
 <!-- notoc -->
 
-#MYSQLi
+# MYSQLi
 
 ```php
 <?php
@@ -22,8 +22,8 @@ $conn->close();
 ?>
 ```
 
-## MÉS INFO
+## Referències
 
-* **MYSQLi** W3Schools: [http://www.w3schools.com/php/php_mysql_intro.asp](http://www.w3schools.com/php/php_mysql_intro.asp)
+* **MYSQLi W3Schools**: [http://www.w3schools.com/php/php_mysql_intro.asp](http://www.w3schools.com/php/php_mysql_intro.asp)
 
 

@@ -1,8 +1,8 @@
-# SQL INJECTION
+# SQL Injection
 
 ## Introducció
 
-> SQL Injection és un tècnica que hacking que permet injectar instruccions SQL a través d'una pàgina de la nostra aplicació web.
+> **SQL Injection** és un tècnica que hacking que permet injectar instruccions SQL a través d'una pàgina de la nostra aplicació web.
 
 **Exemple SQL injection**
 
