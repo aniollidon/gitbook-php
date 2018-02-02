@@ -119,3 +119,9 @@ Si s'especifica nom es modifica l'actual pel nou valor.
 **string session_id ([string id])**
 Retorna l'identificador de la sessió actual. 
 Si s'especifica un identificador, l'actual es modificarà pel nou valor. 
+
+## Referències
+
+* **w3schools.com**: [PHP 5 Sessions](https://www.w3schools.com/php/php_sessions.asp) 
+
+* **Documentació oficial PHP.net:** [Sessions](http://php.net/manual/en/book.session.php)
