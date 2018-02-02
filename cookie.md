@@ -22,6 +22,8 @@ Totes els cookies d'un mateix web es desen seqüencialment en un mateix fitxer d
 
 Cada vegada que el mateix equip sol·licita una determinada pàgina, envia també la cookie.
 
+![](/assets/php-cookies.png)
+
 > Cal que el navegador tingui les **cookies habilitades**.
 
 ## Crear cookies
