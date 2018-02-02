@@ -62,8 +62,10 @@ En el **servidor** també es guarda un fitxer associat a la sessió on anirà gu
 
 Quan un **client** es connecta per segona vegada al servidor (una altra pàgina per exemple) ha d’especificar al servidor quin identificador de sessió (ID) té. 
 Hi ha dos mètodes:
-* En una cookie: s’envia una cookie al servidor amb l’id de la sessio i les dades que es guarden en les variables de sessio. Podem decidir el nom de la cookie amb session_name().
-* A través de la URL: Enllaçarem a la següent pàgina amb un paràmetre que trameti l’identificador de sessió. Aquest mètode assegura el bon funcionament en el cas que el client tingui les cookies deshabilitades. Amb l'inconvenit que l'identificació de la sessió queda visible...
+* **En una cookie**: 
+  s’envia una cookie al servidor amb l’id de la sessio i les dades que es guarden en les variables de sessio. Podem decidir el nom de la cookie amb session_name().
+* **A través de la URL**: 
+  Enllaçarem a la següent pàgina amb un paràmetre que trameti l’identificador de sessió. Aquest mètode assegura el bon funcionament en el cas que el client tingui les cookies deshabilitades. Amb l'inconvenient que l'identificació de la sessió queda visible...
 
 ```php
   echo "<a  href='seguent.php?'.session_name().'='.session_id()";
