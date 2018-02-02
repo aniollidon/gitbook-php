@@ -14,9 +14,9 @@ S'han creat tècniques per **mantenir informació entre peticions**, com per exe
 
 > Una *galeta* o ***cookie*** és un fitxer de text de mida limitada que permet guardar localment (en l'equip client) informacions diverses.
 
-La **finalitat** és guardar informació d'un visitant **en el seu ordinador** per poder-les recuperar i utilitzar en futures visites.
+La **finalitat** és guardar informació d'un visitant, **en el seu ordinador**, per poder-les recuperar i utilitzar en futures visites.
  
-Per exemple: data i hora última visita, nom d'usuaris, etc.
+Per exemple: data i hora última visita, nom d'usuari, etc.
 
 Totes els cookies d'un mateix web es desen seqüencialment en un mateix fitxer de text.
 
