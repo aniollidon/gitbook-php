@@ -1,6 +1,6 @@
-<!-- notoc -->
-
 # Sessions
+
+## Introducció
 
 Hem vist que els **cookies** ens permetien mantenir una informació de variables més enllà d'un únic script. 
 
