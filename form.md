@@ -33,9 +33,17 @@ Fixeu-vos que:
 
 ## Obtenir dades enviades
 
-*  La pàgina destí pot utilitzar un **array associatiu (PHP superglobals) ** (`$_REQUEST, $_POST o $_GET`) del qual el **name** del camp serà una **clau** que contidrà el **valor** entrat al formulari.
+La pàgina destí utilitza un **array associatiu (PHP superglobals)** que són generats automàticament per PHP i que permeten obtenir les dades que ha introduïdes per l'usuari.
 
-* El fitxer que recollirà la informació `processa.php` pot contenir el següent:
+Existeixen 3 arrays diferents:
+* **Array $_GET**: conté les variables si el formulari ha estat enviat pel mètode GET.
+* **Array $_POST**: conté les variables si el formulari ha estat enviat pel mètode POST.
+* **Array $_REQUEST**: conté les variables passades per qualsevol dels 2 mètodes (GET o POST).
+
+
+En aquests arrays associatius, el **name** del camp del formulari serà una **clau** que contidrà el **valor** entrat al formulari.
+
+El fitxer que recollirà la informació `processa.php` pot contenir el següent:
 
 ```php
 <html>
@@ -49,14 +57,26 @@ Fixeu-vos que:
   </body>
 </html>
 ```
+
 * Obtenim el valor entrat al formulari a partir de l'array associatiu `$_REQUEST` i indicant la clau **nom** `$_REQUEST['nom'].
+
 * També podríem haver utilitzat `$_POST['nom']` perquè el formulari s'han enviat utilitzant el mètode post.
+
+ Són uns arrays associatius, , 
+• Array $_GET
+– Array que conté les variables si el formulari ha estat enviat pel mètode GET.
+• Array $_POST
+– Array que conté les variables si el formulari ha estat enviat pel mètode POST.
+• Array $_REQUEST
+– Conté les variables passades per qualsevol dels 2 mètodes explicats.
+
 
 ## POST i GET
 
 Quan un formulari envia dades ho pot fer mitjançant dos mètodes diferents:
 
   * **POST**:  els valors del formulari es transmeten de manera oculta (no aparèixen a la barra d'adreces del navegador).
+  
   * **GET**: els valors aperèixen a l'adreça URL i són visibles per tothom.
   
   Per exemple: 
@@ -68,6 +88,7 @@ Característiques del mètode **GET**:
 
 * Les dades són visibles en la URL.
   * No utilitzar per enviar dades sensibles (com passwords).
+* Les dades s'afegeixen a la capçalera de la petició HTTP.
 * Té limitació en la quantitat de dades a enviar.
   * Màxim 2000 caràcters. 
 * Les sol·licitud GET es guarden en l'historial del navegador.
