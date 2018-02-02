@@ -66,8 +66,9 @@ Hi ha dos mètodes:
 * A través de la URL: Enllaçarem a la següent pàgina amb un paràmetre que trameti l’identificador de sessió. Aquest mètode assegura el bon funcionament en el cas que el client tingui les cookies deshabilitades. Amb l'inconvenit que l'identificació de la sessió queda visible...
 
 ```php
-echo "<a href=\"seguent.php?".session_name()."=".session_id();
+  echo "<a  href='seguent.php?'.session_name().'='.session_id()";
 ```
+
 Primerament, cal **reobrir la sessió** identificada amb un ID deteminat amb la funció **_session_start()_**.
 
 * L'**identificador de sessió** actual s'ha guardat en una **cookie**, pel que únicament si les tenim activades, podrem utilitzar les sessions d'aquesta manera.
