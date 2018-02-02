@@ -2,15 +2,15 @@
 
 ## Introducció a PDO
 
-* **PDO** (PHP Data Object) és un extensió de PHP que ens propociona una capa d'abstracció d'accés a dades.
+> **PDO** (PHP Data Object) és un extensió de PHP que ens propociona una capa d'abstracció d'accés a dades.
 
-* Per tant, ens permet utilitzar les mateixes funcions per realitzar consultes independentment de la base de dades que estiguem utilitant.
+ Per tant, ens permet utilitzar les mateixes funcions per realitzar consultes independentment de la base de dades que estiguem utilitant.
 
 * **PDO** ve amb **PHP 5.1**.
 * Requereix característiques de OO (Orientació Objectes) del nucli de PHP 5.
   * Per tant, no funcionarà en versions anteriors a 5.1.
   
-## PDO CONNEXIÓ A BD
+## Connexió a base de dades
 
 ```php
 <?php
@@ -37,7 +37,7 @@ $conn=null;
 ?>
 ```
 
-## PDO SELECT
+## PDO Select
 
 ```php
 <?php
@@ -92,7 +92,7 @@ echo "New record created successfully. ";
   
 
 
-## PDO DELETE
+## PDO Delete
 
 ```php
 <?php
@@ -105,7 +105,7 @@ echo "New record created successfully. ";
 ?>
 ```
 
-## PDO UPDATE
+## PDO Update
 ```php
 <?php
 	$sql= "UPDATE MyGuests SET lastname='Doe' WHERE id=2";
@@ -119,5 +119,6 @@ echo "New record created successfully. ";
 ```
 
 
-## MÉS INFO
+## Referències
+
 * **PDO** PHP.net: [http://php.net/manual/es/book.pdo.php](http://php.net/manual/es/book.pdo.php)
