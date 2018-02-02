@@ -21,13 +21,22 @@ Una **sessió es tanca** quan:
 
 Les variables de sessió, a diferència de les cookies, **es guarden al servidor**.
 
-Podem desar amb aquest sistema, per **exemple**, l'identificador d'un usuari, l'idioma preferent, un curs o grup, etc., i tenir-los disponibles en qualsevol script mentre no es tanqui la sessió. 
+Podem desar amb aquest sistema, per **exemple**:
+* l'identificador d'un usuari que s'ha autenticat.
+* l'idioma preferent.
+* en una botiga virtual els productes de la cistella.
+
+I els tindrem disponibles en qualsevol script mentre no es tanqui la sessió. 
 
 ## Creació de la sessió
 
-Per iniciar o continuar una sessió, s'utilitza la funció **session_start()**, que cal posar a l’inici de cada pàgina que faci referència a la mateixa sessió. 
+Per iniciar o continuar una sessió, s'utilitza la funció **session_start()**, que cal posar a l’inici de cada pàgina que faci referència a la mateixa sessió.
 
-A cada sessió se li assigna un **identificador (ID) de sessió** exclusiu i aleatori, que conté tota la informació actual.
+A cada sessió el servidor li assigna un **identificador (ID) de sessió** exclusiu i aleatori, com per exemple:
+
+`dkfjdlrugk00dfdgdpeffdd126` 
+
+En el **servidor** també es guarda un fitxer associat a la sessió on anirà guardant les variables de sessió que es creïn, si és el cas.
 
 **pagina1.php**
 
@@ -51,9 +60,18 @@ A cada sessió se li assigna un **identificador (ID) de sessió** exclusiu i ale
 
 ## Recuperació variables de sessió
 
+Quan un **client** es connecta per segona vegada al servidor (una altra pàgina per exemple) ha d’especificar al servidor quin identificador de sessió (ID) té. 
+Hi ha dos mètodes:
+* En una cookie
+* A través de la URL
+
 Primerament, cal **reobrir la sessió** identificada amb un ID deteminat amb la funció **_session_start()_**.
 * L'**identificador de sessió** actual s'ha guardat en una **cookie**, pel que únicament si les tenim activades, podrem utilitzar les sessions d'aquesta manera.
 * Si per el contrari no tenim les cookies activades, podem passar l'ID de sessió per la URL.
+
+Les variables de sessió s’emmagatzemen en un array associatiu, que té la forma següent: 	
+
+_**$_SESSION["variable_sessio"]**_
 
 **pagina2.php**
 
@@ -76,15 +94,16 @@ Primerament, cal **reobrir la sessió** identificada amb un ID deteminat amb la 
 
 ## Funcions de gestió de sessions
 
-**bool session_start (void)  **
+**bool session_start()  **
 Crea o continua una sessió amb l'ID passat com a paràmetre via GET o COOKIE. 
 
-**bool session_destroy (void)**
+**bool session_destroy()**
 Destrueix i tanca totes les dades relacionades amb una sessió. 
 Retorna TRUE si ha anat bé o FALSE en cas contrari
 
-**void session_unset (void)**
-Allibera totes les variables de sessió actualment registrades.
+**void session_unset()**
+Buida el contingut de totes les variables de sessió actuals.
+O el que és el mateix, tanquem la sessió
 
 **string session_name ([string name])**
 Retorna el nom de la sessió actual. 
