@@ -53,13 +53,10 @@ setcookie(nom, valor, expiració)
 
 *  **_nom_**: és el nom o l’identificador amb què ens referirem a aquella cookie.
 *  **_valor_**: és el valor concret que li donem a aquella cookie.
-*  **_temps d'expiració_**: és un data expressada amb segons (nombre enter), per això és útil fer servir la funció **_time()_** de PHP.
+*  **_temps d'expiració_**: és un data expressada amb segons (nombre enter), per això és útil fer servir la funció **_time()_** de PHP que retorna la data actual en segons des de l’1 de gener de 1970.
 * **_domini_**: estableix el domini per al qual la cookie serà vàlida.
 
 Només el **name** és obligatori, els altres paràmetres són opcionals.
-
-* El **temps d'expiració** s'expressa amb segons.
-
 
 > **Important!!!** quan volguem enviar una cookie hem de començar el codi php just al començament del fitxer, abans de qualsevol etiqueta html o espai en blanc.
 
@@ -74,6 +71,26 @@ Per recuperar els valors desats en **cookies** s'utilitzar l'array associatiu `$
   } else {
       echo "Benvingut " . $_COOKIE["user"];
   }
+?>
+```
+
+## Crear/Modificar cookies
+
+**Exemple contador de visites:**
+
+```php
+<?php 
+  //Comprovem si la cookie no està creada
+  if( !isset($_COOKIE["visites"]))  { 
+    //Si no s'ha creat la cookie, la creem
+    setcookie ("visites", "1"); 
+    echo "Benvingut, és la teva primera visita";
+} else { 
+    // Si la cookie existeix, recuperem el valor i l'incrementem en 1
+    $visites = $_COOKIE["visites"]+1; // sumem una visita
+    setcookie ("visites", $visites ); 
+    echo "Hola, és la teva visita número $visites";  vegades.";
+}
 ?>
 ```
 
