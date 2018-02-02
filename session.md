@@ -102,22 +102,27 @@ _**$_SESSION["variable_sessio"]**_
 ## Funcions de gestió de sessions
 
 * **bool session_start()**
-  Crea o continua una sessió amb l'ID passat com a paràmetre via GET o COOKIE. 
+
+    Crea o continua una sessió amb l'ID passat com a paràmetre via GET o COOKIE. 
 
 * **bool session_destroy()**
-  Destrueix i tanca totes les dades relacionades amb una sessió. 
+
+    Destrueix i tanca totes les dades relacionades amb una sessió. 
   Retorna TRUE si ha anat bé o FALSE en cas contrari
 
 * **void session_unset()**
-  Buida el contingut de totes les variables de sessió actuals.
+
+    Buida el contingut de totes les variables de sessió actuals.
   O el que és el mateix, tanquem la sessió
 
 * **string session_name ([string name])**
-  Retorna el nom de la sessió actual. 
+
+    Retorna el nom de la sessió actual. 
   Si s'especifica nom es modifica l'actual pel nou valor.
 
 * **string session_id ([string id])**
-  Retorna l'identificador de la sessió actual. 
+
+    Retorna l'identificador de la sessió actual. 
   Si s'especifica un identificador, l'actual es modificarà pel nou valor. 
 
 ## Referències
