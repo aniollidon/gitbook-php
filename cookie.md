@@ -8,7 +8,7 @@
 
 Per tant, es tracta cada petició d'una pàgina com un transacció independent que **no té relació** amb cap altre petició anterior.
 
-S'han creat tècniques per **mantenir informació entre peticions**, com per exemple les [**cookies**](http://php.net/manual/es/features.cookies.php)
+S'han creat tècniques per **mantenir informació entre peticions**, com per exemple les [**cookies**].(http://php.net/manual/es/features.cookies.php)
 
 ## Cookie
 
@@ -24,7 +24,7 @@ Totes els cookies d'un mateix web es guarden seqüencialment en un mateix fitxer
 
 ## Funcionament
 
-1. El **client** sol·licita una pàgina per primera vegada
+1. El **client** sol·licita una pàgina per primera vegada.
 2. La **cookie** és enviada del servidor al client (sempre i quan el client accepti galetes) i es guarda en el disc dur.
 3. Cada vegada que el mateix equip accedeix a la pàgina web, si la cookie no ha caducat, **s'envia també la cookie** al servidor per recuperar les dades.
 
