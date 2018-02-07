@@ -24,7 +24,7 @@
         },
         "sunlight-highlighter": {
             "theme": "gitbook",
-            "lineNumber": true
+            "lineNumber": false
          },
         "collapsible-chapters":{}
     }
