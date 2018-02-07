@@ -35,6 +35,10 @@ img
     overflow: none; 
 }
 
+.sunlight-code-container {
+    border: 1px solid #CCC; 
+}
+
 
 /* summary */ 
 
