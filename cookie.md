@@ -36,9 +36,7 @@ La **finalitat** és guardar informació d'un visitant, **en el seu ordinador**,
 
 Una **cookie** es crea amb la funció **setcookie()**.
 
-```php
-setcookie(nom, valor, expiració)
-```
+`setcookie(nom, valor, expiració)`
 
 **Exemple**
 
