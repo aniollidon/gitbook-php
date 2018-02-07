@@ -8,7 +8,9 @@
 
 Per tant, es tracta cada petició d'una pàgina com un transacció independent que **no té relació** amb cap altre petició anterior.
 
-S'han creat tècniques per **mantenir informació entre peticions**, com per exemple les [**cookies**].(http://php.net/manual/es/features.cookies.php)
+Dit d'una altra manera, el servidor no és capaç de recordar res que hagis fet abans al lloc web (per exemple, escollir l'idioma). De fet no és capaç ni de saber si ja has visitat el lloc web abans.
+
+Per corregir aquesta limitació, s'han creat tècniques per **mantenir informació entre peticions**, com per exemple les [**cookies**](http://php.net/manual/es/features.cookies.php).
 
 ## Cookie
 
