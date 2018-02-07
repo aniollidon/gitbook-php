@@ -8,6 +8,6 @@
             <img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.eu.png' width=120px'/>
         </a>
         <p>Autor: Sergi Coll</p>
-        <p class="updated">Última modificació: {{ file.mtime }}</p>
+        <p class="updated">Última modificació: {{ file.mtime.strftime("%d/%m/%Y") }}</p>
     </footer>
 {% endblock %}
