@@ -20,7 +20,7 @@ Totes els cookies d'un mateix web es guarden seqüencialment en un mateix fitxer
 
 La **finalitat** és guardar informació d'un visitant, **en el seu ordinador**, per poder-les recuperar i utilitzar en futures visites.
  
-**Per exemple**: data i hora última visita, nom d'usuari, etc.
+**Per exemple**: data i hora última visita, nom d'usuari, idioma escollit, etc.
 
 > Cal que el navegador tingui les **cookies habilitades**.
 
@@ -28,7 +28,7 @@ La **finalitat** és guardar informació d'un visitant, **en el seu ordinador**,
 
 1. El **client** sol·licita una pàgina per primera vegada.
 2. La **cookie** és enviada del servidor al client (sempre i quan el client accepti galetes) i es guarda en el disc dur.
-3. Cada vegada que el mateix equip accedeix a la pàgina web, si la cookie no ha caducat, **s'envia també la cookie** al servidor per recuperar les dades.
+3. Cada vegada que el mateix equip (navegador) accedeix a la pàgina web, si la cookie no ha caducat, **s'envia també la cookie** al servidor perquè pugui recuperar les dades.
 
 ![](/assets/php-cookies.png)
 
@@ -55,8 +55,12 @@ setcookie(nom, valor, expiració)
 
 *  **_nom_**: és el nom o l’identificador amb què ens referirem a aquella cookie.
 *  **_valor_**: és el valor concret que li donem a aquella cookie.
-*  **_temps d'expiració_**: és un data expressada amb segons (nombre enter), per això és útil fer servir la funció **_time()_** de PHP que retorna la data actual en segons des de l’1 de gener de 1970.
-* **_domini_**: estableix el domini per al qual la cookie serà vàlida.
+*  **_temps d'expiració_**: és un data expressada amb segons (nombre enter).
+ 
+  Per això és útil fer servir la funció **_time()_** de PHP que retorna la data actual en segons des de l'1 de gener de 1970.
+
+  Si no indiquem cap valor, la cookie durarà el que duri la sessió (fins que tanquem el navegador).
+* **_domini_**: estableix el domini i subdominis per al qual la cookie serà vàlida.
 
 Només el **name** és obligatori, els altres paràmetres són opcionals.
 
