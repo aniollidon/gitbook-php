@@ -62,7 +62,8 @@ footer p {
 footer p.updated
 {
     font-weight: normal;
-    font-size:70%;
+    font-size: 0.8em !important;
+
 }
 
 
