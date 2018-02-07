@@ -32,7 +32,7 @@ img
 }
 
 .markdown-section pre {
-    overflow: none; 
+    overflow: hidden; 
 }
 
 .sunlight-code-container {
