@@ -27,8 +27,12 @@ img
 /* code */
 .markdown-section code, .markdown-section pre {
     background-color: #ddd;
-    padding: 7px;
+    padding: 5px;
     border-radius: 3px;
+}
+
+.markdown-section pre {
+    overflow: none; 
 }
 
 
