@@ -95,7 +95,7 @@ Característiques del mètode **POST**:
 
 > En general, els desenvolupadors prefereixen POST per enviar dades de formularis.
 
-## Documentació i recursos
+## Referències
 
 *  **PHP Forms** ([https://cacauet.org/wiki/index.php/PHP_Forms](https://cacauet.org/wiki/index.php/PHP_Forms))
 

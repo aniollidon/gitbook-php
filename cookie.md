@@ -68,7 +68,9 @@ Només el **name** és obligatori, els altres paràmetres són opcionals.
 
 ## Recuperar cookies
 
-Per recuperar els valors desats en **cookies** s'utilitzar l'array associatiu `$_COOKIE["nom_cookie"]`.
+Des del servidor, podem recuperar els valors desats en **cookies** s'utilitzar l'array associatiu `$_COOKIE["nom_cookie"]`.
+
+Només podrem llegir la cookie quan el navegador l'enviï, per tant caldrà que es visiti en lloc web, com a mínim, una segona vegada.
 
 ```php
 <?php
@@ -110,4 +112,10 @@ Per eliminar una **cookie** s'utilitza la funció **setcookie()** amb una data d
   setcookie("user", "", time() - 3600);
 ?>
 ```
+
+# Referències
+
+* **w3schools.com**: [PHP 5 Cookies](https://www.w3schools.com/php/php_cookies.asp) 
+
+* **Documentació oficial PHP.net:** [Cookies](http://php.net/manual/es/features.cookies.php)
 
