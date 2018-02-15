@@ -15,6 +15,7 @@ Per tant, si l'usuari deshabilita aquesta possibilitat, es tanca la porta a aque
 > Les **variables de sessió** són un conjunt de variables que estan disponibles a totes les pàgines del site **mentre la sessió no s'acabi**. 
 
 Una **sessió comença** quan l'usuari es connecta a l'aplicació.
+
 Una **sessió es tanca** quan:
   * L'usuari tanqui el navegador.
   * Passa un cert temps (definit pel sistema) sense que l'usuari interaccioni amb l'aplicació.
@@ -36,7 +37,7 @@ A cada sessió el servidor li assigna un **identificador (ID) de sessió** exclu
 
 `dkfjdlrugk00dfdgdpeffdd126` 
 
-En el **servidor** també es guarda un fitxer associat a la sessió on anirà guardant les variables de sessió que es creïn, si és el cas.
+En el **servidor** es guarda un fitxer associat a la sessió on anirà guardant les variables de sessió que es creïn, si és el cas.
 
 **pagina1.php**
 
