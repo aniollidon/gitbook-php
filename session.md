@@ -29,15 +29,38 @@ Podem desar amb aquest sistema, per **exemple**:
 
 I els tindrem disponibles en qualsevol script mentre no es tanqui la sessió. 
 
-## Creació de la sessió
-
-Per iniciar o continuar una sessió, s'utilitza la funció **session_start()**, que cal posar a l’inici de cada pàgina que faci referència a la mateixa sessió.
+## Funcionament
 
 A cada sessió el servidor li assigna un **identificador (ID) de sessió** exclusiu i aleatori, com per exemple:
 
 `dkfjdlrugk00dfdgdpeffdd126` 
 
-En el **servidor** es guarda un fitxer associat a la sessió on anirà guardant les variables de sessió que es creïn, si és el cas.
+En el **servidor** es crea un fitxer associat a la sessió on s'anirà guardant les variables de sessió que es creïn.
+
+Quan un **client** es connecta per segona vegada al servidor (una altra pàgina per exemple) ha d'especificar al servidor quin identificador de sessió (ID) té. 
+
+Hi ha dos mètodes:
+
+* **En una cookie**: 
+    * S’envia una cookie al servidor **únicament amb l'id de la sessió** 
+    * Les altres dades (que poden ser sensibles) es guarden en les variables de sessió (en el servidor) i no en el client (com amb les cookies clàssiques). 
+    * Per defecte la cookie que conté el id de sessió s'anomena **_PHPSESSID_** però el podem canviar amb session_name().
+
+
+* **A través de la URL**: 
+    * Enllaçarem a la següent pàgina amb un paràmetre que trameti l'identificador de sessió per la URL. 
+
+  ```php
+  echo "<a  href='seguent.php?'.session_name().'='.session_id()";
+  ```
+
+    * Aquest mètode assegura el bon funcionament en el cas que el client tingui les **cookies deshabilitades**. 
+    * Amb l'inconvenient que l'**identificació de la sessió queda visible**.
+    * A partir PHP v4.0.2 és capaç d'enviar automàticament el id de sessió sense que haguem de modificar tots els enllaços.
+
+## Creació de la sessió
+
+Per iniciar o continuar una sessió, s'utilitza la funció **session_start()**, que cal posar a l’inici de cada pàgina que faci referència a la mateixa sessió.
 
 **pagina1.php**
 
@@ -60,17 +83,6 @@ En el **servidor** es guarda un fitxer associat a la sessió on anirà guardant 
 ```
 
 ## Recuperació variables de sessió
-
-Quan un **client** es connecta per segona vegada al servidor (una altra pàgina per exemple) ha d’especificar al servidor quin identificador de sessió (ID) té. 
-Hi ha dos mètodes:
-* **En una cookie**: 
-  s’envia una cookie al servidor amb l’id de la sessio i les dades que es guarden en les variables de sessio. Podem decidir el nom de la cookie amb session_name().
-* **A través de la URL**: 
-  Enllaçarem a la següent pàgina amb un paràmetre que trameti l’identificador de sessió. Aquest mètode assegura el bon funcionament en el cas que el client tingui les cookies deshabilitades. Amb l'inconvenient que l'identificació de la sessió queda visible...
-
-```php
-  echo "<a  href='seguent.php?'.session_name().'='.session_id()";
-```
 
 Primerament, cal **reobrir la sessió** identificada amb un ID deteminat amb la funció **_session_start()_**.
 
