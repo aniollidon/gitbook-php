@@ -2,13 +2,13 @@
 
 ## Introducció
 
-Hem vist que els **cookies** ens permetien mantenir una informació de variables més enllà d'un únic script. 
+Hem vist que els **cookies** ens permetien guardar una informació durant tota la visita d'un usuari a la pàgina (i més enllà d'un únic script). 
 
 Però tenen alguns **inconvenients**:
 * Cal que el navegador tingui aquesta opció habilitada.
-* Es desa en l'ordinador local o client.
+* Les dades es desen en l'ordinador local o client.
 
-Per tant, si l'usuari deshabilita aquesta possibilitat, es tanca la porta a aquest manteniment de valors entre scripts. 
+Per tant, si l'usuari deshabilita l'ús de les cookies, es tanca la porta a aquest manteniment de valors entre scripts. 
 
 **PHP** proporciona un altre mecanisme per mantenir la sessió: les **variables de sessió**.
 
