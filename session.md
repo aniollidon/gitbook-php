@@ -44,7 +44,7 @@ Hi ha dos mètodes:
 * **En una cookie**: 
     * S’envia una cookie al servidor **únicament amb l'id de la sessió** 
     * Les altres dades (que poden ser sensibles) es guarden en les variables de sessió (en el servidor) i no en el client (com amb les cookies clàssiques). 
-    * Per defecte la cookie que conté el id de sessió s'anomena **_PHPSESSID_** però el podem canviar amb session_name().
+    * Per defecte la cookie que conté el id de sessió s'anomena **_PHPSESSID_** però el podem canviar amb `session_name(nom_sessio)`.
 
 ![](/assets/PHPSessions-cliente_servidor.png)
 
@@ -125,26 +125,26 @@ Primerament, cal **reobrir la sessió** identificada amb un ID deteminat amb la 
 
 ## Funcions de gestió de sessions
 
-* **bool session_start()**
+* **_bool session_start()_**
 
   Crea o continua una sessió amb l'ID passat com a paràmetre via GET o COOKIE. 
 
-* **bool session_destroy()**
+* **_bool session_destroy()_**
 
   Destrueix i tanca totes les dades relacionades amb una sessió. 
   Es sol utilitzar en els _Log outs_ de les pàgines per esborrar tota la informació de la sessió (usuari, contrassenya, etc)
 
-* **void session_unset()**
+* **_void session_unset()_**
 
   Buida el contingut de totes les variables de sessió actuals.
   O el que és el mateix, tanquem la sessió
 
-* **string session_name ([string name])**
+* **_string session_name ([string name])_**
 
     Retorna el nom de la sessió actual. 
   Si s'especifica nom es modifica l'actual pel nou valor.
 
-* **string session_id ([string id])**
+* **_string session_id ([string id])_**
 
     Retorna l'identificador de la sessió actual. 
   Si s'especifica un identificador, l'actual es modificarà pel nou valor. 
