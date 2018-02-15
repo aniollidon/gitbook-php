@@ -33,7 +33,7 @@ I els tindrem disponibles en qualsevol script mentre no es tanqui la sessió.
 
 A cada sessió el servidor li assigna un **identificador (ID) de sessió** exclusiu i aleatori, com per exemple:
 
-`dkfjdlrugk00dfdgdpeffdd126` 
+  `dkfjdlrugk00dfdgdpeffdd126` 
 
 En el **servidor** es crea un fitxer associat a la sessió on s'anirà guardant les variables de sessió que es creïn.
 
@@ -46,6 +46,7 @@ Hi ha dos mètodes:
     * Les altres dades (que poden ser sensibles) es guarden en les variables de sessió (en el servidor) i no en el client (com amb les cookies clàssiques). 
     * Per defecte la cookie que conté el id de sessió s'anomena **_PHPSESSID_** però el podem canviar amb session_name().
 
+![](/assets/PHPSessions-cliente_servidor.png)
 
 * **A través de la URL**: 
     * Enllaçarem a la següent pàgina amb un paràmetre que trameti l'identificador de sessió per la URL. 
