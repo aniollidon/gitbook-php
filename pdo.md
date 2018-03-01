@@ -108,14 +108,14 @@ echo "New record created successfully. ";
 ## PDO Update
 ```php
 <?php
+	// sql to update a record
 	$sql= "UPDATE Users SET lastname='Doe' WHERE id=2";
 	
-	// Prepare statement
-	$stmt= $conn->prepare($sql);
-	// execute the query
-	$stmt->execute();
+	// execute the query and returns affected rows
+	$count = $conn->exec($sql);
+
 	// echo a message to say the UPDATE succeeded
-	echo $stmt->rowCount() . " records UPDATED successfully";
+	echo $count . " records UPDATED successfully";
 ?>
 ```
 
