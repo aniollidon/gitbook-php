@@ -89,8 +89,20 @@ echo "New record created successfully. ";
 ?>
 ```
 
-  
+## PDO Update
+```php
+<?php
+	// sql to update a record
+	$sql= "UPDATE Users SET lastname='Doe' WHERE id=2";
+	
+	// use exec() because no results are returned
+	// execute the query and returns the number of affected rows
+	$count = $conn->exec($sql);
 
+	// echo a message to say the UPDATE succeeded
+	echo $count . " records updated successfully";
+?>
+```
 
 ## PDO Delete
 
@@ -100,22 +112,10 @@ echo "New record created successfully. ";
 	$sql= "DELETE FROM Users WHERE id=3";
 
 	// use exec() because no results are returned
-	$conn->exec($sql);
-	echo "Record deleted successfully";
-?>
-```
+	// execute the query and returns the number of affected rows
 
-## PDO Update
-```php
-<?php
-	// sql to update a record
-	$sql= "UPDATE Users SET lastname='Doe' WHERE id=2";
-	
-	// execute the query and returns affected rows
 	$count = $conn->exec($sql);
-
-	// echo a message to say the UPDATE succeeded
-	echo $count . " records UPDATED successfully";
+	echo $count . " records deleted successfully";
 ?>
 ```
 
