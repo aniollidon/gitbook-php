@@ -42,7 +42,7 @@ $conn=null;
 ```php
 <?php
 // sql to select a record
-$sql = 'SELECT firstname, lastname, email FROM MyGuest ORDER BY firstname';
+$sql = 'SELECT firstname, lastname, email FROM Users ORDER BY firstname';
 
 //obtenir les files de la BD
 $rows = $conn->query($sql);	// use query() because results are returned
@@ -60,7 +60,7 @@ Si realitzem un INSERT en una taula amb un **camp AUTO_INCREMENT**, podem obteni
 
 ```php
 <?php
-$sql= "INSERT INTO MyGuests(firstname, lastname, email)
+$sql= "INSERT INTO Users(firstname, lastname, email)
 VALUES ('John', 'Doe', 'john@example.com')";
 
 // use exec() because no results are returned
@@ -80,7 +80,7 @@ $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $email = $_POST['email'];
 
-$sql= "INSERT INTO MyGuests(firstname, lastname, email)
+$sql= "INSERT INTO Users(firstname, lastname, email)
 VALUES ($firstname, $lastname, $email)";
 
 // use exec() because no results are returned
@@ -97,7 +97,7 @@ echo "New record created successfully. ";
 ```php
 <?php
 	// sql to delete a record
-	$sql= "DELETE FROM MyGuests WHERE id=3";
+	$sql= "DELETE FROM Users WHERE id=3";
 
 	// use exec() because no results are returned
 	$conn->exec($sql);
@@ -108,7 +108,8 @@ echo "New record created successfully. ";
 ## PDO Update
 ```php
 <?php
-	$sql= "UPDATE MyGuests SET lastname='Doe' WHERE id=2";
+	$sql= "UPDATE Users SET lastname='Doe' WHERE id=2";
+	
 	// Prepare statement
 	$stmt= $conn->prepare($sql);
 	// execute the query
