@@ -9,7 +9,16 @@
 * **PDO** ve amb **PHP 5.1**.
 * Requereix característiques de OO (Orientació Objectes) del nucli de PHP 5.
   * Per tant, no funcionarà en versions anteriors a 5.1.
+
+## Accés a la base de dades
   
+El passos per **accedir a una base de dades** són:
+
+1. Obrir la base de dades.
+2. Trametre la comanda SQL a la base de dades.
+3. Retornar el resultat de la consulta.
+4. Tancar la connexió de la base de dades.
+
 ## Connexió a base de dades
 
 ```php
@@ -19,20 +28,21 @@ $username = "username";
 $password = "password";
 
 try{
-	//creem una nova connexió instancinat l'objecte PDO
-	$conn = new PDO("mysql:host=$servername;dbname=myDB",
-			$username, $password);
+  //creem una nova connexió instancinat l'objecte PDO
+  $conn = new PDO("mysql:host=$servername;dbname=myDB",$username, $password);
+  
   // establim el mode PDO error a exception per poder
   // recuperar les excepccions
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   echo "Connected successfully";
 }
-catch(PDOException $e)
+catch(PDOException $error)
 {
 	//Si falla la connexió amb la BD es mostra l'error.
-	echo "Connection failed: " . $e->getMessage();
+	echo "Connection failed: " . $error->getMessage();
 }
-//Close connection
+
+//Tancar la connexió de la base de dades.
 $conn=null;
 ?>
 ```
