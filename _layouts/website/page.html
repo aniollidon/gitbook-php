@@ -4,10 +4,19 @@
 {% block page %}
     {{ super() }}
     <footer>
-        <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/es/'>
-            <img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.eu.png' width=120px'/>
-        </a>
-        <p>Autor: Sergi Coll</p>
-        <p class="updated">Modificat: {{ file.mtime.strftime|date("DD/MM/YYYY") }}</p>
+        <div>
+            <p>#FpInfor #DawMp07UF01 #DawMp07UF02 #DawMp07UF03 #PHP</p>
+            <p>#FpInfor #AsixMp09Uf01 #PHP</p>
+        </div>
+        <div>
+
+            <a href='https://creativecommons.org/licenses/by-nc-sa/3.0/es/'>
+                <img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.eu.png' width=120px'/>
+            </a>
+            <p class='author'>Autor: Sergi Coll</p>
+            <p class="updated">Modificat: {{ file.mtime.strftime|date("DD/MM/YYYY") }}</p>
+        </div>
     </footer>
 {% endblock %}
+
+
