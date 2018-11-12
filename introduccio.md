@@ -2,18 +2,40 @@
 
 # Introducció al Llenguatge PHP
 
-> **PHP** és un llenguatge de scripting open source per generar codi HTML.
+> **PHP** és un llenguatge de programació open source molt popular i adequat pel desenvolupament web ja que per generar documents HTML.
 
 > **Scripts**: conjunt d'instruccions escrites en un llenguatge determinat que, en el cas de PHP, van incrustades dintre d'una pàgina WEB.
 
 Les sigles PHP signifiquen ***PHP: Hypertext Preprocessor*** (definició recursiva).
 
+La última versió de PHP és **PHP 7**.
+
 Els arxius **PHP** combinen codi HTML i PHP:
 
-  * Els scripts **PHP** són processats pel servidor (com pot ser Apache, IIS, etc).
+```php
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Ejemplo</title>
+    </head>
+    <body>
+
+        <?php
+            echo "¡Hola, sóc un script de PHP!";
+        ?>
+
+    </body>
+</html>
+```
+
+  * Els scripts **PHP** són interpretats pel servidor web (com pot ser Apache, IIS, etc) utilitzant un mòdul de processador de PHP que genera el HTML resultant.
+  
   * El resultat generat (codi HTML) s'envia al client i és processat pel navegador web.
 
 ![php](https://sdz-upload.s3.amazonaws.com/prod/upload/p1ch1_JavaScript%20client%20-%20New%20Page.png)
+
+**_Més informació:_** [php.net: Què és PHP?
+](http://php.net/manual/es/intro-whatis.php)
 
 ## Llenguatges de programació de la web
 
@@ -21,15 +43,15 @@ Els llenguatges de script poden classificar-se en dos tipus:
 
 > Un **llenguatge és entorn client** quan l'intèrpret que ha d'executar els scripts és accessible des del client sense fer cap petició al servidor.
 
-* El usuaris podran veure els scripts, bé sigui de forma directa (mirant el codi font de la pàgina rebuda) o llegint el contingut de fitxers externs vinculats.
-* **_Javascript_** és el més popular. 	
+  * El usuaris podran veure els scripts, bé sigui de forma directa (mirant el codi font de la pàgina rebuda) o llegint el contingut de fitxers externs vinculats.
+  * **_Javascript_** és el més popular. 	
   
   
 > Un **llenguatge és entorn servidor** quan l'execució dels scripts s'efectua al servidor abans d'enviar la resposta al client. 
 
-* El client (el navegador web) **no** rep el codi PHP original, només rep el codi HTML generat al servidor.
-* Els usuaris no podran veure el codi font.
-* Per exemple, **_PHP_**.
+  * El client (el navegador web) **no** rep el codi PHP original, només rep el codi HTML generat al servidor.
+  * Els usuaris no podran veure el codi font.
+  * Per exemple, **_PHP_**.
 
 
 ## Comportament del servidor
