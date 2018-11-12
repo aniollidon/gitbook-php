@@ -2,7 +2,7 @@
 
 # Constants
 
-Similars a les variables però amb la diferència que una vegada ha pres valor ja no pot canviar.
+> Les **constants** són similars a les variables però amb la diferència que una vegada ha pres valor ja no pot canviar.
 
 Per definir una **constant** utilitzem la instrucció  `define("NOMCONSTANT",valor)`
 
