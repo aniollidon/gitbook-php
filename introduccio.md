@@ -2,9 +2,7 @@
 
 # Introducció al Llenguatge PHP
 
-> **PHP** és un llenguatge de programació open source molt popular i adequat pel desenvolupament web ja que per generar documents HTML.
-
-> **Scripts**: conjunt d'instruccions escrites en un llenguatge determinat que, en el cas de PHP, van incrustades dintre d'una pàgina WEB.
+> **PHP** és un llenguatge de programació open source molt popular i adequat pel desenvolupament web ja que permet generar documents HTML.
 
 Les sigles PHP signifiquen ***PHP: Hypertext Preprocessor*** (definició recursiva).
 
@@ -27,6 +25,8 @@ Els arxius **PHP** combinen codi HTML i PHP:
     </body>
 </html>
 ```
+
+> **Scripts**: conjunt d'instruccions escrites en un llenguatge determinat que, en el cas de PHP, van incrustades dintre d'una pàgina WEB.
 
   * Els scripts **PHP** són interpretats pel servidor web (com pot ser Apache, IIS, etc) utilitzant un mòdul de processador de PHP que genera el HTML resultant.
   
