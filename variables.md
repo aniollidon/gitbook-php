@@ -4,7 +4,9 @@
 
 * En PHP les variables comencen amb el símbol de **$** seguit pel nom de la variable.
 
-* PHP distingeix entre majúscules i minúscules (case-sensitive). Les variables `$persona` i `$Persona` són diferents.
+* PHP distingeix entre majúscules i minúscules (case-sensitive). 
+  * Les variables `$persona` i `$Persona` són diferents.
+
 
 * **No cal declarar les variables.**
 * **No cal definir el seu tipus.**
