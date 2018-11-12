@@ -10,18 +10,16 @@ La última versió de PHP és **PHP 7**.
 
 Els arxius **PHP** combinen codi HTML i PHP:
 
-```php
+```html
 <!DOCTYPE HTML>
 <html>
     <head>
         <title>Ejemplo</title>
     </head>
     <body>
-
         <?php
             echo "¡Hola, sóc un script de PHP!";
         ?>
-
     </body>
 </html>
 ```
