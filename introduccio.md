@@ -26,7 +26,7 @@ Els arxius **PHP** combinen codi HTML i PHP:
 
 > **Scripts**: conjunt d'instruccions escrites en un llenguatge determinat que, en el cas de PHP, van incrustades dintre d'una pàgina WEB.
 
-  * Els scripts **PHP** són interpretats pel servidor web (com pot ser Apache, IIS, etc) utilitzant un mòdul de processador de PHP que genera el HTML resultant.
+  * Els scripts **PHP** són interpretats pel servidor web (com pot ser Apache, IIS, etc) utilitzant un mòdul de processament de PHP que genera el HTML resultant.
   
   * El resultat generat (codi HTML) s'envia al client i és processat pel navegador web.
 

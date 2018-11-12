@@ -49,7 +49,6 @@ $a = "10";
 echo gettype($a);        //Mostrarà String
 settype($a,"integer");   //Convertim el string a number
 echo gettype ($a);       //Mostrarà integer
-settype($a,"number");	//Convertim el string a number
 echo isset($b);	//Mostrarà false perquè la variable no s'ha inicialitzat        
 ```
 
