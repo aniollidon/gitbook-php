@@ -58,7 +58,8 @@ echo isset($b);	//Mostrarà false perquè la variable no s'ha inicialitzat
 
 
 
-**_Més informació:_**
+## Més informació
+
 * [php.net: Variables](http://php.net/manual/es/language.variables.basics.php)
 * [php.net: Tipos](http://php.net/manual/es/language.types.php)
 
