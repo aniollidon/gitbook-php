@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Cadenes (Strings)
 
 > Un **cadena** o **string** és una seqüència de caràcters.
