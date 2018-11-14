@@ -93,7 +93,7 @@ Característiques del mètode **POST**:
 * Les sol·licitud POST NO es guarden en l'historial del navegador.
 * Les sol·licitud POST NO poden ser *bookmarked*.
 
-> En general, els desenvolupadors prefereixen POST per enviar dades de formularis.
+> En general, els desenvolupadors prefereixen **POST** per enviar dades de formularis.
 
 ## Referències
 
