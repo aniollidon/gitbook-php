@@ -100,8 +100,8 @@ in_array('Maria', $a);	//retorna true
 $cars = array("Volvo", "BMW", "Toyota");
 $arrlength = count($cars);
 
-for($x = 0; $x < $arrlength; $x++) {
-    echo $cars[$x] . "<br>";
+for($i = 0; $i < $arrlength; $i++) {
+    echo $cars[$i] . "<br>";
 }
 ?>
 ```
