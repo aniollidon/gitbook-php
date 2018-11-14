@@ -92,19 +92,34 @@ in_array('Maria', $a);	//retorna true
 
 ## Recórrer un array indexat
 
+### Amb for
+
 ```php
 <?php
 $cars = array("Volvo", "BMW", "Toyota");
 $arrlength = count($cars);
 
 for($x = 0; $x < $arrlength; $x++) {
-    echo $cars[$x];
-    echo "<br>";
+    echo $cars[$x] . "<br>";
 }
 ?>
 ```
 
 [Provar l'exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_array_num_loop)
+
+### Amb foreach
+
+```php
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+
+foreach($cars as $car) {
+    echo $car . <br>;
+}
+?>
+```
+
+
 
 ## Recórrer un array associatiu
 
