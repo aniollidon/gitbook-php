@@ -6,7 +6,8 @@ Permeten guardar varis valors en una única variable.
 
 Cada element té un **valor** i és identificat per una **clau** que és única a l'array.
 
-## Declaració d'un Array
+## Array indexats
+### Declaració d'un Array
 
 ```php
 //Declaració amb constructor
@@ -19,7 +20,7 @@ $color[1]="groc";
 $color[]="vermell";	//Si no posem índex, s'assigna a la següent posició.
 ```
 
-## Tipus de dades en un array
+### Tipus de dades en un array
 
 > A les caselles dels arrays podem guardar **dades de qualsevol tipus**.
 
