@@ -52,6 +52,51 @@ $a = array("id"=>1,"name"=>"Sayeed","age"=>24);
 
 **Nota**: Per mostrar els valors d'un array associatiu es pot utilitzar la funció `print_r($a)`
 
+
+## Recórrer un array indexat
+
+### Amb for
+
+```php
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+$arrlength = count($cars);
+
+for($i = 0; $i < $arrlength; $i++) {
+    echo $cars[$i] . "<br>";
+}
+?>
+```
+
+[Provar l'exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_array_num_loop)
+
+### Amb foreach
+
+```php
+<?php
+$cars = array("Volvo", "BMW", "Toyota");
+
+foreach($cars as $car) {
+    echo $car . <br>;
+}
+?>
+```
+
+## Recórrer un array associatiu
+
+```php
+<?php
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+
+foreach($age as $key => $value) {
+    echo "Key=" . $key . ", Value=" . $value;
+    echo "<br>";
+}
+?>
+```
+
+[Provar l'exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_array_assoc_loop)
+
 ## Funcions amb Arrays
 
 Donat un array $a:
@@ -90,52 +135,6 @@ in_array('Maria', $a);	//retorna true
 **Més funcions amb arrays a** [https://www.w3schools.com/php/php_ref_array.asp
 ](https://www.w3schools.com/php/php_ref_array.asp
 )
-
-## Recórrer un array indexat
-
-### Amb for
-
-```php
-<?php
-$cars = array("Volvo", "BMW", "Toyota");
-$arrlength = count($cars);
-
-for($i = 0; $i < $arrlength; $i++) {
-    echo $cars[$i] . "<br>";
-}
-?>
-```
-
-[Provar l'exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_array_num_loop)
-
-### Amb foreach
-
-```php
-<?php
-$cars = array("Volvo", "BMW", "Toyota");
-
-foreach($cars as $car) {
-    echo $car . <br>;
-}
-?>
-```
-
-
-
-## Recórrer un array associatiu
-
-```php
-<?php
-$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
-
-foreach($age as $key => $value) {
-    echo "Key=" . $key . ", Value=" . $value;
-    echo "<br>";
-}
-?>
-```
-
-[Provar l'exemple](https://www.w3schools.com/php/showphp.asp?filename=demo_array_assoc_loop)
 
 ## Arrays multidimensionals
 
