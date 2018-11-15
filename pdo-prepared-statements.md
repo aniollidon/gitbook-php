@@ -158,4 +158,5 @@ $conn = null;
 
 ## Referències
 
+* **w3schools.com:** [PHP Prepared Statements](https://www.w3schools.com/php/php_mysql_prepared_statements.asp)
 * **php.net:** [PDOStatement::fetch](http://php.net/manual/es/pdostatement.fetch.php)
