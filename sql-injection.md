@@ -106,25 +106,27 @@ SELECT * FROM users WHERE username=''; DROP TABLE users --' AND password=''
 
 > Una **instrucció preparada (_prepared statement_)** es tracta d'una instrucció SQL pre-compilada que pot ser executada varies vegades només enviant les dades al servidor.
 
-* Permet evitar el *SQL injection*.
+* Permet evitar el ***SQL injection***.
 
 ### Exemple INSERT amb Prepared Statements
 
 ```php
 <?php
-  // prepare sql statement
-	$stmt = $conn->prepare("INSERT INTO MyGuests (firstname, lastname, email)
-					VALUES (:firstname, :lastname, :email)");
+  // 1. prepare sql statement
+  $stmt = $conn->prepare("INSERT INTO MyGuests (firstname, lastname, email)
+     					VALUES (:firstname, :lastname, :email)");
 
-	// execute to insert a row
-	$stmt->execute(array(':firstname'=>'John',
+  // 2. execute to insert a row
+  $stmt->execute(array(':firstname'=>'John',
 						':lastname'=>'Doe',
-						':email'=>"john@example.com"));
+						':email'=>"john@example.com")
+						);
 
-	// execute to insert a row
-	$stmt->execute(array(':firstname'=>'Mary',
+  // execute to insert a row
+  $stmt->execute(array(':firstname'=>'Mary',
 						':lastname'=>'Moe',
-						':email'=>"mary@example.comm"));
+						':email'=>"mary@example.comm")
+						);
 ?>
 ```
 
@@ -133,23 +135,25 @@ SELECT * FROM users WHERE username=''; DROP TABLE users --' AND password=''
 ```php
 <?php
   // 1. prepare sql statement
-	$sql = 'SELECT firstname, lastname, email FROM MyGuest WHERE firstname = :firstname';
-	$stmt = $conn->prepare($sql);
+  $sql = 'SELECT firstname, lastname, email FROM MyGuest WHERE firstname = :firstname';
+  $stmt = $conn->prepare($sql);
 
-	// 2. execute to insert a row
-	$stmt->execute(array(':firstname'=>'John'));
+  // 2. execute to insert a row
+  $stmt->execute(
+      array(':firstname'=>'John')
+      );
 
-	// 3. get all rows
-	$rows = $stmt->fetchAll();
+  // 3. get all rows
+  $rows = $stmt->fetchAll();
 
-	// 4. show rows
-	foreach ($rows as $row) {
-		echo $row['firstname'];
-		echo $row['lastname'];
-	}
+  // 4. show rows
+  foreach ($rows as $row) {
+ 	echo $row['firstname'];
+	echo $row['lastname'];
+  }
 ?>
 ```
-El métode fetch() es pot definir per tal que retorni un array, un objecte, una instància d’una classe, etc.
+El métode `fetch()` o `fetchAll()` es pot definir per tal que retorni un **array**, un **objecte**, una **instància **d'una classe, etc.
 
 `$rows = $stmt->fetch(PDO::FETCH_ASSOC);`
 
