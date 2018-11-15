@@ -140,7 +140,7 @@ $conn = null;
       // 2. execute the query
       $stmt->execute(array(':id'=>3));
 
-      // 3. echo a message to say the UPDATE succeeded
+      // 3. echo a message to say the DELETE succeeded
       echo $stmt->rowCount() . " records DELETED successfully";
     }
 catch(PDOException $e)
