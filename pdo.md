@@ -60,9 +60,9 @@ $rows = $conn->query($sql);	// use query() because results are returned
 
 //recorrem cadauna de les files per mostrar les dades
 foreach ($rows as $row) {
-	 echo $row['firstname'] . "\t";
-	 echo $row['lastname'] . "\t";
-	 echo $row['email'] . "\n";
+	 echo $row['firstname'] . <br/>;
+	 echo $row['lastname'] . <br/>;
+	 echo $row['email'] . <br/>;
 }
 ?>
 ```

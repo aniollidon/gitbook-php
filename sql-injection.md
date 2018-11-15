@@ -100,6 +100,8 @@ SELECT * FROM users WHERE username=''; DROP TABLE users --' AND password=''
 
 **I s'eliminarà tota la taula _users_!!!**
 
+> Per tant, evitarem sempre utilitzar els mètodes `query` o `exec` i al seu lloc utilitzarem els **Prepared Statements**.
+
 ## PDO PREPARED STATEMENTS
 
 > Una **instrucció preparada (_prepared statement_)** es tracta d'una instrucció SQL pre-compilada que pot ser executada varies vegades només enviant les dades al servidor.
