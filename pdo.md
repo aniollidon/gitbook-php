@@ -141,7 +141,7 @@ echo "New record created successfully. ";
 ?>
 ```
 
-## PDO Objectes
+## *PDO Objectes
 
 PDO també permet la realització de consultes i mapeig de resultats en objectes del model de l'aplicació.
 
