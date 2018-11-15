@@ -63,6 +63,42 @@ El métode `fetch()` o `fetchAll()` es pot definir per tal que retorni un **arra
 ?>
 ```
 
+## UPDATE amb Prepared Statements
+
+```php
+<?php
+  $servername = "localhost";
+  $dbname = "myDB";
+  $username = "username";
+  $password = "password";
+$dbname = "myDBPDO";
+
+  try {
+      $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+      // set the PDO error mode to exception
+      $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+      $sql = "UPDATE MyGuests SET lastname='Doe' WHERE id=2";
+
+      // 1. Prepare statement
+      $stmt = $conn->prepare($sql);
+
+      // 2. execute the query
+      $stmt->execute();
+
+      // 3. echo a message to say the UPDATE succeeded
+      echo $stmt->rowCount() . " records UPDATED successfully";
+    }
+catch(PDOException $e)
+    {
+       echo $sql . "<br>" . $e->getMessage();
+    }
+
+$conn = null;
+?>
+```
+
+
 ## Referències
 
 * **php.net:** [PDOStatement::fetch](http://php.net/manual/es/pdostatement.fetch.php)
