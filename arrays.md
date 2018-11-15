@@ -48,9 +48,20 @@ També s'anomenen **diccionaris** o **mapes**.
 $a = array("id"=>1,"name"=>"Sayeed","age"=>24);
 ```
 
-![php](http://programmingsphere.com/wp-content/uploads/2015/07/associative-array-in-PHP.jpg) 
+Per **mostrar els valors** d'un array associatiu es pot utilitzar la funció `print_r()`
 
-**Nota**: Per mostrar els valors d'un array associatiu es pot utilitzar la funció `print_r($a)`
+```php 
+$a = array("id"=>1,"name"=>"Sayeed","age"=>24);
+print_r($a)
+
+//Resultat que es mostrarà
+Array
+(
+    [id] => 1
+    [name] => Sayeed
+    [age] => 24
+)
+```
 
 
 ## Recórrer un array indexat
