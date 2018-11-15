@@ -24,12 +24,13 @@ El passos per **accedir a una base de dades** són:
 ```php
 <?php
 $servername= "localhost";
+$dbname = "dbname";
 $username = "username";
 $password = "password";
 
 try{
   //creem una nova connexió instancinat l'objecte PDO
-  $conn = new PDO("mysql:host=$servername;dbname=myDB",$username, $password);
+  $conn = new PDO("mysql:host=$servername;dbname=$dbname",$username, $password);
   
   // establim el mode PDO error a exception per poder
   // recuperar les excepccions
