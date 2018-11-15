@@ -52,15 +52,20 @@ Per **mostrar els valors** d'un array associatiu es pot utilitzar la funció `pr
 
 ```php 
 $a = array("id"=>1,"name"=>"Sayeed","age"=>24);
+
+echo <pre>
 print_r($a)
+echo </pre>
 
 //Resultat que es mostrarà
+<pre>
 Array
 (
     [id] => 1
     [name] => Sayeed
     [age] => 24
 )
+</pre>
 ```
 
 
