@@ -164,6 +164,9 @@ El métode `fetch()` o `fetchAll()` es pot definir per tal que retorni un **arra
 ?>
 ```
 
+## Referències
+
+* **php.net:** [PDOStatement::fetch](http://php.net/manual/es/pdostatement.fetch.php)
 
 ![](/assets/sqlinjection-acudit.png)
 

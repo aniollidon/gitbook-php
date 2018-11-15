@@ -2,9 +2,9 @@
 
 ## Introducció a PDO
 
-> **PDO** (PHP Data Object) és un extensió de PHP que ens propociona una capa d'abstracció d'accés a dades.
+> **PDO** (_**PHP Data Object**_) és un extensió de PHP que ens propociona una capa d'abstracció d'accés a dades.
 
- Per tant, ens permet utilitzar les mateixes funcions per realitzar consultes independentment de la base de dades que estiguem utilitant.
+Per tant, ens permet utilitzar les mateixes funcions per realitzar consultes independentment de la base de dades que estiguem utilitant.
 
 * **PDO** ve amb **PHP 5.1**.
 * Requereix característiques de OO (Orientació Objectes) del nucli de PHP 5.
@@ -28,8 +28,10 @@ $dbname = "dbname";
 $username = "username";
 $password = "password";
 
+//Fem la gestió d'errors amb les intruccions try...catch(...){}
 try{
-  //creem una nova connexió instancinat l'objecte PDO
+  //Creem una nova connexió a la BD
+  //amb new es crea una instància de la classe PDO definint el tipus de basde de dades, nom de la base de dades, usuari i password.
   $conn = new PDO("mysql:host=$servername;dbname=$dbname",$username, $password);
   
   // establim el mode PDO error a exception per poder
@@ -39,14 +41,23 @@ try{
 }
 catch(PDOException $error)
 {
-	//Si falla la connexió amb la BD es mostra l'error.
-	echo "Connection failed: " . $error->getMessage();
+   //Si falla la connexió amb la BD es mostra l'error.
+   echo "Connection failed: " . $error->getMessage();
 }
 
 //Tancar la connexió de la base de dades.
 $conn=null;
 ?>
 ```
+
+Per **habilitar les exempcions** i poder detectar si s'ha produeix algun error amb la base de dades, cal canviar el model PDO error a:
+
+`$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);`
+
+Els possibles valors que es poden assignar a `ATTR_ERRMODE` són:
+* `PDO::ERRMODE_SILENT`: valor per defecte, no llença cap tipus d'error ni exempció.
+* `PDO::ERRMODE_WARNING`: genera un error E_WARNING de PHP si es produeix algun error.
+* `PDO::ERRMODE_EXCEPTION`: genera i llença una exempció si es produeix un error.
 
 ## PDO Select
 
