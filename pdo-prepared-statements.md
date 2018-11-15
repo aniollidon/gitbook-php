@@ -45,21 +45,40 @@ El métode `fetch()` o `fetchAll()` es pot definir per tal que retorni un **arra
 
 ```php
 <?php
-  // 1. prepare sql statement
-  $stmt = $conn->prepare("INSERT INTO MyGuests (firstname, lastname, email)
-     					VALUES (:firstname, :lastname, :email)");
+  $servername = "localhost";
+  $dbname = "myDB";
+  $username = "username";
+  $password = "password";
 
-  // 2. execute to insert a row
-  $stmt->execute(array(':firstname'=>'John',
-						':lastname'=>'Doe',
-						':email'=>"john@example.com")
-						);
+  try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+   
+    $sql = "INSERT INTO MyGuests (firstname, lastname, email)
+         			  VALUES (:firstname, :lastname, :email)";
 
-  // execute to insert a row
-  $stmt->execute(array(':firstname'=>'Mary',
-						':lastname'=>'Moe',
-						':email'=>"mary@example.comm")
-						);
+    // 1. prepare sql statement
+    $stmt = $conn->prepare($sql);
+
+    // 2. execute to insert a row
+    $stmt->execute(array(':firstname'=>'John',
+ 						':lastname'=>'Doe',
+ 						':email'=>"john@example.com")
+ 						);
+
+     // execute to insert a row
+     $stmt->execute(array(':firstname'=>'Mary',
+ 						':lastname'=>'Moe',
+ 						':email'=>"mary@example.comm")
+ 						);
+  }
+  catch(PDOException $e)
+  {
+     echo $sql . "<br>" . $e->getMessage();
+  }
+
+$conn = null;
 ?>
 ```
 
