@@ -1,3 +1,5 @@
+<!-- no-toc -->
+
 # SQL Injection
 
 ## Introducció
