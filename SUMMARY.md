@@ -19,23 +19,5 @@
   * [MYSQLi](mysqli.md)
   * [PDO](pdo.md)
   * [SQL Injection](sql-injection.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  * [PDO Prepared Statements](pdo-prepared-statements.md)
 
