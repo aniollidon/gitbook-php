@@ -141,6 +141,37 @@ echo "New record created successfully. ";
 ?>
 ```
 
+## PDO Objectes
+
+PDO també permet la realització de consultes i mapeig de resultats en objectes del model de l'aplicació.
+
+En primer lloc cal crear una classe amb el model de dades:
+
+```php
+class Usuari
+{
+private $nom;
+private $cognoms;
+public function nomComplet ()
+{
+return $this->nom . ' ' . $this->cognoms;
+}
+}
+```
+
+El nom d'atributs de la classe ha de ser igual a les columnes de la taula de la base de dades:
+
+```php
+$stmt= $conn->prepare('SELECT nom, cognoms FROM personal');
+$stmt->execute();
+$stmt->setFetchMode(PDO::FETCH_CLASS, 'Usuari');
+while($usuario = $stmt->fetch())
+echo $usuari->nomComplet() . '<br>';
+```
+
+En l’script es pot observar la crida al mètode setFetchMode() passant com a primer argument la constant `PDO::FETCH_CLASS` que indica que es realitzi un mapeig en la classe que s’indica com a segon argument (la classe Usuari creada anteriorment).
+
+Al recórrer tots els elements amb fetch s'obté l’objecte indicat enlloc de l’array associatiu.
 
 ## Referències
 

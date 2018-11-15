@@ -152,10 +152,6 @@ $conn = null;
 ?>
 ```
 
-
-
-
-
 ## Referències
 
 * **w3schools.com:** [PHP Prepared Statements](https://www.w3schools.com/php/php_mysql_prepared_statements.asp)
