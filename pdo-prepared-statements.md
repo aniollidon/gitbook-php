@@ -71,20 +71,21 @@ El métode `fetch()` o `fetchAll()` es pot definir per tal que retorni un **arra
   $dbname = "myDB";
   $username = "username";
   $password = "password";
-$dbname = "myDBPDO";
 
   try {
       $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
       // set the PDO error mode to exception
       $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-      $sql = "UPDATE MyGuests SET lastname='Doe' WHERE id=2";
+      $sql = "UPDATE MyGuests SET lastname=:lastname WHERE id=:id";
 
       // 1. Prepare statement
       $stmt = $conn->prepare($sql);
 
       // 2. execute the query
-      $stmt->execute();
+      $stmt->execute(array(':lastname'=>'Doe',
+                           ':id'=>'2')
+                    );
 
       // 3. echo a message to say the UPDATE succeeded
       echo $stmt->rowCount() . " records UPDATED successfully";
@@ -97,6 +98,43 @@ catch(PDOException $e)
 $conn = null;
 ?>
 ```
+
+## DELETE amb Prepared Statements
+
+```php
+<?php
+  $servername = "localhost";
+  $dbname = "myDB";
+  $username = "username";
+  $password = "password";
+
+  try {
+      $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+      // set the PDO error mode to exception
+      $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+      $sql = "DELETE FROM MyGuests WHERE id=:id";
+
+      // 1. Prepare statement
+      $stmt = $conn->prepare($sql);
+
+      // 2. execute the query
+      $stmt->execute(array(':id'=>3));
+
+      // 3. echo a message to say the UPDATE succeeded
+      echo $stmt->rowCount() . " records DELETED successfully";
+    }
+catch(PDOException $e)
+    {
+       echo $sql . "<br>" . $e->getMessage();
+    }
+
+$conn = null;
+?>
+```
+
+
+
 
 
 ## Referències
