@@ -1,5 +1,7 @@
 # PDO Prepared Statements
 
+## Definició Prepared Statements
+
 > Una **instrucció preparada (_prepared statement_)** es tracta d'una instrucció SQL pre-compilada que pot ser executada varies vegades només enviant les dades al servidor.
 
 * Permet evitar el ***SQL injection***.
