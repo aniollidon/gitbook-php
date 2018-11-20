@@ -99,4 +99,7 @@ Característiques del mètode **POST**:
 
 *  **PHP Forms** ([https://cacauet.org/wiki/index.php/PHP_Forms](https://cacauet.org/wiki/index.php/PHP_Forms))
 
+* **Developer.mozilla.org**: Sending form data
+[https://developer.mozilla.org/es/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data](https://developer.mozilla.org/es/docs/Learn/HTML/Forms/Sending_and_retrieving_form_data)
+
 ---
