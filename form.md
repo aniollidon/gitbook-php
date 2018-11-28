@@ -111,6 +111,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
    //Processar les dades
 } else {
    //Mostrem el formulari
+?>
+  <form action="processa.php" method="post">
+     Nom:<input type="text" name="nom"><br>
+     Email: <input type="text" name="email"><br>
+     <input type="submit" value="Enviar">
+  </form>
+<?php
 }
 ?>
 
