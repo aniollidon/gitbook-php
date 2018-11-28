@@ -119,10 +119,10 @@ En aquest exemple veurem com es pot mostrar el formulari i processar les dades d
       </form>
     <?php
     } else {
-     //Processar les dades
+     //Processem les dades
     ?>
       <h2>Formulari enviat.</h2>
-      <p>Hola <?php echo $_POST['nom];?> </p>
+      <p>Hola <?php echo $_POST['nom]; ?> </p>
     <?php
     }
     ?>
