@@ -105,26 +105,30 @@ Característiques del mètode **POST**:
 En aquest exemple veurem com es pot mostrar el formulari i processar les dades del formulari en **una mateixa pàgina php**.
 
 ```php
-
-<?php
-if($_SERVER['REQUEST_METHOD'] != 'POST') {
-//Mostrem el formulari
-?>
-  <form action="processa.php" method="post">
-  Nom:<input type="text" name="nom"><br>
-  Email: <input type="text" name="email"><br>
-  <input type="submit" value="Enviar">
-  </form>
-<?php
-} else {
- //Processar les dades
-?>
-  <h2>Formulari enviat.</h2>
-  <p>Hola <?php echo $_POST['nom];?> </p>
-<?php
-}
-?>
-
+<html>
+  <body>
+  
+    <?php
+    if($_SERVER['REQUEST_METHOD'] != 'POST') {
+    //Mostrem el formulari
+    ?>
+      <form action="processa.php" method="post">
+      Nom:<input type="text" name="nom"><br>
+      Email: <input type="text" name="email"><br>
+      <input type="submit" value="Enviar">
+      </form>
+    <?php
+    } else {
+     //Processar les dades
+    ?>
+      <h2>Formulari enviat.</h2>
+      <p>Hola <?php echo $_POST['nom];?> </p>
+    <?php
+    }
+    ?>
+    
+  </body>
+</html>
 ```
 
 Fixeu-vos que:
