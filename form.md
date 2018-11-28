@@ -1,5 +1,3 @@
-<!-- notoc -->
-
 # Formularis
 
 ## Enviar dades amb formularis
