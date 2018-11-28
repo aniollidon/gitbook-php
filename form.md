@@ -6,7 +6,7 @@ Comencem per un **exemple** senzill, un formulari amb dos camp de text:
 
 ![](/assets/form.png)
 
-```
+```xml
 <html>
 <body>
   <form action="processa.php" method="post">
@@ -48,7 +48,7 @@ En aquests arrays associatius, el **name** del camp del formulari serà una **cl
 
 El fitxer que recollirà la informació `processa.php` pot contenir el següent:
 
-```
+```xml
 <html>
   <body>
   <!-- Codi HTML per aquí... -->

@@ -37,8 +37,7 @@ img
 
 
 .sunlight-code-container, .sunlight-line-number-margin {
-    margin: -1em -1.1765em;
-    padding: 1em 1.1765em;
+    /*padding: 1em 1.1765em;*/
     border: 1px solid #CCC;
     background-color: #EEE;
 }
