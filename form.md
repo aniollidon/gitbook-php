@@ -6,7 +6,7 @@ Comencem per un **exemple** senzill, un formulari amb dos camp de text:
 
 ![](/assets/form.png)
 
-```html
+```php
 <html>
 <body>
   <form action="processa.php" method="post">
