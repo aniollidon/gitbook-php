@@ -37,9 +37,8 @@ img
 
 /* code sunlight-highlighter plugin */
 .sunlight-theme-light .sunlight-code-container, .sunlight-theme-light .sunlight-line-number-margin {
-    /*padding: 1em 1.1765em;*/
+    padding: 1.2em 1.1765em;
     background-color: #ddd !important;
-    padding: 5px !important;
     border-radius: 3px !important;
 }
 
