@@ -4,7 +4,9 @@
 
 ## Enviar dades amb formularis
 
-**Exemple:**
+Comencem per un **exemple** senzill, un formulari amb dos camp de text:
+
+![](/assets/form.png)
 
 ```html
 <html>
@@ -17,6 +19,8 @@
 </body>
 </html>
 ```
+
+
 Fixeu-vos que:
 
 * El tag `<form>`  envolta tots els camps del **formulari**.
@@ -36,6 +40,7 @@ Fixeu-vos que:
 La pàgina destí utilitza un **array associatiu (PHP superglobals)** que són generats automàticament per PHP i que permeten obtenir les dades que ha introduïdes per l'usuari.
 
 Existeixen 3 arrays diferents:
+
 * **Array $_GET**: conté les variables si el formulari ha estat enviat pel mètode GET.
 * **Array $_POST**: conté les variables si el formulari ha estat enviat pel mètode POST.
 * **Array $_REQUEST**: conté les variables passades per qualsevol dels 2 mètodes (GET o POST).
@@ -71,7 +76,9 @@ Quan un formulari envia dades ho pot fer mitjançant dos mètodes diferents:
   * **GET**: els valors aperèixen a l'adreça URL i són visibles per tothom.
   
   Per exemple: 
-  `http://localhost/processa.php/nom=jaume&curs=1` 
+  `http://localhost/processa.php/nom=jaume&email=jaume@example.com` 
+  
+  [w3schools: Prova un exemple](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_get)
 
 ### GET
 
@@ -94,6 +101,10 @@ Característiques del mètode **POST**:
 * Les sol·licitud POST NO poden ser *bookmarked*.
 
 > En general, els desenvolupadors prefereixen **POST** per enviar dades de formularis.
+
+## Exemple
+
+
 
 ## Referències
 
