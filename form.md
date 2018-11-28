@@ -54,15 +54,17 @@ El fitxer que recollirà la informació `processa.php` pot contenir el següent:
   <!-- Codi HTML per aquí... -->
   <? php
       $nom = $_REQUEST['nom'];  //Obtenim el nom introduït
+      $email = $_REQUEST['email']  
       echo "Hola, $nom!";       //Mostrem una salutació
   ?>
   <!-- Més codi HTML per allà... -->
   </body>
 </html>
 ```
+Fixeu-vos que:
 
-* Obtenim el valor entrat al formulari a partir de l'array associatiu `$_REQUEST` i indicant la clau **nom** `$_REQUEST['nom'].
-
+* Obtenim el valor entrat al formulari a partir de l'array associatiu `$_REQUEST` i indicant la clau **nom** `$_REQUEST['nom']`.
+* En el form anterior hem posat els **noms de les variables NOM i EMAIL (paràmetre "NAME")** i amb aquest mateix nom les hem capturat.
 * També podríem haver utilitzat `$_POST['nom']` perquè el formulari s'han enviat utilitzant el mètode post.
 
 ## POST i GET
@@ -100,7 +102,23 @@ Característiques del mètode **POST**:
 
 ## Exemple
 
+En aquest exemple veurem com es pot mostrar el formulari i processar les dades del formulari en **una mateixa pàgina php**.
 
+```php
+
+<?php
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+   //Processar les dades
+} else {
+   //Mostrem el formulari
+}
+?>
+
+```
+
+Fixeu-vos que:
+
+* La condició `$_SERVER['REQUEST_METHOD'] == 'POST'` ens permet saber si ja s'han introduit dades al formulari i per tant cal processar-les.
 
 ## Referències
 
