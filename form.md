@@ -104,7 +104,7 @@ Característiques del mètode **POST**:
 
 En aquest exemple veurem com es pot mostrar el formulari i processar les dades del formulari en **una mateixa pàgina php**.
 
-```php
+```xml
 <html>
   <body>
   
@@ -122,7 +122,7 @@ En aquest exemple veurem com es pot mostrar el formulari i processar les dades d
      //Processem les dades
     ?>
       <h2>Formulari enviat.</h2>
-      <p>Hola <?php echo $_POST['nom]; ?> </p>
+      <p>Hola <?php echo $_POST['nom'];?> </p>
     <?php
     }
     ?>
