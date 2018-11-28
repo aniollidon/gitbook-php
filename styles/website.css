@@ -35,11 +35,12 @@ img
     overflow: hidden; 
 }
 
-
+/* code sunlight-highlighter plugin */
 .sunlight-code-container, .sunlight-line-number-margin {
     /*padding: 1em 1.1765em;*/
-    border: 1px solid #CCC;
-    background-color: #EEE;
+    background-color: #ddd !important;
+    padding: 5px !important;
+    border-radius: 3px !important;
 }
 
 /* summary */ 
