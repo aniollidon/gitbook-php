@@ -23,7 +23,7 @@
             "showLevel": false
         },
         "sunlight-highlighter": {
-            "theme": "gitbook",
+            "theme": "light",
             "lineNumber": false
          },
         "collapsible-chapters":{}
