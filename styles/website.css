@@ -36,9 +36,9 @@ img
 }
 
 /* code sunlight-highlighter plugin */
-.sunlight-theme-light .sunlight-code-container, .sunlight-theme-light .sunlight-line-number-margin {
-    margin: -1em -1.1765em !important;
-    padding: 1em 1.1765em !important;
+.sunlight-code-container, .sunlight-line-number-margin {
+    /*margin: -1em -1.1765em !important;
+    padding: 1em 1.1765em !important;*/
     background-color: #ddd !important;
     border-radius: 3px !important;
 }
