@@ -107,16 +107,20 @@ En aquest exemple veurem com es pot mostrar el formulari i processar les dades d
 ```php
 
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-   //Processar les dades
-} else {
-   //Mostrem el formulari
+if($_SERVER['REQUEST_METHOD'] != 'POST') {
+//Mostrem el formulari
 ?>
   <form action="processa.php" method="post">
-     Nom:<input type="text" name="nom"><br>
-     Email: <input type="text" name="email"><br>
-     <input type="submit" value="Enviar">
+  Nom:<input type="text" name="nom"><br>
+  Email: <input type="text" name="email"><br>
+  <input type="submit" value="Enviar">
   </form>
+<?php
+} else {
+ //Processar les dades
+?>
+  <h2>Formulari enviat.</h2>
+  <p>Hola <?php echo $_POST['nom];?> </p>
 <?php
 }
 ?>
@@ -125,7 +129,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 Fixeu-vos que:
 
-* La condició `$_SERVER['REQUEST_METHOD'] == 'POST'` ens permet saber si ja s'han introduit dades al formulari i per tant cal processar-les.
+* La condició `$_SERVER['REQUEST_METHOD'] != 'POST'` ens permet saber si no s'han introduit dades al formulari i per tant cal mostrar el formulari.
 
 ## Referències
 
