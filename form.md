@@ -71,30 +71,28 @@ El fitxer que recollirà la informació `processa.php` pot contenir el següent:
 
 Quan un formulari envia dades ho pot fer mitjançant dos mètodes diferents:
 
-  * **POST**:  els valors del formulari es transmeten de manera oculta (no aparèixen a la barra d'adreces del navegador).
-  
-  * **GET**: els valors aperèixen a l'adreça URL i són visibles per tothom.
-  
-  Per exemple: 
-  `http://localhost/processa.php/nom=jaume&email=jaume@example.com` 
-  
-  [w3schools: Prova un exemple](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_get)
-
 ### GET
 
 Característiques del mètode **GET**:
 
-* Les dades són visibles en la URL.
-  * No utilitzar per enviar dades sensibles (com passwords).
+* Els **valors** introduits al formulari aperèixen a l'adreça URL i són **visibles per tothom**.
+  * No utilitzar per enviar dades sensibles (com passwords). 
+  *  Per exemple: `http://localhost/processa.php/nom=jaume&email=jaume@example.com` 
+  * [w3schools: Prova un exemple](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_get)
+
 * Les dades s'afegeixen a la capçalera de la petició HTTP.
 * Té limitació en la quantitat de dades a enviar.
   * Màxim 2000 caràcters. 
 * Les sol·licitud GET es guarden en l'historial del navegador.
 * Les sol·licitud GET  poden ser *bookmarked*.
 
+
 ### POST
 
 Característiques del mètode **POST**:
+
+* Els **valors** introduits al formulari es transmeten de manera **oculta** (no aparèixen a la barra d'adreces del navegador).
+* Les dades s'afegeixen en el cos de la petició HTTP.
 * No hi ha límits en la quantitat d'informació a enviar.
 * Les dades s'afegeixen en el cos de la petició HTTP.
 * Les sol·licitud POST NO es guarden en l'historial del navegador.
