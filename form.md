@@ -67,7 +67,7 @@ El fitxer que recollirà la informació `processa.php` pot contenir el següent:
 
 ## POST i GET
 
-Quan un formulari envia dades ho pot fer mitjançant dos mètodes diferents:
+Quan un formulari envia dades ho pot fer mitjançant **dos mètodes** diferents:
 
 ### GET
 
