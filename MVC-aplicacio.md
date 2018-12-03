@@ -135,10 +135,10 @@ class User {
 ```
 
 El **controlador** ha de tenir sempre aquesta estructura:
-    1. Inclou el model
-    2. Llença la consulta
-    3. Recull els resultats 
-    4. Inclou la vista que mostrarà els resultats.
+  1. Inclou el model
+  2. Llença la consulta
+  3. Recull els resultats 
+  4. Inclou la vista que mostrarà els resultats.
 
 # La vista
 
