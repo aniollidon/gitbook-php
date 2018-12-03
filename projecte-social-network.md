@@ -7,9 +7,9 @@
 │   │   └── user.php              # Example Controller with functionality explanation
 │   │   └── post.php
 │   ├── models                    # Models directory
-│   │   └── database.php               
-│   │   └── user.php
-│   │   └── post.php
+│   │   └── Database.php               
+│   │   └── User.php
+│   │   └── Post.php
 │   └── views                     # Views directory, views are recommended in pure html, possible <?=$variable?> additions
 │       └── user.view.php
 │       └── post.view.php

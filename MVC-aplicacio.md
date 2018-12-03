@@ -56,7 +56,7 @@ class Database{
 
 
 
-**user.php**
+**User.php**
 
 ```php+lineNumbers:true
 <?php
