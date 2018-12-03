@@ -26,7 +26,6 @@ class Database{
     public static function connect() {
     
         try {
-        
             $db_config = array(
                 'hostname' => 'localhost',
                 'dbname' => "db_name",
@@ -62,20 +61,17 @@ class User {
     private $connection;
 
     public function __CONSTRUCT(){
-
-        try 
-        {
+        try {
             $this->connection = Database::Connect();
         } 
-        catch (Exception $e) 
-        {
+        catch (Exception $e) {
             die($e->getMessage());
         }
     }
 
     // ************************************************** 
     // exists(user)
-    // Comprova que si l'usuari ja existeix
+    // Comprova que si l'usuari ja existeix a la base dades
     // ************************************************** 
 
         public function exists($user)
@@ -104,7 +100,7 @@ class User {
         
     // ************************************************** 
     // create(name, username, passwd)
-    // Crea un nou usuari a la BD
+    // Crea un nou usuari a la base de dades
     // ************************************************** 
     public function create($name, $username, $passwd)
     {
