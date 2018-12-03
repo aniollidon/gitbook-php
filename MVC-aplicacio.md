@@ -15,25 +15,17 @@ Aquí només tindrem una consulta que ens mostrarà el nom de tots els usuaris, 
 
 ```php+lineNumbers:true
 <?php
+    global $db_config;
     
-    define('RUTA','http://localhost/SocialNetwork/');
-    define('RUTA_IMATGES', '/var/www/html/SocialNetwork/fotos/');
-
     $db_config = array(
         'hostname' => 'localhost',
-        'dbname' => "socialnetwork",
-        'username' => "root",
-        'passwd' => 'patata'
+        'dbname' => 'socialnetwork',
+        'username' => 'username',
+        'passwd' => 'passwd'
     );
 
-    $demo_user = array(
-        'username'=> 'prova',
-        'password'=>'prova'
-    );
 ?>
 ```
-
-# El model
 
 **database.php**
 
@@ -48,7 +40,9 @@ class Database{
     
     public static function connect() {
     
-        try {           
+        try {     
+            $db_config = $GLOBALS['db_config'];
+                  
             $conexion = new PDO("mysql:host=".
                 $db_config['hostname'].";
                 dbname=".$db_config['dbname'],
@@ -69,7 +63,7 @@ class Database{
 ?>
 ```
 
-
+# El model
 
 **User.php**
 
