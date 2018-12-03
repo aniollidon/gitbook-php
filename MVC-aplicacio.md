@@ -84,11 +84,8 @@ class User {
         $statement->execute(array(':user'=>$user));
         $result = $statement->fetch();
 
-        if ($result) {
-            return true; //L'usuari existeix
-        } else {
-            return false; //L'usuari no existeix
-        }
+        return $result; // Retorna treu si l'usuari existeix 
+                        // i false si no existeix
     }
 
     // ************************************************** 
@@ -108,6 +105,17 @@ class User {
     {
         
     }
+    
+    // ************************************************** 
+    // getAll()
+    // Retorn tots els usuaris de la base de dades
+    // ************************************************** 
+    public function getAll()
+    {
+        
+    }
+
+
 
 }
 ?>
@@ -116,4 +124,43 @@ class User {
 
 # El controlador
 
+**userController.php**
+
+```php+lineNumbers:true
+<?php
+    require_once 'models/user.php';
+    
+    $user = new User();
+    $users= $user->getAll();
+    
+    include 'users.view.php';
+?>
+```
+
+Simplement inclou el model, llença la consulta, recull els resultats i la vista s'encarregarà de mostrar-los. 
+
 # La vista
+
+```xml+lineNumbers:true
+<html>
+ <head>
+     <title> MVC </title>
+ </head>
+ <body>
+     <h1>Llistat d'usuaris </h1>
+     <table>
+         <tr>
+         <th>Nom</th>
+         </tr>
+         <?php foreach ($usuaris as $usuari) { ?>
+             <tr>
+                 <td><?php echo $usuari ['name'] ?></td>
+             </tr>
+         <?php } ?>
+     </table>
+ ?>
+ ```
+ 
+Simplement ens dediquem a mostrar les dades obtingudes a la consulta ( fixeu-vos que estem utilitzant la variable utilitzada al controlador) .
+
+No hem pogut separar absolutament el que és PHP del codi HTML, però tampoc és [codi spaghetti](https://ca.wikipedia.org/wiki/Codi_spaghetti).
