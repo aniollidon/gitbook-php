@@ -11,6 +11,28 @@ Ho veurem en un exemple molt simplificat i molt orientat a la pràctica que heu 
 
 Aquí només tindrem una consulta que ens mostrarà el nom de tots els usuaris, però es pot estendre el que sigui necessari.
 
+**db_config.php**
+
+```php+lineNumbers:true
+<?php
+    
+    define('RUTA','http://localhost/SocialNetwork/');
+    define('RUTA_IMATGES', '/var/www/html/SocialNetwork/fotos/');
+
+    $db_config = array(
+        'hostname' => 'localhost',
+        'dbname' => "socialnetwork",
+        'username' => "root",
+        'passwd' => 'patata'
+    );
+
+    $demo_user = array(
+        'username'=> 'prova',
+        'password'=>'prova'
+    );
+?>
+```
+
 # El model
 
 **database.php**
@@ -26,14 +48,7 @@ class Database{
     
     public static function connect() {
     
-        try {
-            $db_config = array(
-                'hostname' => 'localhost',
-                'dbname' => "db_name",
-                'username' => "db_user",
-                'passwd' => 'db_pwsd'
-            );
-            
+        try {           
             $conexion = new PDO("mysql:host=".
                 $db_config['hostname'].";
                 dbname=".$db_config['dbname'],
