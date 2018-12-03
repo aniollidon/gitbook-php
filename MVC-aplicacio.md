@@ -15,8 +15,39 @@ Aquí només tindrem una consulta que ens mostrarà el nom de tots els usuaris, 
 **database.php**
 
 ```php
+<?php
+class Database{
 
-
+    // ************************************************** 
+    // connect()
+    // Connecta amb la BD
+    // ************************************************** 
+    
+    public static function connect() {
+    
+        try {
+        
+            $db_config = array(
+                'hostname' => 'localhost',
+                'dbname' => "db_name",
+                'username' => "db_user",
+                'passwd' => 'db_pwsd'
+            );
+            
+            $conexion = new PDO ("mysql:host=".$db_config['hostname'].";dbname=".$db_config['dbname'],
+                $db_config['username'],
+                $db_config['passwd']
+            );
+            $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $conexion->exec("SET CHARACTER SET UTF8");
+            return $conexion;
+        
+        } catch (PDOException $e) {
+            echo "Error" . $e->getMessage();
+        }
+    }
+}
+?>
 ```
 
 
