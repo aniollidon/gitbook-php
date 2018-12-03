@@ -33,7 +33,9 @@ class Database{
                 'passwd' => 'db_pwsd'
             );
             
-            $conexion = new PDO ("mysql:host=".$db_config['hostname'].";dbname=".$db_config['dbname'],
+            $conexion = new PDO("mysql:host=".
+                $db_config['hostname'].";
+                dbname=".$db_config['dbname'],
                 $db_config['username'],
                 $db_config['passwd']
             );
