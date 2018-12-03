@@ -60,6 +60,8 @@ class Database{
 
 ```php+lineNumbers:true
 <?php
+require_once 'models/database.php';
+
 class User {
     private $connection;
 

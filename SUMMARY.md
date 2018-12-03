@@ -22,43 +22,5 @@
   * [PDO Prepared Statements](pdo-prepared-statements.md)
 * [Patró MVC](MCV.md)
   * [Exemple](MVC-aplicacio.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [Projecte: Social Network](projecte-social-network.md)
 
