@@ -76,7 +76,7 @@ class User {
     // Comprova que si l'usuari ja existeix a la base dades
     // ************************************************** 
 
-        public function exists($user)
+    public function exists($user)
     {
         // Consultem els usuaris de la BD
         $sql = "SELECT * FROM users WHERE user=:user LIMIT 1";
