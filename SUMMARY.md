@@ -21,7 +21,7 @@
   * [SQL Injection](sql-injection.md)
   * [PDO Prepared Statements](pdo-prepared-statements.md)
 * [Patró MVC](MCV.md)
-  * [Projecte](MVC-aplicacio.md)
+  * [Exemple](MVC-aplicacio.md)
 
 
 

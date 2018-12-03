@@ -14,7 +14,7 @@ Aquí només tindrem una consulta que ens mostrarà el nom de tots els usuaris, 
 
 **database.php**
 
-```php
+```php+lineNumbers:true+lineNumberStart:100
 <?php
 class Database{
 
@@ -38,8 +38,10 @@ class Database{
                 $db_config['username'],
                 $db_config['passwd']
             );
+            
             $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $conexion->exec("SET CHARACTER SET UTF8");
+            
             return $conexion;
         
         } catch (PDOException $e) {
