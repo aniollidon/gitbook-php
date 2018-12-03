@@ -55,7 +55,7 @@ class Database{
 
 **user.php**
 
-```php
+```php+lineNumbers:true
 <?php
 class User {
     private $connection;
