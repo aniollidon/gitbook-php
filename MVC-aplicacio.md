@@ -115,12 +115,8 @@ class User {
     {
         
     }
-
-
-
 }
 ?>
-
 ```
 
 # El controlador
