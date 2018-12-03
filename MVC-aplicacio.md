@@ -1,6 +1,7 @@
 # Aplicació model MVC
 
 Aquí veurem una versió bastant simple d'aquest model.
+
 Bàsicament el que pretenem és intentar separar el que és codi PHP i les consultes a la base de dades, del que és la presentació HTML (vista) i que com a mínim el codi
 d'aquesta presentació no sigui una porqueria illegible.
 
@@ -133,11 +134,15 @@ class User {
     $user = new User();
     $users= $user->getAll();
     
-    include 'users.view.php';
+    require_once 'views/users.view.php';
 ?>
 ```
 
-Simplement inclou el model, llença la consulta, recull els resultats i la vista s'encarregarà de mostrar-los. 
+El **controlador** ha de tenir sempre aquesta estructura:
+    1. Inclou el model
+    2. Llença la consulta
+    3. Recull els resultats 
+    4. Inclou la vista que mostrarà els resultats.
 
 # La vista
 
@@ -161,6 +166,6 @@ Simplement inclou el model, llença la consulta, recull els resultats i la vista
  ?>
  ```
  
-Simplement ens dediquem a mostrar les dades obtingudes a la consulta ( fixeu-vos que estem utilitzant la variable utilitzada al controlador) .
+La **vista** simplement s'encarrega de mostrar les dades obtingudes a la consulta (fixeu-vos que estem utilitzant la mateixa variable utilitzada al controlador) .
 
 No hem pogut separar absolutament el que és PHP del codi HTML, però tampoc és [codi spaghetti](https://ca.wikipedia.org/wiki/Codi_spaghetti).
