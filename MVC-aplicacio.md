@@ -57,7 +57,62 @@ class Database{
 **user.php**
 
 ```php
+<?php
+class User {
+    private $connection;
 
+    public function __CONSTRUCT(){
+
+        try 
+        {
+            $this->connection = Database::Connect();
+        } 
+        catch (Exception $e) 
+        {
+            die($e->getMessage());
+        }
+    }
+
+    // ************************************************** 
+    // exists(user)
+    // Comprova que si l'usuari ja existeix
+    // ************************************************** 
+
+        public function exists($user)
+    {
+        // Consultem els usuaris de la BD
+        $sql = "SELECT * FROM users WHERE user=:user LIMIT 1";
+        $statement = $this->connection->prepare($sql);
+        $statement->execute(array(':user'=>$user));
+        $result = $statement->fetch();
+
+        if ($result) {
+            return true; //L'usuari existeix
+        } else {
+            return false; //L'usuari no existeix
+        }
+    }
+
+    // ************************************************** 
+    // valid(user, passwd)
+    // Comprova que l'usuari i password siguin vàlids
+    // ************************************************** 
+    public function valid($user, $passwd)
+    {
+        
+    }
+        
+    // ************************************************** 
+    // create(name, username, passwd)
+    // Crea un nou usuari a la BD
+    // ************************************************** 
+    public function create($name, $username, $passwd)
+    {
+        
+    }
+
+}
+?>
 
 ```
 
