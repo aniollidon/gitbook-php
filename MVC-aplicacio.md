@@ -14,7 +14,7 @@ Aquí només tindrem una consulta que ens mostrarà el nom de tots els usuaris, 
 
 **database.php**
 
-```php+lineNumbers:true+lineNumberStart:100
+```php+lineNumbers:true
 <?php
 class Database{
 
