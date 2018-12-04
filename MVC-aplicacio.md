@@ -134,7 +134,7 @@ class User {
 
 # El controlador
 
-**userController.php**
+**user.php**
 
 ```php+lineNumbers:true
 <?php
@@ -154,6 +154,8 @@ El **controlador** ha de tenir sempre aquesta estructura:
   4. Inclou la vista que mostrarà els resultats.
 
 # La vista
+
+**user.view.php**
 
 ```xml+lineNumbers:true
 <html>
