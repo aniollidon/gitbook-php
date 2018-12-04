@@ -35,7 +35,7 @@ try{
   $conn = new PDO("mysql:host=$servername;dbname=$dbname",$username, $password);
   
   // establim el mode PDO error a exception per poder
-  // recuperar les excepccions
+  // recuperar les excepcions
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   echo "Connected successfully";
 }
@@ -55,9 +55,9 @@ Per **habilitar les exempcions** i poder detectar si s'ha produeix algun error a
 `$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);`
 
 Els possibles valors que es poden assignar a `ATTR_ERRMODE` són:
-* `PDO::ERRMODE_SILENT`: valor per defecte, no llença cap tipus d'error ni exempció.
+* `PDO::ERRMODE_SILENT`: valor per defecte, no llença cap tipus d'error ni excepció.
 * `PDO::ERRMODE_WARNING`: genera un error E_WARNING de PHP si es produeix algun error.
-* `PDO::ERRMODE_EXCEPTION`: genera i llença una exempció si es produeix un error.
+* `PDO::ERRMODE_EXCEPTION`: genera i llença una excepció si es produeix un error.
 
 ## PDO Select
 

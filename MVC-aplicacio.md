@@ -42,7 +42,8 @@ class Database{
     
         try {     
             $db_config = $GLOBALS['db_config'];
-                  
+            
+            //Creem una nova connexió a la BD
             $conexion = new PDO("mysql:host=".
                 $db_config['hostname'].";
                 dbname=".$db_config['dbname'],
@@ -50,6 +51,7 @@ class Database{
                 $db_config['passwd']
             );
             
+            // establim el mode PDO error a EXCEPTION per poder recuperar les excepcions
             $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $conexion->exec("SET CHARACTER SET UTF8");
             
@@ -136,7 +138,7 @@ class User {
 
 ```php+lineNumbers:true
 <?php
-    require_once 'models/user.php';
+    require_once 'models/User.php';
     
     $user = new User();
     $users= $user->getAll();
