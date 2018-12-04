@@ -37,9 +37,7 @@ class Database{
     // connect()
     // Connecta amb la BD
     // ************************************************** 
-    
     public static function connect() {
-    
         try {     
             $db_config = $GLOBALS['db_config'];
             
@@ -89,7 +87,6 @@ class User {
     // exists(user)
     // Comprova que si l'usuari ja existeix a la base dades
     // ************************************************** 
-
     public function exists($user)
     {
         // Consultem els usuaris de la BD
