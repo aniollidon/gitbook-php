@@ -103,10 +103,10 @@ class User {
     }
 
     // ************************************************** 
-    // valid(user, passwd)
+    // isValid(user, passwd)
     // Comprova que l'usuari i password siguin vàlids
     // ************************************************** 
-    public function valid($user, $passwd)
+    public function isValid($user, $passwd)
     {
         
     }
@@ -170,7 +170,7 @@ El **controlador** ha de tenir sempre aquesta estructura:
          </tr>
          <?php foreach ($users as $user) { ?>
              <tr>
-                 <td><?php echo $user['name'] ?></td>
+                 <td><?= $user['name'] ?></td>
              </tr>
          <?php } ?>
      </table>
