@@ -23,7 +23,6 @@ Aquí només tindrem una consulta que ens mostrarà el nom de tots els usuaris, 
         'username' => 'username',
         'passwd' => 'passwd'
     );
-
 ?>
 ```
 
