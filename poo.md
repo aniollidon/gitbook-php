@@ -10,16 +10,16 @@
 <?php
 //Definim la classe Cotxe
 class Cotxe {
-    //Constants
+    //CONSTANTS
     const RODES = 4;
     
-    //Propietats
+    //PROPIETATS
     //private: només permet accedir-hi des de la pròpia classe
     private $color;
     private $potencia;
     private $marca;
     
-    //Constructor: s'executa quan es crea l'objecte
+    //CONSTRUCTOR: s'executa quan es crea l'objecte
     public function __construct($color, $potencia, $marca)
     {
         $this->color = $color;
@@ -27,7 +27,7 @@ class Cotxe {
         $this->marca;
     }
     
-    //Mètodes
+    //MÈTODES
     public function getColor()
     {
         return $this->color;
