@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Programació Orientada a Objectes (POO) amb PHP
 
 ## Definir una classe
