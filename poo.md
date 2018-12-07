@@ -1,6 +1,6 @@
 <!-- notoc -->
 
-# Programació Orientada a Objectes (POO) amb PHP
+# Programació Orientada a Objectes (POO)
 
 ## Definir una classe
 
@@ -44,6 +44,8 @@ class Cotxe {
 ?>
 ```
 
+## Crear un objecte
+
 **main.php**
 ```php
 <?php
@@ -55,8 +57,6 @@ $elMeuCotxe = new Cotxe('vermell',120,'audi');
 echo 'Color del cotxe: ' . $elMeuCotxe->getColor(); // Mostrarà: "Color del coche: vermell"
 ?>
 ```
-
-
 
 ## Operador Doble dos punts :: 
 
@@ -71,11 +71,11 @@ echo 'Color del cotxe: ' . $elMeuCotxe->getColor(); // Mostrarà: "Color del coc
     
     // Obtenir el valor mitjançant l'objecte
     $elMeuCotxe = new Cotxe();
-    echo $elMeuCotxe ::RUEDAS . "\n";
+    echo $elMeuCotxe ::RODES. "\n";
 ?>
 ```
 
 
 ## Referències
 
-* Programación orientada a objetos en PHP: [https://diego.com.es/programacion-orientada-a-objetos-en-php](https://diego.com.es/programacion-orientada-a-objetos-en-php)]
+* Programación orientada a objetos en PHP: [https://diego.com.es/programacion-orientada-a-objetos-en-php](https://diego.com.es/programacion-orientada-a-objetos-en-php)
