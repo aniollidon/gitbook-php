@@ -58,9 +58,9 @@ echo 'Color del cotxe: ' . $elMeuCotxe->getColor(); // Mostrarà: "Color del coc
 
 
 
-## Operador Doble dos punts :: o Paamayim Nekudotayim
+## Operador Doble dos punts :: 
 
-> S'anomena **_Paamayim Nekudotayim_** o **_doble dos punts "::"_** a l'operador que permet accedir a constants i a mètodes estàtics.
+> S'anomena **_doble dos punts "::"_** o **_Paamayim Nekudotayim_** a l'operador que permet accedir a constants i a mètodes estàtics.
 > A més, permet poder sobreescriure propietats o mètodes d'una classe. 
 
 
