@@ -47,7 +47,6 @@ class Cotxe {
 **main.php**
 ```php
 <?php
-
 include 'Cotxe.php';
 
 //Creem un objecte de la classe Cotxe
@@ -64,16 +63,17 @@ echo 'Color del cotxe: ' . $elMeuCotxe->getColor(); // Mostrarà: "Color del coc
 > S'anomena **_Paamayim Nekudotayim_** o **_doble dos punts "::"_** a l'operador que permet accedir a constants i a mètodes estàtics.
 > A més, permet poder sobreescriure propietats o mètodes d'una classe. 
 
+
 ```php
 <?php
-// Obtenir el valor d'una constant mitjançant el nom de la classe
-echo Cotxe::RODES . "\n";
-
-// Obtenir el valor mitjançant l'objecte
-$elMeuCotxe = new Cotxe();
-echo $elMeuCotxe ::RUEDAS . "\n";
+    // Obtenir el valor d'una constant mitjançant el nom de la classe
+    echo Cotxe::RODES . "\n";
+    
+    // Obtenir el valor mitjançant l'objecte
+    $elMeuCotxe = new Cotxe();
+    echo $elMeuCotxe ::RUEDAS . "\n";
 ?>
-```php
+```
 
 
 ## Referències
