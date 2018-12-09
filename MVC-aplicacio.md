@@ -143,12 +143,12 @@ class User {
 
 ```php+lineNumbers:true
 <?php
-    require_once 'models/User.php';
+    require_once '../models/User.php';
     
     $user = new User();
     $users= $user->getAll();
     
-    require_once 'views/users.view.php';
+    require_once '../views/users.view.php';
 ?>
 ```
 
