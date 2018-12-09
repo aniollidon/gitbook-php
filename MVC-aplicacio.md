@@ -26,7 +26,7 @@ Aquí només tindrem una consulta que ens mostrarà el nom de tots els usuaris, 
 ?>
 ```
 
-**database.php**
+**Database.php**
 
 ```php+lineNumbers:true
 <?php
@@ -68,7 +68,7 @@ class Database{
 
 ```php+lineNumbers:true
 <?php
-require_once 'models/database.php';
+require_once 'Database.php';
 
 class User {
     private $connection;
@@ -94,7 +94,7 @@ class User {
         $statement->execute(array(':user'=>$user));
         $result = $statement->fetch();
 
-        return $result; // Retorna treu si l'usuari existeix 
+        return $result; // Retorna true si l'usuari existeix 
                         // i false si no existeix
     }
 
@@ -106,7 +106,18 @@ class User {
     {
         
     }
+    
+    // ************************************************** 
+    // getAll()
+    // RetornA tots els usuaris de la base de dades
+    // ************************************************** 
+    public function getAll()
+    {
         
+    }
+    
+    /* CRUD (CREATE, READ, UPDATE, DELETE) */
+    
     // ************************************************** 
     // create(name, username, passwd)
     // Crea un nou usuari a la base de dades
@@ -115,15 +126,7 @@ class User {
     {
         
     }
-    
-    // ************************************************** 
-    // getAll()
-    // Retorn tots els usuaris de la base de dades
-    // ************************************************** 
-    public function getAll()
-    {
-        
-    }
+
 }
 ?>
 ```
