@@ -4,8 +4,8 @@
 ```
 ├── app                           # Main MVC file structure directory
 │   ├── controllers               # Controllers directory
-│   │   └── user.php              # Example Controller with functionality explanation
-│   │   └── post.php
+│   │   └── userController.php    # Example Controller with functionality explanation
+│   │   └── postController.php
 │   ├── models                    # Models directory
 │   │   └── Database.php               
 │   │   └── User.php
