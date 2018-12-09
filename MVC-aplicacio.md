@@ -109,7 +109,7 @@ class User {
     
     // ************************************************** 
     // getAll()
-    // RetornA tots els usuaris de la base de dades
+    // Retorna tots els usuaris de la base de dades
     // ************************************************** 
     public function getAll()
     {
@@ -126,6 +126,23 @@ class User {
     {
         
     }
+    
+    // ************************************************** 
+    // read(userId)
+    // Si rep un identificador d'usuari: 
+    //    retorna les dades de l'usuari 
+    // Si NO rep un identificador d'usuari: 
+    //    retorna tots els usuaris de la base de dades
+    // ************************************************** 
+    public function read($userId = '')
+    {
+        if ($userId != ''){
+            //Selecciona l'usuari que el userId indicat
+        } else {
+            //Selecciona tots els usuaris
+        }
+    }
+
 
 }
 ?>
