@@ -107,15 +107,6 @@ class User {
         
     }
     
-    // ************************************************** 
-    // getAll()
-    // Retorna tots els usuaris de la base de dades
-    // ************************************************** 
-    public function getAll()
-    {
-        
-    }
-    
     /* CRUD (CREATE, READ, UPDATE, DELETE) */
     
     // ************************************************** 
@@ -137,13 +128,11 @@ class User {
     public function read($userId = '')
     {
         if ($userId != ''){
-            //Selecciona l'usuari que el userId indicat
+            //Selecciona l'usuari que té el userId indicat
         } else {
             //Selecciona tots els usuaris
         }
     }
-
-
 }
 ?>
 ```
