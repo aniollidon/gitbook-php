@@ -145,9 +145,32 @@ echo "New record created successfully. ";
 
 **PDO** també permet la realització de consultes i mapeig de resultats en objectes del model de l'aplicació.
 
+### Sense indicar la classe de l'objecte
+
+Si no s'indica la classe a la que pertany l'objecte, retornarà una instància de `stdClass` on les propietats de l'objecte corresponen a les columnes de la base de dades.
+
+```php
+$stmt = $dbh->query("SELECT * FROM Clients");
+$clients = $stmt->fetchAll(PDO::FETCH_OBJ);
+foreach ($clients as $client){
+    echo $client->nom . ' ' . $client->cognom . '<br>';
+}
+
+/*
+stdClass::__set_state(array(
+   'id' => '104',
+   'nom' => 'John',
+   'cognom' => 'Doe',
+   'telf' => '666 66 66 66',
+))*/
+```
+
+### Indicant la classe de l'objecte
+
 En primer lloc cal crear una classe amb el model de dades:
 
 ```php
+<?php
 class Usuari
 {
   private $nom;
@@ -157,6 +180,7 @@ class Usuari
     return $this->nom . ' ' . $this->cognoms;
   }
 }
+?>
 ```
 
 El nom d'atributs de la classe ha de ser igual a les columnes de la taula de la base de dades:
@@ -165,13 +189,16 @@ El nom d'atributs de la classe ha de ser igual a les columnes de la taula de la 
 $stmt= $conn->prepare('SELECT nom, cognoms FROM personal LIMIT 1');
 $stmt->execute();
 $stmt->setFetchMode(PDO::FETCH_CLASS, 'Usuari');
-$usuario = $stmt->fetch()
+$usuari = $stmt->fetch()
+
 echo $usuari->nomComplet() . '<br>';
 ```
 
 En l'script es pot observar la crida al mètode `setFetchMode()` passant com a primer argument la constant `PDO::FETCH_CLASS` que indica que es realitzi un mapeig en la classe que s’indica com a segon argument (la classe **_Usuari_** creada anteriorment).
 
 Amb `fetch()` s'obté l'objecte del tipus indicat enlloc d'un array associatiu.
+
+```
 
 ## Referències
 
