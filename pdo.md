@@ -147,7 +147,7 @@ echo "New record created successfully. ";
 
 ### Sense indicar la classe de l'objecte
 
-Si no s'indica la classe a la que pertany l'objecte, retornarà una instància de `stdClass` on les propietats de l'objecte corresponen a les columnes de la base de dades.
+Si no s'indica la classe a la que pertany l'objecte, retornarà una instància de `stdClass` on les propietats de l'objecte correspondran a les columnes de la taula de la base de dades.
 
 ```php
 $stmt = $dbh->query("SELECT * FROM Clients");
@@ -197,8 +197,6 @@ echo $usuari->nomComplet() . '<br>';
 En l'script es pot observar la crida al mètode `setFetchMode()` passant com a primer argument la constant `PDO::FETCH_CLASS` que indica que es realitzi un mapeig en la classe que s’indica com a segon argument (la classe **_Usuari_** creada anteriorment).
 
 Amb `fetch()` s'obté l'objecte del tipus indicat enlloc d'un array associatiu.
-
-```
 
 ## Referències
 
