@@ -150,7 +150,7 @@ echo "New record created successfully. ";
 Si no s'indica la classe a la que pertany l'objecte, retornarà una instància de `stdClass` on les propietats de l'objecte correspondran a les columnes de la taula de la base de dades.
 
 ```php
-$stmt = $dbh->query("SELECT * FROM Clients");
+$stmt = $conn->query("SELECT * FROM Clients");
 $clients = $stmt->fetchAll(PDO::FETCH_OBJ);
 foreach ($clients as $client){
     echo $client->nom . ' ' . $client->cognom . '<br>';
