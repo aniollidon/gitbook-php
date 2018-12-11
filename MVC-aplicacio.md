@@ -185,3 +185,9 @@ El **controlador** ha de tenir sempre aquesta estructura:
 La **vista** simplement s'encarrega de mostrar les dades obtingudes a la consulta (fixeu-vos que estem utilitzant la mateixa variable utilitzada al controlador) .
 
 No hem pogut separar absolutament el que és PHP del codi HTML, però tampoc és [codi spaghetti](https://ca.wikipedia.org/wiki/Codi_spaghetti).
+
+
+## Referències
+
+* Anexsoft.com: [Realizando un CRUD (listar, registrar, actualizar, eliminar) con PHP](http://anexsoft.com/p/57/realizando-un-crud-listar-registrar-actualizar-eliminar-con-php)
+* Anexsoft.com: [Realizando un CRUD con el patrón MVC en PHP](http://anexsoft.com/p/61/realizando-un-crud-con-el-patron-mvc-en-php)
