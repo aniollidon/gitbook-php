@@ -4,6 +4,9 @@
 ```
 ├── app                           # Main MVC file structure directory
 │   ├── controllers               # Controllers directory
+│   │   ├── session
+│   │   |   ├── login.php
+│   │   |   └── logout.php
 │   │   ├── user                  # Example Controller with functionality explanation
 │   │   |   ├── create.php
 │   │   |   ├── read.php
@@ -13,7 +16,8 @@
 │   │       ├── create.php
 │   │       ├── read.php
 │   │       ├── update.php
-│   │       └── delete.php
+│   │       ├── delete.php
+│   │       └── like.php
 │   ├── models                    # Models directory
 │   │   ├── Database.php               
 │   │   ├── User.php
