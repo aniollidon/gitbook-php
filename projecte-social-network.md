@@ -4,14 +4,22 @@
 ```
 ├── app                           # Main MVC file structure directory
 │   ├── controllers               # Controllers directory
-│   │   └── userController.php    # Example Controller with functionality explanation
-│   │   └── postController.php
+│   │   ├── user                  # Example Controller with functionality explanation
+│   │   |   ├── create.php
+│   │   |   ├── read.php
+│   │   |   ├── update.php
+│   │   |   └── delete.php
+│   │   └── post
+│   │       ├── create.php
+│   │       ├── read.php
+│   │       ├── update.php
+│   │       └── delete.php
 │   ├── models                    # Models directory
-│   │   └── Database.php               
-│   │   └── User.php
+│   │   ├── Database.php               
+│   │   ├── User.php
 │   │   └── Post.php
 │   └── views                     # Views directory, views are recommended in pure html, possible <?=$variable?> additions
-│       └── user.view.php
+│       ├── user.view.php
 │       └── post.view.php
 ├── index.php                     # Endpoint url
 ├── config.php                    # App configuration
