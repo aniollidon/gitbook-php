@@ -7,7 +7,7 @@
 │   │   ├── session
 │   │   |   ├── login.php
 │   │   |   └── logout.php
-│   │   ├── user                  # Example Controller with functionality explanation
+│   │   ├── user 
 │   │   |   ├── create.php
 │   │   |   ├── read.php
 │   │   |   ├── update.php
