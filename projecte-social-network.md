@@ -38,7 +38,6 @@
 │   │   ├── Database.php               
 │   │   ├── User.php
 │   │   └── Post.php
-
 ├── index.php                     # Endpoint url
 ├── config.php                    # App configuration
 └── public                        # Directory for all public resources, javascript files, stylesheets and vendor plugins
