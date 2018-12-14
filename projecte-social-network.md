@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # Projecte: Social Network
 
 ## Estructura del projecte
