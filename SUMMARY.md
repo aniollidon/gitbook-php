@@ -23,5 +23,5 @@
 * [POO](poo.md)
 * [Patró MVC](MCV.md)
 * [Projecte: Social Network](projecte-social-network.md)
-  <!--* [Aplicació MVC](MVC-aplicacio.md)-->
+  * [Aplicació MVC](MVC-aplicacio.md)
 
