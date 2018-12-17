@@ -1,3 +1,5 @@
+<!-- notoc -->
+
 # El patró MVC (Model - Vista - Controlador)
 
 > **MVC** són les sigles de **model-vista-controlador** (***model-view-controler***) que consisteix en un patró d'arquitectura del software.
