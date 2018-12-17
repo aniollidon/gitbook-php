@@ -72,7 +72,7 @@ echo 'Color del cotxe: ' . $elMeuCotxe->getColor(); // Mostrarà: "Color del coc
     
     // Obtenir el valor mitjançant l'objecte
     $elMeuCotxe = new Cotxe();
-    echo $elMeuCotxe ::RODES. "\n";
+    echo $elMeuCotxe::RODES. "\n";
 ?>
 ```
 
