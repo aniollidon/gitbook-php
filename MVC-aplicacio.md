@@ -68,19 +68,9 @@ abstract class Model{
 
 ```php+lineNumbers:true
 <?php
-require_once 'Database.php';
+require_once 'Model.php';
 
-class User {
-    private $connection;
-
-    public function __CONSTRUCT(){
-        try {
-            $this->connection = Database::Connect();
-        } 
-        catch (Exception $e) {
-            die($e->getMessage());
-        }
-    }
+class User extends Model {
 
     // ************************************************** 
     // exists(user)
@@ -146,7 +136,7 @@ class User {
     require_once '../models/User.php';
     
     $user = new User();
-    $users= $user->getAll();
+    $users= $user->read();
     
     require_once '../views/users.view.php';
 ?>
