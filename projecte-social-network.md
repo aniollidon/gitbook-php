@@ -2,6 +2,8 @@
 
 # Projecte: Social Network
 
+[Enunciat del projecte](https://docs.google.com/document/d/1vmlRiELCGtQxvJsy_cj82iFYredYkT95sNYOxDPdOYw/edit?usp=sharing)
+
 ## Estructura del projecte
 ```
 ├── app                           # Main MVC file structure directory
