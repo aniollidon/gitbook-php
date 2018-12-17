@@ -11,18 +11,22 @@ Ho veurem en un exemple molt simplificat i molt orientat a la pràctica que heu 
 
 Aquí només tindrem una consulta que ens mostrarà el nom de tots els usuaris, però es pot estendre el que sigui necessari.
 
-**db_config.php**
+**config.php**
 
 ```php+lineNumbers:true
 <?php
-    global $db_config;
-    
-    $db_config = array(
-        'hostname' => 'localhost',
-        'dbname' => 'socialnetwork',
-        'username' => 'username',
-        'passwd' => 'passwd'
-    );
+    // ** MySQL settings ** //
+    /** MySQL hostname */
+    define('DB_HOST', 'localhost');
+
+    /** The name of the database */
+    define('DB_NAME', 'socialnetwork');
+
+    /** MySQL database username */
+    define('DB_USER', 'socialnetwork_user');
+
+    /** MySQL database password */
+    define('DB_PASSWORD', 'password');
 ?>
 ```
 
