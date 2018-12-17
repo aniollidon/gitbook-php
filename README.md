@@ -20,8 +20,12 @@
   * [PDO](pdo.md)
   * [SQL Injection](sql-injection.md)
   * [PDO Prepared Statements](pdo-prepared-statements.md)
+* [POO](poo.md)
 * [Patró MVC](MCV.md)
-  * [Projecte](MVC-aplicacio.md)
+* [Projecte: Social Network](projecte-social-network.md)
+  * [Aplicació MVC](MVC-aplicacio.md)
+
+
 
 
 
