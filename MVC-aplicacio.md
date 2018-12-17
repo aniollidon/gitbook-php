@@ -30,33 +30,29 @@ Aquí només tindrem una consulta que ens mostrarà el nom de tots els usuaris, 
 ?>
 ```
 
-**Database.php**
+**Model.php**
 
 ```php+lineNumbers:true
 <?php
-class Database{
+abstract class Model{
 
+    protected $connection;
+    
     // ************************************************** 
-    // connect()
+    // __construct()
     // Connecta amb la BD
     // ************************************************** 
-    public static function connect() {
+    public function __construct() {
         try {     
-            $db_config = $GLOBALS['db_config'];
-            
             //Creem una nova connexió a la BD
-            $conexion = new PDO("mysql:host=".
-                $db_config['hostname'].";
-                dbname=".$db_config['dbname'],
-                $db_config['username'],
-                $db_config['passwd']
+            $this->connection = new PDO ("mysql:host=". DB_HOST .";dbname=".DB_NAME,
+                DB_USER,
+                DB_PASSWORD
             );
             
             // establim el mode PDO error a EXCEPTION per poder recuperar les excepcions
-            $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $conexion->exec("SET CHARACTER SET UTF8");
-            
-            return $conexion;
+            $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->connection->exec("SET CHARACTER SET UTF8");
         
         } catch (PDOException $e) {
             echo "Error" . $e->getMessage();
