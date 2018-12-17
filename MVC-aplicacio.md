@@ -1,15 +1,19 @@
+<!-- notoc -->
+
 # Aplicació model MVC
 
-Aquí veurem una versió bastant simple d'aquest model.
+Aquí veurem una **versió simplificada** d'aquest model.
 
-Bàsicament el que pretenem és intentar separar el que és codi PHP i les consultes a la base de dades, del que és la presentació HTML (vista) i que com a mínim el codi
-d'aquesta presentació no sigui una porqueria illegible.
+Bàsicament el que pretenem és intentar separar:
+  * el que és codi PHP 
+  * les consultes a la base de dades
+  *  la presentació HTML (vista) 
 
-També s'intentarà mitjançant funcions fer el codi el més genèric i més entenedor possible.
+i que com a mínim el codi d'aquesta presentació no sigui una porqueria illegible.
 
-Ho veurem en un exemple molt simplificat i molt orientat a la pràctica que heu de fer.
+També s'intentarà mitjançant funcions i mètodes fer el codi el més genèric i el més entenedor possible.
 
-Aquí només tindrem una consulta que ens mostrarà el nom de tots els usuaris, però es pot estendre el que sigui necessari.
+Ho veurem en un exemple simplificat i molt orientat a la pràctica que heu de fer.
 
 **config.php**
 
@@ -129,7 +133,7 @@ class User extends Model {
 
 # El controlador
 
-**user.php**
+**user/read.php**
 
 ```php+lineNumbers:true
 <?php
@@ -154,10 +158,10 @@ El **controlador** ha de tenir sempre aquesta estructura:
 
 ```xml+lineNumbers:true
 <html>
- <head>
+  <head>
      <title> MVC </title>
- </head>
- <body>
+  </head>
+  <body>
      <h1>Llistat d'usuaris </h1>
      <table>
          <tr>
@@ -169,12 +173,14 @@ El **controlador** ha de tenir sempre aquesta estructura:
              </tr>
          <?php } ?>
      </table>
+   </body
+</html>
  ?>
  ```
  
-La **vista** simplement s'encarrega de mostrar les dades obtingudes a la consulta (fixeu-vos que estem utilitzant la mateixa variable utilitzada al controlador) .
+La **vista** simplement s'encarrega de mostrar les dades obtingudes a la consulta (fixeu-vos que estem utilitzant **la mateixa variable utilitzada al controlador**).
 
-No hem pogut separar absolutament el que és PHP del codi HTML, però tampoc és [codi spaghetti](https://ca.wikipedia.org/wiki/Codi_spaghetti).
+En aquesta aproximació al model MVC, no hem pogut separar totalment el què és codi PHP del HTML, però tampoc és [codi spaghetti](https://ca.wikipedia.org/wiki/Codi_spaghetti).
 
 
 ## Referències
