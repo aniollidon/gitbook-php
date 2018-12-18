@@ -19,18 +19,18 @@ Ho veurem en un exemple simplificat i molt orientat a la pràctica que heu de fe
 
 ```php+lineNumbers:true
 <?php
-// ** MySQL settings ** //
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
-
-/** The name of the database */
-define('DB_NAME', 'socialnetwork');
-
-/** MySQL database username */
-define('DB_USER', 'socialnetwork_user');
-
-/** MySQL database password */
-define('DB_PASSWORD', 'password');
+    // ** MySQL settings ** //
+    /** MySQL hostname */
+    define('DB_HOST', 'localhost');
+    
+    /** The name of the database */
+    define('DB_NAME', 'socialnetwork');
+    
+    /** MySQL database username */
+    define('DB_USER', 'socialnetwork_user');
+    
+    /** MySQL database password */
+    define('DB_PASSWORD', 'password');
 ?>
 ```
 
@@ -40,25 +40,26 @@ define('DB_PASSWORD', 'password');
 <?php
 abstract class Model{
 
-protected $connection;
-// **************************************************
-// __construct()
-// Connecta amb la BD
-// **************************************************
-public function __construct() {
-try {
-//Creem una nova connexió a la BD
-$this->connection = new PDO ("mysql:host=". DB_HOST .";dbname=".DB_NAME,
-DB_USER,
-DB_PASSWORD
-);
-// establim el mode PDO error a EXCEPTION per poder recuperar les excepcions
-$this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$this->connection->exec("SET CHARACTER SET UTF8");
-} catch (PDOException $e) {
-echo "Error" . $e->getMessage();
-}
-}
+    protected $connection;
+    
+    // **************************************************
+    // __construct()
+    // Connecta amb la BD
+    // **************************************************
+    public function __construct() {
+        try {
+            //Creem una nova connexió a la BD
+            $this->connection = new PDO ("mysql:host=". DB_HOST .";dbname=".DB_NAME,
+                                        DB_USER,
+                                        DB_PASSWORD
+                                        );
+            // establim el mode PDO error a EXCEPTION per poder recuperar les excepcions
+            $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->connection->exec("SET CHARACTER SET UTF8");
+        } catch (PDOException $e) {
+            echo "Error" . $e->getMessage();
+        }
+    }
 }
 ?>
 ```
