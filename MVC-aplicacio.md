@@ -74,52 +74,54 @@ require_once 'Model.php';
 
 class User extends Model {
 
-// **************************************************
-// exists(user)
-// Comprova que si l'usuari ja existeix a la base dades
-// **************************************************
-public function exists($user)
-{
-// Consultem els usuaris de la BD
-$sql = "SELECT * FROM users WHERE user=:user LIMIT 1";
-$statement = $this->connection->prepare($sql);
-$statement->execute(array(':user'=>$user));
-$result = $statement->fetch();
-
-return $result; // Retorna true si l'usuari existeix
-// i false si no existeix
-}
-
-// **************************************************
-// isValid(user, passwd)
-// Comprova que l'usuari i password siguin vàlids
-// **************************************************
-public function isValid($user, $passwd)
-{
-}
-/* CRUD (CREATE, READ, UPDATE, DELETE) */
-// **************************************************
-// create(name, username, passwd)
-// Crea un nou usuari a la base de dades
-// **************************************************
-public function create($name, $username, $passwd)
-{
-}
-// **************************************************
-// read(userId)
-// Si rep un identificador d'usuari:
-// retorna les dades de l'usuari
-// Si NO rep un identificador d'usuari:
-// retorna tots els usuaris de la base de dades
-// **************************************************
-public function read($userId = '')
-{
-if ($userId != ''){
-//Selecciona l'usuari que té el userId indicat
-} else {
-//Selecciona tots els usuaris
-}
-}
+    // **************************************************
+    // exists(user)
+    // Comprova que si l'usuari ja existeix a la base dades
+    // **************************************************
+    public function exists($user)
+    {
+        // Consultem els usuaris de la BD
+        $sql = "SELECT * FROM users WHERE user=:user LIMIT 1";
+        $statement = $this->connection->prepare($sql);
+        $statement->execute(array(':user'=>$user));
+        $result = $statement->fetch();
+        
+        return $result; // Retorna true si l'usuari existeix
+        // i false si no existeix
+    }
+    
+    // **************************************************
+    // isValid(user, passwd)
+    // Comprova que l'usuari i password siguin vàlids
+    // **************************************************
+    public function isValid($user, $passwd)
+    {
+    }
+    
+    /* CRUD (CREATE, READ, UPDATE, DELETE) */
+    // **************************************************
+    // create(name, username, passwd)
+    // Crea un nou usuari a la base de dades
+    // **************************************************
+    public function create($name, $username, $passwd)
+    {
+    }
+    
+    // **************************************************
+    // read(userId)
+    // Si rep un identificador d'usuari:
+    // retorna les dades de l'usuari
+    // Si NO rep un identificador d'usuari:
+    // retorna tots els usuaris de la base de dades
+    // **************************************************
+    public function read($userId = '')
+    {
+        if ($userId != ''){
+            //Selecciona l'usuari que té el userId indicat
+        } else {
+            //Selecciona tots els usuaris
+        }
+    }
 }
 ?>
 ```
@@ -130,10 +132,12 @@ if ($userId != ''){
 
 ```php+lineNumbers:true
 <?php
-require_once '../models/User.php';
-$user = new User();
-$users= $user->read();
-require_once '../views/users.view.php';
+    require_once '../models/User.php';
+    
+    $user = new User();
+    $users= $user->read();
+    
+    require_once '../views/users.view.php';
 ?>
 ```
 
@@ -149,25 +153,26 @@ El **controlador** ha de tenir sempre aquesta estructura:
 
 ```xml+lineNumbers:true
 <html>
-<head>
-<title> MVC </title>
-</head>
-<body>
-<h1>Llistat d'usuaris </h1>
-<table>
-<tr>
-<th>Nom</th>
-</tr>
-<?php foreach ($users as $user) { ?>
-<tr>
-<td><?= $user['name'] ?></td>
-</tr>
-<?php } ?>
-</table>
-</body
+    <head>
+        <title> MVC </title>
+    </head>
+    <body>
+        <h1>Llistat d'usuaris </h1>
+        <table>
+            <tr>
+                <th>Nom</th>
+            </tr>
+            <?php foreach ($users as $user) { ?>
+            <tr>
+                <td><?= $user['name'] ?></td>
+            </tr>
+            <?php } ?>
+        </table>
+    </body>
 </html>
 ?>
 ```
+
 La **vista** simplement s'encarrega de mostrar les dades obtingudes a la consulta (fixeu-vos que estem utilitzant **la mateixa variable utilitzada al controlador**).
 
 En aquesta aproximació al model MVC, no hem pogut separar totalment el què és codi PHP del HTML, però tampoc és [codi spaghetti](https://ca.wikipedia.org/wiki/Codi_spaghetti).
@@ -176,4 +181,5 @@ En aquesta aproximació al model MVC, no hem pogut separar totalment el què és
 ## Referències
 
 * Anexsoft.com: [Realizando un CRUD (listar, registrar, actualizar, eliminar) con PHP](http://anexsoft.com/p/57/realizando-un-crud-listar-registrar-actualizar-eliminar-con-php)
+
 * Anexsoft.com: [Realizando un CRUD con el patrón MVC en PHP](http://anexsoft.com/p/61/realizando-un-crud-con-el-patron-mvc-en-php)
