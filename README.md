@@ -22,6 +22,7 @@
   * [PDO Prepared Statements](pdo-prepared-statements.md)
 * [POO](poo.md)
 * [Patró MVC](MCV.md)
+* [Activitats](activitats/DAW-MP07/readme.md)
 * [Projecte: Social Network](projecte-social-network.md)
   * [Aplicació MVC](MVC-aplicacio.md)
 
