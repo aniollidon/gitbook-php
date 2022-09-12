@@ -18,7 +18,7 @@ En aquest exercici declararem una variable de tipus objecte. En concret instànc
  2. De quin tipus és la variable $d?
  3. Observa que l'operador de concatenació de cadenes en php és el punt ( . )
  4. Que retorna la invocació del mètode format de la classe datetime?
- 5. Prova a modificar el codi per a intentar mostrar $d tal com ho feiem a [l'exercici anterior](/DAW/DAW-MP07/DAW-MP07-UF1/php-els-tipus-de-variables-primitius/readme.md). És a dir *echo "el valor de \$d és $d";* Ha funcionat? 
+ 5. Prova a modificar el codi per a intentar mostrar $d tal com ho feiem a [l'exercici anterior](/activitats/DAW-MP07/DAW-MP07-UF1/php-els-tipus-de-variables-primitius/readme.md). És a dir *echo "el valor de \$d és $d";* Ha funcionat? 
  6. Seria interessant, ara que sabem que la variable és de tipus objecte, conèixer de quina classe és aquell objecte. Això ho podem fer amb la funció *get_class()*. Una pista: *$classe_de_d = get_class( $d );*
 
 
