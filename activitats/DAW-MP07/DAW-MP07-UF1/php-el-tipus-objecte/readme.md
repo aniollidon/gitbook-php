@@ -1,6 +1,6 @@
 # PHP - El tipus objecte.
 ## DAW-MP07-UF1 - Exercici de Desenvolupament web en entorn servidor.
-[Exercici previ a realitzar](/DAW/DAW-MP07/DAW-MP07-UF1/php-els-tipus-de-variables-primitius/readme.md)
+[Exercici previ a realitzar](/activitats/DAW-MP07/DAW-MP07-UF1/php-els-tipus-de-variables-primitius/readme.md)
 
 PHP és un llenguatge orientat a objectes. Un dels tipus de variables són les [variables de tipus objecte](http://php.net/manual/es/language.types.php)
 
