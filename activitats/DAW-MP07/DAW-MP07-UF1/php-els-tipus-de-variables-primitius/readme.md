@@ -20,7 +20,7 @@ Observa ara aquest tall de codi:
  6. Exten el codi per tal de, a més de la variable *$i*, treballar igual amb variables de tipus: coma flotant, booleana i cadena de caracters. 
  7. Modifica el codi per saber de quin tipus és el valor que retorna gettype.
 
-Aquest exercici continua amb un [exercici amb variables de tipus classe](/DAW-MP07/DAW-MP07-UF1/php-el-tipus-objecte/readme.md)
+Aquest exercici continua amb un [exercici amb variables de tipus classe](/activitats/DAW-MP07/DAW-MP07-UF1/php-el-tipus-objecte/readme.md)
 
 
 
