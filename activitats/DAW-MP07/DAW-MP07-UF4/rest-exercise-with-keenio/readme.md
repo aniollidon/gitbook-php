@@ -2,7 +2,7 @@
 ## DAW-MP07-UF4 - Exercici de Serveis web. Pàgines dinàmiques interactives. Webs Híbrids.
 In a help desk application scenario we want to be able to get in real time statistics about help desk issues status.
 
-1) Modify [the help desk exercise](/DAW/DAW-MP07/DAW-MP07-UF2/mvc-microsoft-fluent-api/readme.md) to include in controler an event POST to keen.io with fields: `technician Id`, `technician name`, `issue description`. You should write raw code to make the post as [C# - Calling an API](/DAW/DAW-MP07/DAW-MP07-UF4/c-cridant-una-api/readme.md).
+1) Modify [the help desk exercise](/activitats/DAW-MP07/DAW-MP07-UF2/mvc-microsoft-fluent-api/readme.md) to include in controler an event POST to keen.io with fields: `technician Id`, `technician name`, `issue description`. You should write raw code to make the post as [C# - Calling an API](/activitats/DAW-MP07/DAW-MP07-UF4/c-cridant-una-api/readme.md).
 
 2) Make a new *controler action* named `statistics`. This action should fill a *ModelView* with keen.io aggregated data: **total issues by technician name**. Learn how to get aggregates at [Data Analysis APIs - Group By](https://keen.io/docs/data-analysis/group-by/)
 
@@ -10,7 +10,7 @@ In a help desk application scenario we want to be able to get in real time stati
 
 **Requirements:**
 
-* Exercise [C# - Calling API](/DAW/DAW-MP07/DAW-MP07-UF4/c-cridant-una-api/readme.md) completed.
+* Exercise [C# - Calling API](/activitats/DAW-MP07/DAW-MP07-UF4/c-cridant-una-api/readme.md) completed.
 * Points 1 and 2 should be coded on C# with out keen.io .NET SDK, no fear!
 
 ---

@@ -64,7 +64,7 @@ max_a_mostrar = request.GET.get( 'max', 100 )
 
 **I ara què?**
 
-Un cop finalitzada aquesta pràctica has de realitzar aquesta altre: [django - Consumir Web Service senzill amb AJAX](/DAW/DAW-MP07/DAW-MP07-UF4/django-consumir-web-service-senzill-amb-ajax/readme.md)
+Un cop finalitzada aquesta pràctica has de realitzar aquesta altre: [django - Consumir Web Service senzill amb AJAX](/activitats/DAW-MP07/DAW-MP07-UF4/django-consumir-web-service-senzill-amb-ajax/readme.md)
 
 
 ---

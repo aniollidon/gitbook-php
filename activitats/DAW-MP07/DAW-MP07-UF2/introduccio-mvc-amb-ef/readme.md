@@ -7,7 +7,7 @@ Exercici:
 * Qui presenta el video? De quina companyia? Quin càrrec té?
 * Quin IDE fan servir? Quin llenguatge de programació? Es pot desenvolupar MVC amb altres llenguatges que no sigui aquest?
 * Quins altres projectes web del vs2013 disposen de *plantilla* a banda del projecte MVC?
-* Quin sistema utilitza per a crear el model dels estudiats a l'exercici [EF - Accés a dades amb l'ORM de Microsoft](/DAW/DAW-MP07/DAW-MP07-UF3/ef-acces-a-dades-amb-lorm-de-microsoft/readme.md)?
+* Quin sistema utilitza per a crear el model dels estudiats a l'exercici [EF - Accés a dades amb l'ORM de Microsoft](/activitats/DAW-MP07/DAW-MP07-UF3/ef-acces-a-dades-amb-lorm-de-microsoft/readme.md)?
 * A quina carpeta emmagatzema els models? Com s'ha de dir la propietat que actuarà com a clau primària?
 * Què conté un *controlador*?
 * Què conté una *vista*?

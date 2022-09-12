@@ -1,6 +1,6 @@
 # PHP - Recorrer array ( mapa )
 ## DAW-MP07-UF1 - Exercici de Desenvolupament web en entorn servidor.
-Tal com hem aprés a l'exercici [PHP - Arrays (mapes)](/DAW/DAW-MP07/DAW-MP07-UF1/php-arrays-mapes/readme.md) [un array en realitat és un mapa ordenat per les claus](http://www.php.net/manual/es/language.types.array.php).
+Tal com hem aprés a l'exercici [PHP - Arrays (mapes)](/activitats/DAW-MP07/DAW-MP07-UF1/php-arrays-mapes/readme.md) [un array en realitat és un mapa ordenat per les claus](http://www.php.net/manual/es/language.types.array.php).
 
 Com podem fer per recorrer un array obtenint tant les claus com els valors? Doncs de la següent manera:
 

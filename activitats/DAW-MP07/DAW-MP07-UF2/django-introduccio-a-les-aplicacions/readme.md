@@ -1,6 +1,6 @@
 # django - Introducció a les aplicacions
 ## DAW-MP07-UF2 - Exercici de Generació dinàmica de pagines web.
-Un cop realitzat l'exercici [Introducció als models](/DAW/DAW-MP07/DAW-MP07-UF3/django-introduccio-als-models/readme.md) ara toca fer [Part 3](https://docs.djangoproject.com/en/1.8/intro/tutorial03/).
+Un cop realitzat l'exercici [Introducció als models](/activitats/DAW-MP07/DAW-MP07-UF3/django-introduccio-als-models/readme.md) ara toca fer [Part 3](https://docs.djangoproject.com/en/1.8/intro/tutorial03/).
 
 **Exercici**
 

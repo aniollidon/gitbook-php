@@ -2,7 +2,7 @@
 ## DAW-MP07-UF1 - Exercici de Desenvolupament web en entorn servidor.
 [$_SERVER](http://php.net/manual/en/reserved.variables.server.php) és un array que compté capceleres, paths i localitzacions d'scripts. 
 
- 1. Fés un volcat de totes les claus i valors d'aquest array. Utilitza l'esquema vist a l'exercici [recorrer array](/DAW/DAW-MP07/DAW-MP07-UF1/php-recorrer-array-mapa/readme.md)
+ 1. Fés un volcat de totes les claus i valors d'aquest array. Utilitza l'esquema vist a l'exercici [recorrer array](/activitats/DAW-MP07/DAW-MP07-UF1/php-recorrer-array-mapa/readme.md)
 
  2. A partir de quina clau pots saber quin sistema operatiu utilitza el navegador que ha realitzat la petició?
 

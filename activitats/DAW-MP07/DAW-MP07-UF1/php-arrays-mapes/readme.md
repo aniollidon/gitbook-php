@@ -1,6 +1,6 @@
 # PHP - Arrays (mapes)
 ## DAW-MP07-UF1 - Exercici de Desenvolupament web en entorn servidor.
-Recomenat realitzar abans [exercici arrays simples](/DAW/DAW-MP07/DAW-MP07-UF1/php-arrays-simples/readme.md).
+Recomenat realitzar abans [exercici arrays simples](/activitats/DAW-MP07/DAW-MP07-UF1/php-arrays-simples/readme.md).
 
 [Un array a PHP és realment un mapa ordenat](http://www.php.net/manual/es/language.types.array.php) i això és el que ara treballarem. Observa i executa aquest tall de codi:
 
@@ -38,7 +38,7 @@ print( "<br>");
 
 Exercici a realitzar després d'aquest:
 
- * [Recorrer array (mapa)](/DAW/DAW-MP07/DAW-MP07-UF1/php-recorrer-array-mapa/readme.md)
+ * [Recorrer array (mapa)](/activitats/DAW-MP07/DAW-MP07-UF1/php-recorrer-array-mapa/readme.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # PHP - Instruccions de control de flux: són parells?
 ## DAW-MP07-UF1 - Exercici de Desenvolupament web en entorn servidor.
-Modifica l'exercici [PHP - Control de flux del programa: IF parell?](/DAW/DAW-MP07/DAW-MP07-UF1/php-control-de-flux-del-programa-if-parell/readme.md) per tal que avalui tots els números entre `$v` i `$v + 100`. El resultat l'ha de mostrar en una llista no númerada. Exemple:
+Modifica l'exercici [PHP - Control de flux del programa: IF parell?](/activitats/DAW-MP07/DAW-MP07-UF1/php-control-de-flux-del-programa-if-parell/readme.md) per tal que avalui tots els números entre `$v` i `$v + 100`. El resultat l'ha de mostrar en una llista no númerada. Exemple:
 
 * El número 12 és parell.
 * El número 13 és senar. 

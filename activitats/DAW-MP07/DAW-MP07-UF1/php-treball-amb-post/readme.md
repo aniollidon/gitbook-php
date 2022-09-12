@@ -1,6 +1,6 @@
 # PHP - Treball amb POST
 ## DAW-MP07-UF1 - Exercici de Desenvolupament web en entorn servidor.
-En aquest exercici modificarem el comportament del programa de l'exercici [/DAW/DAW-MP07/DAW-MP07-UF1/php-treball-senzill-amb-formularis/readme.md](/DAW/DAW-MP07/DAW-MP07-UF1/php-treball-senzill-amb-formularis/readme.md). Es tracta d'unificar les dues pàgines: **pinta_formulari.php** i **processa_dades.php** en una única pàgina **formulari.php**. 
+En aquest exercici modificarem el comportament del programa de l'exercici [/DAW/DAW-MP07/DAW-MP07-UF1/php-treball-senzill-amb-formularis/readme.md](/activitats/DAW-MP07/DAW-MP07-UF1/php-treball-senzill-amb-formularis/readme.md). Es tracta d'unificar les dues pàgines: **pinta_formulari.php** i **processa_dades.php** en una única pàgina **formulari.php**. 
 
 Desenvolupament de l'exercici:
 

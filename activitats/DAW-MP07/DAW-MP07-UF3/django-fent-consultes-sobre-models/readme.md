@@ -5,7 +5,7 @@ La [QuerySet API](https://docs.djangoproject.com/en/dev/ref/models/querysets/) �
 Exercicis:
 
 1. Donada una query, exemple: `Clients.objects.all()`, en quin moment s'executa? ( ['When query is evaluated?'](https://docs.djangoproject.com/en/dev/ref/models/querysets/#when-querysets-are-evaluated) )
-2. Crea al menys 5 consultes sobre els models de l'exercici [django - Definint models](/DAW/DAW-MP07/DAW-MP07-UF3/django-definint-models/readme.md) utilitzant [mètodes que retornin querysets](https://docs.djangoproject.com/en/dev/ref/models/querysets/). Exemples:
+2. Crea al menys 5 consultes sobre els models de l'exercici [django - Definint models](/activitats/DAW-MP07/DAW-MP07-UF3/django-definint-models/readme.md) utilitzant [mètodes que retornin querysets](https://docs.djangoproject.com/en/dev/ref/models/querysets/). Exemples:
     2. Tots els clients.
     2. Totes les Factures.
     2. Totes les Factures d'un determinat client:

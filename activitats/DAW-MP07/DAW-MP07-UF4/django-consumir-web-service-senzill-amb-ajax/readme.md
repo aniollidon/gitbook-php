@@ -1,6 +1,6 @@
 # django - Consumir Web Service senzill amb AJAX
 ## DAW-MP07-UF4 - Exercici de Serveis web. Pàgines dinàmiques interactives. Webs Híbrids.
-A la pràctica anterior hem preparat un Web Service senzill que [donada una cadena de caracters ens retorna un número màxim de persones que la contenen al seu nom o cognos](/DAW/DAW-MP07/DAW-MP07-UF4/django-construccio-dun-web-service-senzill/readme.md).
+A la pràctica anterior hem preparat un Web Service senzill que [donada una cadena de caracters ens retorna un número màxim de persones que la contenen al seu nom o cognos](/activitats/DAW-MP07/DAW-MP07-UF4/django-construccio-dun-web-service-senzill/readme.md).
 
 En aquesta pràctica anem a cridar aquest Web Service des del navegador client sense recarregar la pàgina. Usarem AJAX.
 

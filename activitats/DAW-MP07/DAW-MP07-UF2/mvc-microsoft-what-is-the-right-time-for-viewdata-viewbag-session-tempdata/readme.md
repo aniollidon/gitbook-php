@@ -8,7 +8,7 @@ Llegeix el post [What is the right time for ViewData, ViewBag, Session, TempData
 
 Pràctica:
 
-* Modifica la pràctica [MVC Microsoft - El help desk](/DAW/DAW-MP07/DAW-MP07-UF2/mvc-microsoft-fluent-api/readme.md) de manera que quan s'intenti esborrar un técnic amb incidències relacionades, a més de marcar-lo com 'no actiu' (tal com feiem) et reenvii a la pantalla de 'details' del tècnic i que aparegui un missatge indicant el que ha passat ( 'Aquest tècnic no s'ha pogut donar de baixa perquè té incidències relacionades, el marquem com NO Actiu' ) De les estructures comentades anteriorment fes servir la que més s'hi adigui.
+* Modifica la pràctica [MVC Microsoft - El help desk](/activitats/DAW-MP07/DAW-MP07-UF2/mvc-microsoft-fluent-api/readme.md) de manera que quan s'intenti esborrar un técnic amb incidències relacionades, a més de marcar-lo com 'no actiu' (tal com feiem) et reenvii a la pantalla de 'details' del tècnic i que aparegui un missatge indicant el que ha passat ( 'Aquest tècnic no s'ha pogut donar de baixa perquè té incidències relacionades, el marquem com NO Actiu' ) De les estructures comentades anteriorment fes servir la que més s'hi adigui.
 
 ---
 

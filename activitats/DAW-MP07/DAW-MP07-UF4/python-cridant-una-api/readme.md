@@ -23,7 +23,7 @@ Ara envia crea l'event fent un post des del teu llenguatge de programació. Exem
 
  * Estudia com serialitzar [estructures django a json](http://docs.python.org/2/library/json.html)
  * Enten i comenta línia a línia el codi Python de l'exemple que crida la API [keen.io](https://keen.io/).
- * Passa a fer la segona part de l'exercici [Python - Cridant una API II](/DAW/DAW-MP07/DAW-MP07-UF4/python-cridant-una-api-ii/readme.md).
+ * Passa a fer la segona part de l'exercici [Python - Cridant una API II](/activitats/DAW-MP07/DAW-MP07-UF4/python-cridant-una-api-ii/readme.md).
 
 **En aquest exercici hem aprés:**
 

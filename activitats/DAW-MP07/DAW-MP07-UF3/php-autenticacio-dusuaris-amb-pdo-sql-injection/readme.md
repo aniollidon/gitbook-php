@@ -1,6 +1,6 @@
 # PHP - Autenticació d'usuaris amb PDO - SQL Injection
 ## DAW-MP07-UF3 - Exercici de Tècniques d’accés a dades.
-Un cop completada la tasca [PHP - Inserció de dades amb PDO](/DAW/DAW-MP07/DAW-MP07-UF3/php-insercio-de-dades-amb-pdo/readme.md) farem una pantalla que validi els usuaris a la base de dades.
+Un cop completada la tasca [PHP - Inserció de dades amb PDO](/activitats/DAW-MP07/DAW-MP07-UF3/php-insercio-de-dades-amb-pdo/readme.md) farem una pantalla que validi els usuaris a la base de dades.
 
 Aquest és el codi que proposo, però aquest codi està malament perquè és vulnerable a atac per **sql injection**. 
 

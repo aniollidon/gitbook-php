@@ -10,7 +10,7 @@ Dins l'apartat **Documentació** ( [Entity Framework (EF) Documentation](Entity 
 
 Com pots veure a l'enllç anterior, el sistema per interrogar entitas és Linq. Aquesta pàgina ben segur et serà de molta utilitat: [http://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b](http://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b). De totes maneres, recorda, que no Linq to entities no suporta totes les expressions de Linq.
 
-Un cop realitzada la pràctica [EF - Accés a dades amb l'ORM de Microsoft](/DAW/DAW-MP07/DAW-MP07-UF3/ef-acces-a-dades-amb-lorm-de-microsoft/readme.md) fes els següents 
+Un cop realitzada la pràctica [EF - Accés a dades amb l'ORM de Microsoft](/activitats/DAW-MP07/DAW-MP07-UF3/ef-acces-a-dades-amb-lorm-de-microsoft/readme.md) fes els següents 
 **exercicis**
 
 1. Llista tots els Gossos ordenats alfabèticament.

@@ -16,7 +16,7 @@ Fes els bucles necessaris per mostrar pel navegador la següent informació:
     
 Aquest exercici té dues complexitats:
 
- 1. Cal un bucle intern (nested loop), això està treballat a l'exercici [PHP - Recorrer array](/DAW/DAW-MP07/DAW-MP07-UF1/php-recorrer-array-mapa/readme.md)
+ 1. Cal un bucle intern (nested loop), això està treballat a l'exercici [PHP - Recorrer array](/activitats/DAW-MP07/DAW-MP07-UF1/php-recorrer-array-mapa/readme.md)
  2. Cal un **separador** entre elements, el separador no ha d'aparèixer davant del primer element i tampoc darrera de l'últim. A sota trobaràs una pista de com fer-ho:
 
 El separador:

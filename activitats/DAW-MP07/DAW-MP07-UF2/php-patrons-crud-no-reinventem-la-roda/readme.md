@@ -94,7 +94,7 @@ Exercici 1: Fés un manteniment d'usuaris i grups tenint en compte aquests patro
 Disposarem de dues entitats interrelacionades amb tipus de correspondència N:M, que són els usuaris i els grups.
 D'aquí sorgeixen 3 taules: **Usuaris**, **Grups** i **UsuariPertanyGrup**.
 
-Crearem les taules a la base de dades i insertarem alguns usuaris usuaris. Pots fer ajudar-te de la pràctica [PHP - Autenticació d'usuaris amb PDO - SQL Injection](/DAW/DAW-MP07/DAW-MP07-UF3/php-autenticacio-dusuaris-amb-pdo-sql-injection/readme.md) per fer aquest pas.
+Crearem les taules a la base de dades i insertarem alguns usuaris usuaris. Pots fer ajudar-te de la pràctica [PHP - Autenticació d'usuaris amb PDO - SQL Injection](/activitats/DAW-MP07/DAW-MP07-UF3/php-autenticacio-dusuaris-amb-pdo-sql-injection/readme.md) per fer aquest pas.
 
 Caldrà que desenvolupis els següents fitxers PHP:
 

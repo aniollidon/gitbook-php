@@ -2,7 +2,7 @@
 ## DAW-MP07-UF1 - Exercici de Desenvolupament web en entorn servidor.
 El [patró PGR](http://en.wikipedia.org/wiki/Post/Redirect/Get) consisteix a fer una redirecció després d'haver rebut dades via POST. La intenció és prevenir submits duplicats.
 
-Per a realitzar aquest exercici cal utilitzar el codi desenvolupat a l'exercici [PHP, treball amb post](/DAW/DAW-MP07/DAW-MP07-UF1/php-treball-amb-post/readme.md)
+Per a realitzar aquest exercici cal utilitzar el codi desenvolupat a l'exercici [PHP, treball amb post](/activitats/DAW-MP07/DAW-MP07-UF1/php-treball-amb-post/readme.md)
 
  1. Executa el codi anterior: Ompla el formulari i fes submit (via post) de les dades.
  2. Fes un refresh del resultat del form. Observaràs que el navegador et pregunta si vols tornar a enviar les dades, això és el que volem evitar.

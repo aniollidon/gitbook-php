@@ -25,7 +25,7 @@ Some other notes on POST requests:
 
 Exercici:
 
- 1. A l'exercici [PHP - Treball senzill amb formularis](/DAW/DAW-MP07/DAW-MP07-UF1/php-treball-senzill-amb-formularis/readme.md) substitueix el mètode POST per el GET i investiga que passa.
+ 1. A l'exercici [PHP - Treball senzill amb formularis](/activitats/DAW-MP07/DAW-MP07-UF1/php-treball-senzill-amb-formularis/readme.md) substitueix el mètode POST per el GET i investiga que passa.
  2. Un cop fetes varies proves, passa a afinar el codi que processa les dades canviat $_REQUEST per $_GET o $_POST segons el cas.
 
 Solucions:

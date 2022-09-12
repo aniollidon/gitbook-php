@@ -1,6 +1,6 @@
 # Python - Cridant una API II
 ## DAW-MP07-UF4 - Exercici de Serveis web. Pàgines dinàmiques interactives. Webs Híbrids.
-Un cop completat l'exercici [Python - Cridant una API](/DAW/DAW-MP07/DAW-MP07-UF4/python-cridant-una-api/readme.md) aprendrem a tractar el resultat de la crida.
+Un cop completat l'exercici [Python - Cridant una API](/activitats/DAW-MP07/DAW-MP07-UF4/python-cridant-una-api/readme.md) aprendrem a tractar el resultat de la crida.
 
 Per a l'exercici esmentat el resultat a tractar és la confirmació que l'event s'ha creat:
 

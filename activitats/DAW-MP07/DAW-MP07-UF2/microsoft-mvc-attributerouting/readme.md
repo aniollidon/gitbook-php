@@ -2,7 +2,7 @@
 ## DAW-MP07-UF2 - Exercici de Generació dinàmica de pagines web.
 El projecte [AttributeRouting](http://attributerouting.net/) inclós a MVC5 permet definir routes tot anotant els mètodes del controlador.
 
-Reescriu l'exercici [Microsoft MVC Processant rutes](/DAW/DAW-MP07/DAW-MP07-UF2/microsoft-mvc-processant-rutes/readme.md) de manera que les rutes quedin anotades a les accions i no al fitxer de rutes.
+Reescriu l'exercici [Microsoft MVC Processant rutes](/activitats/DAW-MP07/DAW-MP07-UF2/microsoft-mvc-processant-rutes/readme.md) de manera que les rutes quedin anotades a les accions i no al fitxer de rutes.
 
 Per tal de provar les rutes, el controlador i les accions, escriu de nou al navegador les urls que disparan aquestes accions.
 

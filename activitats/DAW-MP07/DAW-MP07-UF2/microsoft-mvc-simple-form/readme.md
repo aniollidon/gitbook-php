@@ -86,7 +86,7 @@ La vista:
 Exercicis:
 
 1. Implementa el projecte a la teva màquina.
-2. Millora les rutes usant [Microsoft MVC AttributeRouting](/DAW/DAW-MP07/DAW-MP07-UF2/microsoft-mvc-attributerouting/readme.md)
+2. Millora les rutes usant [Microsoft MVC AttributeRouting](/activitats/DAW-MP07/DAW-MP07-UF2/microsoft-mvc-attributerouting/readme.md)
 3. Modifica per tal que la acció post faci un Post/Redirect/Get a una tercera acció on s'executi la suma i prepari el viewBag.
 
 Ajuda:

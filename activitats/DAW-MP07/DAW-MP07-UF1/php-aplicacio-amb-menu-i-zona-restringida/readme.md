@@ -7,7 +7,7 @@ En aquesta pràctica es treballa:
  * Formularis: mètode POST (opcionalment GET)
  * Bucles i condicionals
 
-És tracta de fer una aplicació amb menú i zona restringida. El sistema que utilitzarem per emmagatzemar [usuaris i contrasenyes serà un array associatiu](/DAW/DAW-MP07/DAW-MP07-UF1/php-autenticacio-dusuaris/readme.md).
+És tracta de fer una aplicació amb menú i zona restringida. El sistema que utilitzarem per emmagatzemar [usuaris i contrasenyes serà un array associatiu](/activitats/DAW-MP07/DAW-MP07-UF1/php-autenticacio-dusuaris/readme.md).
 
 Les pantalles a realitzar són les següents:
 
@@ -17,8 +17,8 @@ Les pantalles a realitzar són les següents:
 A partir d'aquí totes les pàgines requereixen haver-se autenticat. Atenció el codi per comprovar que l'usuari ha iniciat sessió ha d'estar dins un include:
 
  * *menu.php* - Mostra les opcions de menú que són: *comprovar_divisors.php*, *conjetura_collatz.php* )
- * *comprovar_divisors.php* - [comprova els divisors d'un número](/DAW/DAW-MP07/DAW-MP07-UF1/php-numeros-primers/readme.md). Opció per tornar al menú principal.
- * *conjetura_collatz.php* - [comprova la conjetura collatz](/DAW/DAW-MP07/DAW-MP07-UF1/php-algorisme-3n-1-conjetura-collatz/readme.md). Opció per tornar al menú principal.
+ * *comprovar_divisors.php* - [comprova els divisors d'un número](/activitats/DAW-MP07/DAW-MP07-UF1/php-numeros-primers/readme.md). Opció per tornar al menú principal.
+ * *conjetura_collatz.php* - [comprova la conjetura collatz](/activitats/DAW-MP07/DAW-MP07-UF1/php-algorisme-3n-1-conjetura-collatz/readme.md). Opció per tornar al menú principal.
 
 Per a fer aquest exercici, tots els missatges d'error de formularis o de confirmació de dades s'enviaran via cookie: totes les pantalles comproven si reben cookie 'missatge' si la reben, l'esborren i inclouen el valor de la cookie a la pàgina web. Quan un processament vol enviar missatges a la UI els posa com a valor en aquesta cookie. Com veus la cookie és molt efímera: es fa el Post de les dades del formulari, la pàgina PHP recull les dades, envia cookie de missatge i redirigeix cap a la pàgina que toqui (ex: conjetura_collatz.php?num=17 , a la pàgina final es mostren els possibles missatges de la cookie i el resultat )
 

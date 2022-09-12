@@ -3,8 +3,8 @@
 ### 1. Desenvolupa aplicacions d'accés a magatzems de dades, aplicant mesures per mantenir la seguretat i la integritat de la informació. 
 #### 1.1 S'han analitzat les tecnologies que permeten l'accés mitjançant programació a la informació disponible en magatzems de dades.
 
-* [PHP - Accés a dades](/DAW/DAW-MP07/DAW-MP07-UF3/php-acces-a-dades/readme.md)
-* [ORM - Object relational mapping](/DAW/DAW-MP07/DAW-MP07-UF3/orm-object-relational-mapping/readme.md)
+* [PHP - Accés a dades](/activitats/DAW-MP07/DAW-MP07-UF3/php-acces-a-dades/readme.md)
+* [ORM - Object relational mapping](/activitats/DAW-MP07/DAW-MP07-UF3/orm-object-relational-mapping/readme.md)
  
 #### 1.2 S'han creat aplicacions que estableixin connexions amb bases de dades. 
 #### 1.3 S'ha recuperat informació emmagatzemada en bases de dades.
@@ -14,38 +14,38 @@
 
 **Accés a dades amb PHP**
 
-* [PHP - Accés a dades amb PDO](/DAW/DAW-MP07/DAW-MP07-UF3/php-acces-a-dades-amb-pdo/readme.md)
-* [PHP - Inserció de dades amb PDO](/DAW/DAW-MP07/DAW-MP07-UF3/php-insercio-de-dades-amb-pdo/readme.md)
-* [PHP - Autenticació d'usuaris amb PDO - SQL Injection](/DAW/DAW-MP07/DAW-MP07-UF3/php-autenticacio-dusuaris-amb-pdo-sql-injection/readme.md)
-* [PHP - MiniTwitter](/DAW/DAW-MP07/DAW-MP07-UF3/acces-a-dades-minitwitter/readme.md)
+* [PHP - Accés a dades amb PDO](/activitats/DAW-MP07/DAW-MP07-UF3/php-acces-a-dades-amb-pdo/readme.md)
+* [PHP - Inserció de dades amb PDO](/activitats/DAW-MP07/DAW-MP07-UF3/php-insercio-de-dades-amb-pdo/readme.md)
+* [PHP - Autenticació d'usuaris amb PDO - SQL Injection](/activitats/DAW-MP07/DAW-MP07-UF3/php-autenticacio-dusuaris-amb-pdo-sql-injection/readme.md)
+* [PHP - MiniTwitter](/activitats/DAW-MP07/DAW-MP07-UF3/acces-a-dades-minitwitter/readme.md)
 
 **Altres exercicis amb PHP**
 
-* [SQL Injection amb my_sql](/DAW/DAW-MP07/DAW-MP07-UF3/sql-injecton-amb-my_sql/readme.md)
+* [SQL Injection amb my_sql](/activitats/DAW-MP07/DAW-MP07-UF3/sql-injecton-amb-my_sql/readme.md)
 
 **Accés a dades amb l'ORM de Microsoft**
 
-* [EF: Primera presa de contacte amb l'ORM de Microsoft.](/DAW/DAW-MP07/DAW-MP07-UF3/ef-primera-presa-de-contacte-amb-lorm-de-microsoft/readme.md)
-* [ORM: exercicis crear models, insertar dades, consultar dades.](/DAW/DAW-MP07/DAW-MP07-UF3/django-exercicis-crear-models-insertar-dades-consultar-dades/readme.md)
+* [EF: Primera presa de contacte amb l'ORM de Microsoft.](/activitats/DAW-MP07/DAW-MP07-UF3/ef-primera-presa-de-contacte-amb-lorm-de-microsoft/readme.md)
+* [ORM: exercicis crear models, insertar dades, consultar dades.](/activitats/DAW-MP07/DAW-MP07-UF3/django-exercicis-crear-models-insertar-dades-consultar-dades/readme.md)
 
 **Accés a dades amb l'ORM de django**
 
-* [django - Introducció als models](/DAW/DAW-MP07/DAW-MP07-UF3/django-introduccio-als-models/readme.md)
-* [django - Definint models](/DAW/DAW-MP07/DAW-MP07-UF3/django-definint-models/readme.md)
-* [django - Fent consultes sobre models](/DAW/DAW-MP07/DAW-MP07-UF3/django-fent-consultes-sobre-models/readme.md)
+* [django - Introducció als models](/activitats/DAW-MP07/DAW-MP07-UF3/django-introduccio-als-models/readme.md)
+* [django - Definint models](/activitats/DAW-MP07/DAW-MP07-UF3/django-definint-models/readme.md)
+* [django - Fent consultes sobre models](/activitats/DAW-MP07/DAW-MP07-UF3/django-fent-consultes-sobre-models/readme.md)
 
 #### 1.7 S'han utilitzat transaccions per mantenir la consistència de la informació. 
 
 **TX amb django**
 
-* [django - Transaccions](/DAW/DAW-MP07/DAW-MP07-UF3/django-transaccions/readme.md)
+* [django - Transaccions](/activitats/DAW-MP07/DAW-MP07-UF3/django-transaccions/readme.md)
 
 **TX amb EntityFramework**
 
 
 #### 1.8 S'han provat i documentat les aplicacions.
 
-* [ORM, Pros and Cons](/DAW/DAW-MP07/DAW-MP07-UF3/orm-pros-and-cons/readme.md)
+* [ORM, Pros and Cons](/activitats/DAW-MP07/DAW-MP07-UF3/orm-pros-and-cons/readme.md)
 
 
 ##Conceptes clau:

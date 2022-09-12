@@ -1,6 +1,6 @@
 # django - Definint models
 ## DAW-MP07-UF3 - Exercici de Tècniques d’accés a dades.
-Un cop [familiaritzat amb django](/DAW/DAW-MP07/DAW-MP07-UF3/django-introduccio-als-models/readme.md) pots passar a fer aquest exercici.
+Un cop [familiaritzat amb django](/activitats/DAW-MP07/DAW-MP07-UF3/django-introduccio-als-models/readme.md) pots passar a fer aquest exercici.
 
 Consulta el punt [Models](https://docs.djangoproject.com/en/1.8/topics/db/models/) per a fer aquest exercici. ( No treballarem amb herència, tampoc amb proxy models.)
 

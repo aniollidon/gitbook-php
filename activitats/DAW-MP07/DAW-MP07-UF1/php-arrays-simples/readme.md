@@ -42,7 +42,7 @@ echo "<br>";
 
 Un cop completat aquest exercici et recomano els següents:
 
- * [PHP - Recorrer un array simple](/DAW/DAW-MP07/DAW-MP07-UF1/php-recorre-un-array-simple/readme.md)
+ * [PHP - Recorrer un array simple](/activitats/DAW-MP07/DAW-MP07-UF1/php-recorre-un-array-simple/readme.md)
 
 
 ---

@@ -12,7 +12,7 @@
 
 1. Navega per totes les APIs de mashape i busca inspiració.
 2. Proposa un projecte de desenvolupament web que al menys utilitzi 3 de les APIs del portal (o altres).
-3. Fes un cop d'ull a **unirest.io** cita alguna avantatge que té usar aquest projecte en comptes de fer servir el sistema que hem usat a la pràctica [django - Consumir Web Service senzill amb AJAX](/DAW/DAW-MP07/DAW-MP07-UF4/django-consumir-web-service-senzill-amb-ajax/readme.md)
+3. Fes un cop d'ull a **unirest.io** cita alguna avantatge que té usar aquest projecte en comptes de fer servir el sistema que hem usat a la pràctica [django - Consumir Web Service senzill amb AJAX](/activitats/DAW-MP07/DAW-MP07-UF4/django-consumir-web-service-senzill-amb-ajax/readme.md)
 4. Pica el projecte que has proposat usant **unirest.io**
 5. Documenta-ho tot i entraga-ho.
 

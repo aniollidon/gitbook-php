@@ -2,7 +2,7 @@
 ## DAW-MP07-UF3 - Exercici de Tècniques d’accés a dades.
 En aquest exercici practicarem la inserció de dades amb una base de dades usant PDO.
 
-Primer creem la base de dades i la taula on insertarem dades, això es pot veure a l'exercici [PHP - Accés a dades amb PDO](/DAW/DAW-MP07/DAW-MP07-UF3/php-acces-a-dades-amb-pdo/readme.md)
+Primer creem la base de dades i la taula on insertarem dades, això es pot veure a l'exercici [PHP - Accés a dades amb PDO](/activitats/DAW-MP07/DAW-MP07-UF3/php-acces-a-dades-amb-pdo/readme.md)
 
 Mitjançant aquest codi insertem les dades:
 
@@ -38,7 +38,7 @@ Mitjançant aquest codi insertem les dades:
 
  1. Fixat que és important passar els paràmetres d'aquesta manera per evitar sql injection. Més endavant farem una pràctica sobre això.
  2. Executa aquest codi al teu entorn i amb la teva base de dades. Comprova que els valors realment s'inserten a la taula.
- 3. Fés un formulari per a insertar goblins a la base de dades *gringottsDB* de l'exercici [PHP - Accés a dades amb PDO](/DAW/DAW-MP07/DAW-MP07-UF3/php-acces-a-dades-amb-pdo/readme.md). Molt important: Recorda crear la clau primària de la taula. Molt important: les passwd MAI s'emmagatzemen en text pla, cal fer una transformació hash de les mateixes, per exemple amb MD5. Reflexiona perquè fem això amb les passwd.
+ 3. Fés un formulari per a insertar goblins a la base de dades *gringottsDB* de l'exercici [PHP - Accés a dades amb PDO](/activitats/DAW-MP07/DAW-MP07-UF3/php-acces-a-dades-amb-pdo/readme.md). Molt important: Recorda crear la clau primària de la taula. Molt important: les passwd MAI s'emmagatzemen en text pla, cal fer una transformació hash de les mateixes, per exemple amb MD5. Reflexiona perquè fem això amb les passwd.
 
 Nota, codi per emmagatzemar la passwd amb MD5:
 

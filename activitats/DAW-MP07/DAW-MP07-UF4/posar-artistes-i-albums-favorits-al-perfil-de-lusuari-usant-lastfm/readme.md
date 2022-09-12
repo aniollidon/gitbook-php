@@ -13,7 +13,7 @@ Per això li apareixerà un text box amb typeahead, pots fer servir [Twitter Boo
 És important que la crida ajax es faci a la teva aplicació django i que sigui aquesta qui consulti a last.fm l'artista i retorni a l'usuari la resposta. D'aquesta manera mai veuran quina és YOUR_API_KEY.
 
 Pots trobar més informació sobre com registrar-te i fer servir la api de last fm a l'exercici [Consultant la API de last.fm
-](/DAW/DAW-MP04/DAW-MP04-UF2/consultant-la-api-de-lastfm/readme.md)
+](/activitats/DAW-MP04/DAW-MP04-UF2/consultant-la-api-de-lastfm/readme.md)
 
 ####Nota: pots començar per fer un simple formulari per triar artista preferit sense haver d'assignar-lo al teu perfil. ####
 

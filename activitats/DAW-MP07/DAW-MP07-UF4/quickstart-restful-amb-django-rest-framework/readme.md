@@ -1,6 +1,6 @@
 # Quickstart RESTful amb django-rest-framework
 ## DAW-MP07-UF4 - Exercici de Serveis web. Pàgines dinàmiques interactives. Webs Híbrids.
-Un cop completat l'exercici [Introducció a ReST i ReSTful](/DAW/DAW-MP07/DAW-MP07-UF4/introduccio-a-rest-i-restful/readme.md) pots passar a implementar un servei ReSTful amb django.
+Un cop completat l'exercici [Introducció a ReST i ReSTful](/activitats/DAW-MP07/DAW-MP07-UF4/introduccio-a-rest-i-restful/readme.md) pots passar a implementar un servei ReSTful amb django.
 
 Per tal de mantenir-nos en la filosofia DRY i no haver de reinventar la roda, utilitzarem un paquet REST ja existent. En aquest cas farem servir django-rest-framework.org
 

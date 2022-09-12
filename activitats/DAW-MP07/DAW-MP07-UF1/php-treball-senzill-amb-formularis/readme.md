@@ -56,7 +56,7 @@ El fitxer **processa_dades.php** és el que rebrà les dades. Les dades es reben
 
  1. Analitza els controls que fem servir per a recollir dades, fixat que hi ha controls amb corxets al costat del nom, són per a variables que poden contenir més d'un valor.
  1. Mitjançant la funció *print_r( $variable )* analitza el contingut de la variable *$_REQUEST*. Diferencia el contingut de les variables que contenien corxets amb les que no.
- 2. Pinta camp a camp les dades rebudes. Hi haurà camps que podràs pintar directament (Ex: *echo "El valor de text és " . $_REQUEST["mytext"];* ) Altres valors, els que són un array, els hauràs de recorrer tal com s'ha treballat en [exercicis d'arrays](/DAW/DAW-MP07/DAW-MP07-UF1/php-concatenar-elements-dun-array/readme.md) 
+ 2. Pinta camp a camp les dades rebudes. Hi haurà camps que podràs pintar directament (Ex: *echo "El valor de text és " . $_REQUEST["mytext"];* ) Altres valors, els que són un array, els hauràs de recorrer tal com s'ha treballat en [exercicis d'arrays](/activitats/DAW-MP07/DAW-MP07-UF1/php-concatenar-elements-dun-array/readme.md) 
 
 Bibliografia: 
 

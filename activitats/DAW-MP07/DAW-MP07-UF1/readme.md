@@ -10,4 +10,4 @@ Exercicis de Desenvolupament web en entorn servidor.
 ###### #FpInfor #Daw #DawMp07Uf01
 
 **Material indexat**
-* [Introducció a desenvolupament web en entorn servidor - Metacontingut](/DAW/DAW-MP07/DAW-MP07-UF1/abc-index-dexercicis/readme.md)
+* [Introducció a desenvolupament web en entorn servidor - Metacontingut](/activitats/DAW-MP07/DAW-MP07-UF1/abc-index-dexercicis/readme.md)

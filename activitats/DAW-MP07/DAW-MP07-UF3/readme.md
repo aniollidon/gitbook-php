@@ -10,4 +10,4 @@ Exercicis de Tècniques d’accés a dades.
 ###### #FpInfor #Daw #DawMp07Uf03
 
 **Material indexat**
-* [Tècniques d’accés a dades. Metacontingut.](/DAW/DAW-MP07/DAW-MP07-UF3/tecniques-dacces-a-dades-metacontingut/readme.md)
+* [Tècniques d’accés a dades. Metacontingut.](/activitats/DAW-MP07/DAW-MP07-UF3/tecniques-dacces-a-dades-metacontingut/readme.md)

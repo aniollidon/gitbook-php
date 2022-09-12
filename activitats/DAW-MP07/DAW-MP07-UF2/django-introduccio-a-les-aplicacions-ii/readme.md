@@ -1,6 +1,6 @@
 # django - Introducció a les aplicacions II
 ## DAW-MP07-UF2 - Exercici de Generació dinàmica de pagines web.
-Un cop finalitzat l'exercici [django - Introducció a les aplicacions](/DAW/DAW-MP07/DAW-MP07-UF2/django-introduccio-a-les-aplicacions/readme.md) el que farem és afegir lògica a la nostra aplicació.
+Un cop finalitzat l'exercici [django - Introducció a les aplicacions](/activitats/DAW-MP07/DAW-MP07-UF2/django-introduccio-a-les-aplicacions/readme.md) el que farem és afegir lògica a la nostra aplicació.
 
 1. Fes que es mostri, per a cada enquesta, les possibles opcions i els vots de cadascuna d'elles.
 1. Fes que es pugui votar una opció en una enquesta. Per fer-ho, crea un enllaç a la url de votar.
