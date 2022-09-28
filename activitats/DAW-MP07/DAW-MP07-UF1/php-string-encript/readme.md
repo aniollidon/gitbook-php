@@ -21,7 +21,7 @@ echo decript($mr);
 ```
 
 ### Activitats
- 1. Crea la funció per desencriptar els diferents textos. _Recomenable fer una ullada a les [funcions de tractament d'stings](https://www.php.net/manual/en/book.strings.php)_
+ 1. Crea la funció per desencriptar els diferents textos. _Recomenable fer una ullada a les [funcions de tractament d'strings](https://www.php.net/manual/en/book.strings.php)_
  2. El sistema proposat per encriptar és poc segur i una mica rudimentàri. Busca una solució segura per encriptar i desencriptar text amb php. Explica breument com funciona, i mostra un exemple del seu funcionament.
  3. Crea una técnica d'encriptament i desencriptament pròpia i original que compleixi els diferents requisits:
     + Ha de funcionar per qualsevol caràcter UTF8.

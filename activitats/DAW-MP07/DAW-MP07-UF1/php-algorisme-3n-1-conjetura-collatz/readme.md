@@ -2,9 +2,9 @@
 ## DAW-MP07-UF1 - Exercici de Desenvolupament web en entorn servidor.
 Fes un formulari que reculli un número, l'anomenarem **n**.
 
-El formulari s'envia a ell mateix el número i pinta totes les passes per arribar des de **n** fins a **1** utilitzant [l'algorisme 3n + 1](http://ca.wikipedia.org/wiki/Conjectura_de_Collatz) així com al número més alt arribat.
+El formulari s'envia a ell mateix el número i pinta totes les passes per arribar des de **n** fins a **1** utilitzant [l'algorisme 3n + 1](https://www.youtube.com/watch?v=HpcYW08Ug7g) així com al número més alt arribat.
 
-Exemples ( de la wikipedia ) del resultat que ha de mostrar l'algorisme:
+[Exemples del resultat que ha de mostrar l'algorisme](http://ca.wikipedia.org/wiki/Conjectura_de_Collatz):
 
 la seqüència del 30 és
 {15,46,23,70,35,106,53,160,80,40,20,10,5,16,8,4,2,1}, després de 18 iteracions i arribant a un màxim de 160.
