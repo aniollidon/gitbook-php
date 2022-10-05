@@ -14,7 +14,7 @@ La pàgina **formulari.php** detectarà si li estan fent un POST, si és el cas 
     }
     
     
-Solució
+### Solució
 
 ```php
 <!DOCTYPE html>
