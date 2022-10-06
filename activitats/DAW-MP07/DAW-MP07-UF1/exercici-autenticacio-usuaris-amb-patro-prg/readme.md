@@ -23,7 +23,7 @@ si he_rebut_dades llavors
 pintar formulari de login
 ```
 
-Solució
+Codi
 =====
 
 Fitxer `login.php`:
