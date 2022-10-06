@@ -24,8 +24,7 @@ Com ho farem per controlar l'accés a **P2.php**? Només podran entrar els usuar
 Fixat que és necessari l'ús de sessions en aquesta pràctica.
 
 
-(*)Presentació i dibuixos de [Xavi Sala](https://uf.ctrl-alt-d.net/usuaris/mostra/22/)
-
+(*)Presentació i dibuixos de Xavi Sala
 
 Solució 
 ====
