@@ -46,7 +46,7 @@ Fitxer `login.php`:
             header("Location: benvinguda.php?usuari=$usuari");
             die();
         } else {
-            echo "<h4> usuari o passwd incorrecte </h4>"
+            echo "<h4> usuari o passwd incorrecte </h4>";
         }
     }
     //pintem formulari
