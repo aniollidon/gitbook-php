@@ -89,7 +89,7 @@ Fitxer `dades.php`:
 Solució
 =====
 
-Fitxer benvinguda.php
+Fitxer `benvinguda.php`
 ```php
 <!DOCTYPE html>
 <html>
@@ -112,7 +112,7 @@ Fitxer benvinguda.php
 </html>
 ```
 
-Nou fitxer login.php
+Nou fitxer `login.php`
 ```php
 <!DOCTYPE html>
 <html>
@@ -170,5 +170,5 @@ Nou fitxer login.php
 ---
 
 ###### Autor: daniel herrera 2016.10.04 14:55:45
-###### Editat per: daniel herrera 2017.10.10 13:48:50
+###### Editat per: aniol lidon 2022.7.10 09:49:50
 ###### [CC BY](https://creativecommons.org/licenses/by/4.0/) ![CC BY](https://licensebuttons.net/l/by/3.0/80x15.png)
