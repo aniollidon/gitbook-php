@@ -15,7 +15,7 @@ Guia:
     + Cada dia a les 12 de la nit s'esborraran les respostes i es generarà un nou hexàgon.
     + Els hexàgons cada dia són diferents. Dona un cop d'ull a la funció [srand](https://www.php.net/manual/en/function.srand.php).
 6. Els hexàgons proposats han de tenir com a mínim 3 respostes possibles.
-    + (EXTRA) Ha de tenir 10 respostes possibles i s'ha d'implementar de forma eficient (menys de mig segon per calcular-ho).
+    + (EXTRA) Ha de tenir un mínim de 10 respostes possibles i s'ha d'implementar de forma eficient (menys de mig segon per calcular-ho).
 7. Cal afegir els mètodes GET: `data`, `sol`, `neteja`. Per generar la data d'un joc diferent del d'avui, mostrar les solucions, i per netejar les respostes.
 8. Cal mostrar els següents errors:
     + Falta la lletra del mig.
