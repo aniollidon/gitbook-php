@@ -73,7 +73,7 @@ $var[] = $txt;
 Es demana:
 
 * Implementar el programa i que funcioni correctament. Indentant el codi i documentant dins el propi codi de programa les parts que calgui.
-* Executar el programa en alguna plataforma pública, ex: c9.io i aconseguir que ens arribin connexions remotes ( ex: publicant la url al pastebin )
+* (NO FER) Executar el programa en alguna plataforma pública, ex: c9.io i aconseguir que ens arribin connexions remotes ( ex: publicant la url al pastebin )
 
 Entregables:
 
