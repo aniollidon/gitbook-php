@@ -8,7 +8,7 @@ Repassem que és PDO:
 
 Anem a fer la primera aplicació que s'hi connecti a una base de dades. Utilitzarem *MySQL* per aquesta pràctica.
 
-Primer creem la base de dades:
+Creem la base de dades (amb Comandes):
 
 ```console
 dani@teacher:~/projectes/fpuf$ mysql -u root -p
@@ -39,6 +39,8 @@ Això crearà la taula:
 ------------- | -------------
  1  | 'a'
  2  | 'b'
+
+**Exercici**: Fem el mateix des del mètode gràfic accedint a través del phpMyAdmin.
 
 
 Per últim llegim tots els valors des de PHP:
