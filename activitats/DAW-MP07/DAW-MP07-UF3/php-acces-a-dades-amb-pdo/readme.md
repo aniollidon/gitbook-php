@@ -40,10 +40,6 @@ Això crearà la taula:
  1  | 'a'
  2  | 'b'
 
-**Exercici**: 
-1. Fem el mateix des del mètode gràfic accedint a través del phpMyAdmin.
-
-
 Per últim llegim tots els valors des de PHP:
 
 ```php
@@ -82,7 +78,7 @@ Per últim llegim tots els valors des de PHP:
 
 **Exercici**: 
 
- 1. Fes la teva base de dades *acces_dades* i prova aquest codi php.
+ 1. Fes la teva base de dades *acces_dades* i prova aquest codi php. Pots crear-la a través del PhpmyAdmin o amb comandes.
  2. Simplifica el codi usant [foreach + query](http://www.php.net/manual/en/pdo.query.php)
  3. Fes una nova base de dades anomenada *gringottsDB* i crea un usuari amb permisos sobre aquesta base de dades. Crea una taula anomenada *goblins* amb estructura: *goblin_name*, *password*, *last_login*. Inserta uns quants goblins (fent servir SQL). Per últim fes un programet amb PDO que llisti tots els goblins de la taula.
 
