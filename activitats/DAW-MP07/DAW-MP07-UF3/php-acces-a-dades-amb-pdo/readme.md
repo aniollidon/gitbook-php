@@ -40,7 +40,8 @@ Això crearà la taula:
  1  | 'a'
  2  | 'b'
 
-**Exercici**: Fem el mateix des del mètode gràfic accedint a través del phpMyAdmin.
+**Exercici**: 
+1. Fem el mateix des del mètode gràfic accedint a través del phpMyAdmin.
 
 
 Per últim llegim tots els valors des de PHP:
