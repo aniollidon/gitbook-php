@@ -1,4 +1,4 @@
-# PHP - Inserció de dades amb PDO
+# PHP - Autentificació amb pdo
 ## DAW-MP07-UF3 - Exercici de Tècniques d’accés a dades.
 Modifica el formulari d'autentificació de la [Prova de l'UF1](https://github.com/aniollidon/gitbook-php/tree/master/activitats/DAW-MP07/DAW-MP07-UF1/prova-uf1 ) de manera que les dadedes dels usuaris i l'escriptura de les connexions es faci a la base de dades enlloc de a un fitxer JSON.
 
