@@ -7,6 +7,8 @@ Per fer això caldrà crear una base de dades tal i com hem vist a l'exercici [P
 1. Evita l'sql injection tal i com hem vist a l'exercici [PHP - Inserció de dades amb PDO](/activitats/DAW-MP07/DAW-MP07-UF3/php-insercio-de-dades-amb-pdo/readme.md)
 2. Recorda crear la clau primària de la taula. i que les contrassenyes mai s'emmagatzemen en text pla, cal fer una transformació hash de les mateixes, per exemple amb MD5. 
 
++ L'usuari i contrasenya de la base de dades ha de ser "dwes-user" i "dwes-pass". La base de dades creada s'ha de dir "dwes-nomcognom-autpdo".
++ Cal penjar el fitxer sql que crea la base de dades.
 
 ---
 
