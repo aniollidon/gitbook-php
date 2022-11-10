@@ -18,8 +18,7 @@ EL codi que hi ha darrera del formulari és vulnerable a atacs SQL Injection:
 	/* Query and get the results */
 	$user = $_GET["user"] ?? "";
 	$pass = $_GET["password"] ?? "";
-	$query = "SELECT * FROM access WHERE username='$user' AND
-	     password='$pass'";
+	$query = "SELECT * FROM access WHERE username='$user' AND password='$pass'";
 	$result = $mysqli -> query($query);
 
 	/* Check results */
@@ -28,11 +27,6 @@ EL codi que hi ha darrera del formulari és vulnerable a atacs SQL Injection:
 		die("Error authenticating");
 	}
 ```
-*Informació adicional de [documentació MySQL 9.6 Comment Syntax](http://dev.mysql.com/doc/refman/5.7/en/comments.html)*:
-
-* *From a “#” character to the end of the line.*
-* *From a “-- ” sequence to the end of the line.*
-* *From a /* sequence to the following */ sequence, as in the C programming language.*
 
 ## Entregables
 
@@ -40,7 +34,7 @@ En un fitxer PDF:
 
 1. Explica quin és l'objectiu d'aquesta pràctica.
 1. Escriu com queda la cadena `$query` amb les dades enviades ( el passwd escrit al formulari eś: 'patata' )
-1. Explica que significa `--` en mysql i per què l'utilitza l'atacant.
+1. Explica que significa `#` en mysql i per què l'utilitza l'atacant.
 1. Explica per què aquesta pàgina és vulnerable a SQL Injection.
 1. Milloraria la seguretat usar `POST` en comptes de `GET` en aquest escenari? Com? Evitaria l'SQL Injection? Com?
 1. Quin tipus de llibreries està usant el codi php? *"Vendor Specific Database Extensions"* o *"Abstraction Layers"*. Influeix això amb la vulnerabilitat SQL Injection? Com?
