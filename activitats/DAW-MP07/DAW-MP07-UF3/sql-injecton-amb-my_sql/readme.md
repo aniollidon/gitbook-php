@@ -58,6 +58,6 @@ En un fitxer PDF:
 
 ---
 
-###### Autor: daniel herrera 2015.11.18 08:31:52
-###### Editat per: daniel herrera 2015.11.18 09:10:41
+###### Autor: daniel herrera 2015.11.18
+###### Editat per: Aniol Lidon 2022.11.10
 ###### [CC BY](https://creativecommons.org/licenses/by/4.0/) ![CC BY](https://licensebuttons.net/l/by/3.0/80x15.png)
