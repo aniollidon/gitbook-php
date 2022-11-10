@@ -2,7 +2,7 @@
 ## DAW-MP07-UF3 - Exercici de Tècniques d’accés a dades.
 Un perillòs hacker omple un formulari amb aquestes dades:
 
-![sql injection](http://i.imgur.com/MMftsdg.png)
+![sql injection](https://i.imgur.com/B3QEQjs.png)
 
 EL codi que hi ha darrera del formulari és vulnerable a atacs SQL Injection:
 
