@@ -40,6 +40,9 @@ En un fitxer PDF:
 1. Quin tipus de llibreries està usant el codi php? *"Vendor Specific Database Extensions"* o *"Abstraction Layers"*. Influeix això amb la vulnerabilitat SQL Injection? Com?
 1. Explica com ho faries per tal que el codi PHP deixi de ser vulnerable a SQL Injection.
 1. Un cop llegit el codi php que processa les dades, com ompliries el formulari per a crear el teu propi usuari a la base de dades?
+ 
+## Extra (+2punts) 
+1. Prova-ho amb l'adreça facilitada pel professor i canvia la teva nota a la puntuació desitjada
 
 
 
