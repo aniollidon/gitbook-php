@@ -6,30 +6,28 @@ Un perillòs hacker omple un formulari amb aquestes dades:
 
 EL codi que hi ha darrera del formulari és vulnerable a atacs SQL Injection:
 
+```php
     <?php
-       /* Connect to the Database */
-       $dbLink = mysql_connect("localhost", "username", "password");
-    
-       if (!dbLink) {
-          echo 'db link fail';
-       }
-    
-       /* Select the database */
-       mysql_select_db("databaseName");
-    
-       /* Query and get the results */
-       $user = $_GET["user"];
-       $pass = $_GET["password"];
-       $query = "SELECT * FROM users WHERE username='$user' AND
-                 password='$pass'";
-       $result = mysql_query($query);
-    
-       /* Check results */
-       $row = mysql_fetch_array($result, MYSQL_ASSOC));
-       if (!$row){
-          die("Error authenticating");
-       }
+      $mysqli = new mysqli("localhost","alumne","*********","sqlinj");
 
+	if ($mysqli -> connect_errno) {
+	  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+	  exit();
+	}
+
+	/* Query and get the results */
+	$user = $_GET["user"] ?? "";
+	$pass = $_GET["password"] ?? "";
+	$query = "SELECT * FROM access WHERE username='$user' AND
+	     password='$pass'";
+	$result = $mysqli -> query($query);
+
+	/* Check results */
+	$row = $result -> fetch_array(MYSQLI_ASSOC);
+	if (!$row){
+		die("Error authenticating");
+	}
+```
 *Informació adicional de [documentació MySQL 9.6 Comment Syntax](http://dev.mysql.com/doc/refman/5.7/en/comments.html)*:
 
 * *From a “#” character to the end of the line.*
