@@ -1,7 +1,7 @@
 # WORDPRESS PHP - Creació d'un connector (plugin) de wordpress
 ## DAW-MP07-UF3 - Exercici de Tècniques d'accés a dades.
 La següent pràctica consisteix a crear un connector de wordpress que permeti als usuaris fer un registre del seu creixement. La interfície permetrà pujar una fotografia als usuaris cada dia, a través d'una pàgina privada.
-![add-log](https://i.imgur.com/a/NqahWOp)
+![add-log](https://i.imgur.com/ANMEvoJ.png)
 
 En una pàgina visible per tothom es mostraran tots els registres diaris de cada persona ordenadament per data i agrupats per usuari.
 
