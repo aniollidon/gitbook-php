@@ -29,6 +29,8 @@ Caldrà implementar les parts restants del connector, des de registrar el fitxer
 ## Informació de servei
 El servei de detecció de cares està implementat per Exadel i el codi està disponible al seu [GitHub](https://github.com/exadel-inc/CompreFace). Podeu generar-vos el vostre propi servidor mitjançant el seu contenidor Docker.
 
+Podeu baixar el codi a través del següent [enllaç.](https://downgit.github.io/#/home?url=https://github.com/aniollidon/gitbook-php/tree/master/activitats/DAW-MP07/DAW-MP07-UF3/wordpress-php-plugin)
+
 ---
 
 #FpInfor #Daw #DawMp07 #DawMp07Uf03
