@@ -19,7 +19,7 @@ Caldrà implementar les parts restants del connector, des de registrar el fitxer
 
 1. El mateix connector crearà i esborrarà en desinstal·lar tant la pàgina pública, com la privada.
 
-1. La detecció de cares es farà mitjançant un servidor extern. Aquest servidor disposa d'una API que us hi podeu comunicar via CURL. Per provar com funciona i obtenir la clau podeu accedir-hi [via web](http://192.168.182.10:8000/) amb les credencials facilitades pel professor.
+1. La detecció de cares es farà mitjançant un servidor extern. Aquest servidor disposa d'una API que us hi podeu comunicar via CURL. Per provar com funciona i obtenir la clau podeu accedir-hi [via web](http://172.24.200.10:8000/) amb les credencials facilitades pel professor.
 
 1. Amb PHP caldrà aplicar l'escalat, translació i rotació de la imatge.
 
