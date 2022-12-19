@@ -53,11 +53,11 @@ Podeu baixar el codi a través del següent [enllaç.](https://downgit.github.io
 + Pujar una imatge al servidor [1 punt]
 	+ Guardar correctament la imatge
 	+ Manegar els diferents errors possibles: 
-		El fitxer no és una imatge
-		El fitxer no té l'extenció adequada
-		El fitxer pesa massa
-		Error al moure el fitxer
-		Altres ... 
+		+ El fitxer no és una imatge
+		+ El fitxer no té l'extenció adequada
+		+ El fitxer pesa massa
+		+ Error al moure el fitxer
+		+ Altres ... 
 
 + Inserir correctament els registres a la base de dades [1 punt]
 
@@ -66,10 +66,10 @@ Podeu baixar el codi a través del següent [enllaç.](https://downgit.github.io
 	+ Agafar les dades correctes
 	+ Demanar-li al servidor les dades mínimes.
 	+ Manegar els diferents errors possibles:
-		Errors del mateix detector
-		Errors per mala connexió
-		Apareix més d'una persona a l'imatge
-		Altres ...
+		+ Errors del mateix detector
+		+ Errors per mala connexió
+		+ Apareix més d'una persona a l'imatge
+		+ Altres ...
 		
 + Crear nova imatge normalitzada a partir de la detecció de cares [2 punts]
 	+ Normalitzar la rotació
