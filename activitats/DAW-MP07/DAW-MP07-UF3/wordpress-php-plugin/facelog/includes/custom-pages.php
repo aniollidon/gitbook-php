@@ -48,7 +48,7 @@ function facelog_gallery() : string
  */
 function facelog_addlog() : string
 {
-    $process = plugin_dir_url( __FILE__ ) . "/upload.php";
+    $process = plugin_dir_url( __DIR__. ".." ) . "/upload.php";
     $msg = $_GET["err"] ?? "";
     $msg .= isset($_GET["ok"]) ? "Ok!" : "";
     $msg_class =  isset($_GET["ok"]) ? "ok" : "error";
