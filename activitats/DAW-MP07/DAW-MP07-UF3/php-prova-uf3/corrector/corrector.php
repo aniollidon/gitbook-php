@@ -20,10 +20,10 @@ function compara_arrays(array $a, array $b) {
     if($sa == $sb)
         echo "correcte";
     else
-        echo "incorrecte: \n".inline_var_export($a). "\n" . inline_var_export($b);
+        echo "incorrecte: <br><pre>".inline_var_export($a). "<br>" . inline_var_export($b). "</pre>";
 }
 
-echo "get_demarcacions \n";
+echo "get_demarcacions <br>";
 $res = $db->get_demarcacions();
 $gt = array (
     0 => 'Barcelona',
@@ -32,9 +32,9 @@ $gt = array (
     3 => 'Tarragona',
 );
 compara_arrays($gt, $res);
-echo "\n\n";
+echo "<br><br>";
 
-echo "get_all_partits \n";
+echo "get_all_partits <br>";
 $res = $db->get_all_partits();
 $gt = array (
     0 =>
@@ -208,9 +208,9 @@ $gt = array (
 );
 compara_arrays($gt, $res);
 
-echo "\n\n";
+echo "<br><br>";
 
-echo "get_partits \n";
+echo "get_partits <br>";
 $res = $db->get_partits("Girona");
 $gt = array (
     0 =>
@@ -323,21 +323,21 @@ $gt = array (
         ),
 );
 compara_arrays($gt, $res);
-echo "\n\n";
+echo "<br><br>";
 
-echo "find_demarcacio \n";
+echo "find_demarcacio <br>";
 var_export($db->find_demarcacio("Girona"));
 echo "-";
 var_export($db->find_demarcacio("Gorona") == false);
-echo "\n\n";
+echo "<br><br>";
 
-echo "get_num_escons \n";
+echo "get_num_escons <br>";
 var_export($db->get_num_escons("Girona") == 17);
 echo "-";
 var_export($db->get_num_escons("Barcelona") == 85);
-echo "\n\n";
+echo "<br><br>";
 
-echo "set_vots \n";
+echo "set_vots <br>";
 $vots = array (
     'Cs' => '8935',
     'CUP-G' => '24837',
@@ -364,12 +364,12 @@ $vots = array (
 );
 $db -> set_vots("Girona", $vots);
 
-echo "get_vots \n";
+echo "get_vots <br>";
 $var = $db->get_vots("Girona");
 compara_arrays($var, $vots);
-echo "\n\n";
+echo "<br><br>";
 
-echo "set_escons \n";
+echo "set_escons <br>";
 $esconsg = array (
     'Cs' => '0',
     'CUP-G' => '2',
@@ -383,12 +383,12 @@ $esconsg = array (
 );
 $db -> set_escons("Girona", $esconsg);
 
-echo "get_escons \n";
+echo "get_escons <br>";
 $var = $db->get_escons("Girona");
 compara_arrays($var, $esconsg);
-echo "\n\n";
+echo "<br><br>";
 
-echo "set_escons \n";
+echo "set_escons <br>";
 $esconsl = array (
     'Cs' => '1',
     'CUP-G' => '1',
@@ -402,19 +402,19 @@ $esconsl = array (
 );
 $db -> set_escons("Lleida", $esconsl);
 
-echo "get_all_escons \n";
+echo "get_all_escons <br>";
 $esconst = [];
 foreach ($esconsg as $k => $v){
     $esconst[$k] = strval(intval($v) + intval(($esconsl[$k]) ?? 0));
 }
 $res = $db->get_all_escons();
 compara_arrays($res, $esconst);
-echo "\n\n";
+echo "<br><br>";
 
-//echo "set_escons \n";
+//echo "set_escons <br>";
 //var_export($db->set_escons());
-//echo "\n\n";
+//echo "<br><br>";
 
-echo "count_demarcacio_with_escons \n";
+echo "count_demarcacio_with_escons <br>";
 var_export($db->count_demarcacio_with_escons() == 2);
-echo "\n\n";
+echo "<br><br>";
