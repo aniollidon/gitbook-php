@@ -1,0 +1,3 @@
+[submodule "activitats/DAW-MP07/DAW-MP07-UF4/crossfit-wod-api"]
+	path = activitats/DAW-MP07/DAW-MP07-UF4/crossfit-wod-api
+	url = https://github.com/carlosazaustre/crossfit-wod-api.git
