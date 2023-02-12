@@ -1,4 +1,4 @@
-# Node - Aplicació per les neveres d'un supermercat
+# Node - Màquines expenedores
 ## DAW-MP07-UF2 - Exercici de Generació dinàmica de pàgines web.
 **Objectiu**: Confeccionar una API per l'aplicació que gestiona l'estoc de màquines expenedores.
 Una empresa té una sèrie de màquines repartides per diversos municipis. Les diferents màquines tenen diferents calaixos on hi ha un producte. Dels productes en tindrem diferents unitats que en direm estocs.
