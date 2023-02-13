@@ -31,8 +31,8 @@ GET /api/v1/maquines/[ID] // Retorna una màquina
 
 GET /api/v1/estocs?venda=[DATA-VENDA] // Retorna tots els estocs venuts una data.
 GET /api/v1/estocs?disponible // Retorna tots els estocs disponibles
-GET /api/v1/productes/[ID]/estocs // Retorna tots els estocs d'una venda
-GET /api/v1/productes/[ID]/estocs?disponible // Retorna tots els estocs disponibles d'una venda
+GET /api/v1/productes/[ID]/estocs // Retorna tots els estocs d'un producte
+GET /api/v1/productes/[ID]/estocs?disponible // Retorna tots els estocs disponibles d'un producte
 GET /api/v1/maquines/[ID]/estocs // Retorna tots els productes que han passat per una màquina
 GET /api/v1/maquines/[ID]/estocs?disponible // Retorna tots els productes actualment a una màquina
 GET /api/v1/maquines/[ID]/calaixos // Retorna tots els calaixos d'una màquina amb el seu contingut actual
