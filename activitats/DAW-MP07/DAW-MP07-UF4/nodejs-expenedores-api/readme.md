@@ -65,7 +65,7 @@ Per fer la pràctica caldrà seguir el [tutorial de bones pràctiques](https://w
 
 ---
 
-#FpInfor #Daw #DawMp07 #DawMp07Uf02
+#FpInfor #Daw #DawMp07 #DawMp07Uf04
 
 ---
 
