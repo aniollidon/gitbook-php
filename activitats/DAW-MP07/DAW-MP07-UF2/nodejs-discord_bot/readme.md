@@ -5,7 +5,7 @@
 + El desplegament d'aplicacions desenvolupades amb NodeJS
 
 **Requisits**: 
-+ Confeccionar un robot de Discord que et realitzi una funció a la vostra elecció tot connectant a una altra llibreria. Per exemple:
++ Confeccionar un robot de Discord, fent ús de la llibreria [´discord.js´](https://discord.js.org) que et realitzi una funció a la vostra elecció tot connectant a una altra llibreria. Per exemple:
     + Fes un robot de Discord que comuniqui pel xat les entregues al Classroom pendents i que comuniqui les notes per missatge als alumnes.
     + Fes un robot de Discord que guardi tot el que passa al xat (i/o xat de veu) en diferents Documents de Google ordenats per dia en carpetes del Drive (EXTRA: Inclosos els missatges de veu).
     + Fes un robot de Discord que enviï els missatges a Telegram i permeti la comunicació entre els dos sistemes de missatgeria.
