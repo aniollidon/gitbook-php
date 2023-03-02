@@ -22,7 +22,7 @@
 + Qualitat del codi, incloent-hi estructura, llegibilitat i documentació. (1 punt)
 + Capacitat de l'estudiant per explicar el funcionament del bot i l'API de Google implementada. (1 punt)
 + EXTRA: Aplicar APIs d'eines d'intel·ligència artificial com el tractament de [Llenguatge Natural](https://cloud.google.com/natural-language/docs/) o [La Transcripció de veu (Google)](https://cloud.google.com/speech-to-text/) [(Assemblyai)](https://www.assemblyai.com/docs)
-
++ EXTRA: Fer servir les noves [APIS d'OpenAI](https://platform.openai.com) de ChatGPT o whisper
 
 
 
