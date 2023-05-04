@@ -1,0 +1,340 @@
+.lletra-taula {
+    box-sizing: border-box;
+    margin-left: .125rem;
+    margin-right: .125rem;
+    display: flex;
+    height: 3.5rem;
+    width: 3.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: .25rem;
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(28 33 42/var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 33 42/var(--tw-bg-opacity));
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(0, 118, 168, .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    font-family: RingsideNarrow-Bold, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    font-weight: 400;
+}
+
+.taula-no {
+    border-color: rgb(28 33 42/var(--tw-border-opacity));
+    background-color: rgb(28 33 42/var(--tw-bg-opacity));
+}
+
+.taula-si {
+    border-color: rgb(255 150 0/var(--tw-border-opacity));
+    background-color: rgb(255 150 0/var(--tw-bg-opacity));
+}
+
+.taula-enblanc {
+    color: black;
+    border-color: rgb(216 224 232/var(--tw-border-opacity));
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+}
+
+.taula-lloc {
+    border-color: rgb(60 168 63/var(--tw-border-opacity));
+    background-color: rgb(60 168 63/var(--tw-bg-opacity));
+}
+
+.lletra-teclat {
+    display: flex;
+    flex: 1 1 0;
+    height: 50px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-family: RingsideNarrow-Book, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --tw-bg-opacity: 1;
+    background-color: rgb(216 224 232/var(--tw-bg-opacity));
+    border-radius: 0.25rem;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 0.125rem;
+    margin-right: 0.125rem;
+}
+
+.lletra-teclat:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(203 213 225/var(--tw-bg-opacity));
+}
+
+.lletra-teclat:active {
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 33 42/var(--tw-bg-opacity));
+}
+
+.teclat-no {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 33 42/var(--tw-bg-opacity));
+}
+
+.teclat-no:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 33 42/var(--tw-bg-opacity));
+}
+
+.teclat-si {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 150 0/var(--tw-bg-opacity));
+}
+
+.teclat-si:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(202 138 4/var(--tw-bg-opacity));
+}
+
+.teclat-si:active {
+    --tw-bg-opacity: 1;
+    background-color: rgb(161 98 7/var(--tw-bg-opacity));
+}
+
+.teclat-lloc {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(60 168 63/var(--tw-bg-opacity));
+}
+
+.teclat-lloc:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(50 150 63/var(--tw-bg-opacity));
+}
+
+.teclat-lloc:active {
+    --tw-bg-opacity: 1;
+    background-color: rgb(21 128 61/var(--tw-bg-opacity));
+}
+
+.teclat-enviar {
+    flex: 1.5 1 0;
+    height: 50px;
+    background-color: rgb(0, 118, 168);
+    color: white;
+}
+
+.teclat-enviar:hover {
+    background-color: rgb(0, 100, 140);
+}
+
+.teclat-suprimir{
+    flex: 1.5 1 0;
+    height: 50px;
+}
+*, :after, :before {
+    border: 0 solid #e5e7eb;
+    box-sizing: border-box;
+}
+
+:after, :before {
+    --tw-content: "";
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: normal;
+    font-feature-settings: normal;
+    font-family: RingsideNarrow-Book, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-variation-settings: normal;
+    line-height: 1.5;
+    tab-size: 4;
+}
+
+body {
+    line-height: inherit;
+    margin: 0;
+}
+
+h1 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+button {
+    color: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    text-transform: none;
+}
+
+button {
+    -webkit-appearance: button;
+    background-color: initial;
+    background-image: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+:disabled {
+    cursor: default;
+}
+
+svg {
+    display: block;
+    vertical-align: middle;
+}
+
+*, :after, :before {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(0, 118, 168, .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+}
+
+.mb-1 {
+    margin-bottom: .25rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.h-16 {
+    height: 4rem;
+}
+
+.h-6 {
+    height: 1.5rem;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.border-b {
+    border-bottom-width: 1px;
+}
+
+.border-gray-300 {
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219/var(--tw-border-opacity));
+}
+
+.px-3 {
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+.py-6 {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+:root {
+    --animation-speed: 800ms;
+    --animation-speed-fast: 250ms;
+    --default-cell-bg-color: #fff;
+    --default-cell-border-color: #000;
+    --default-cell-text-color: #000;
+    --absent-cell-bg-color: #1c212a;
+    --correct-cell-bg-color: #3ca83f;
+    --present-cell-bg-color: #facc15;
+}
+
+main {
+    height: var(--vh);
+}
+
+#header {
+    border-bottom: 1px solid #d8e0e8;
+    height: 75px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+h1 {
+    flex: 1 1;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#teclat {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 5px 15px;
+    width: 600px;
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-display: swap;
+    font-family: RingsideNarrow-Bold;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://interactius.ara.cat/assets/common_new/fonts/Ringside/RingsideNarrow-Bold.otf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: RingsideNarrow-Book;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://interactius.ara.cat/assets/common_new/fonts/Ringside/RingsideNarrow-Book.otf);
+}
