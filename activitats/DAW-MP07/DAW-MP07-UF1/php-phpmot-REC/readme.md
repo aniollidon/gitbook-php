@@ -28,7 +28,7 @@ Crea un joc Wordle en PHP similar al [joc del trobamot](https://jocs.ara.cat/tro
 1. Cal mostrar els següents errors:
     + Paraula no trobada.
     + Hi falten lletres.
-1. Cal fer desplegament a la màquina Isard. El codi estarà disponible a `/var/www/html/phpmotUF1`.
+1. Cal fer desplegament a la màquina Isard. El codi estarà disponible a `/var/www/html/phpmotUF1` de la màquina Isard.
 
 ---
 
