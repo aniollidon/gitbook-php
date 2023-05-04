@@ -16,6 +16,7 @@
 + Cal preparar un document que expliqui el funcionament del bot, s'expliqui com afegir-lo a un grup de telegram, s'enllaci la carpeta al drive amb tots els registres i ens expliqui les comandes disponibles. (1 punt)
 + Cal desplegar l'aplicació a la màquina isard assignada de manera que quan la màquina estigui encesa el bot funcionarà de forma autònoma. (1 punt)
 
+**La pràctica es presentarà a la màquina isard facilitada pel professor i s'enviarà l'enllaç de Github al classroom**. Podeu fer el desenvolupament en local i pujar-ho a a la màquina remota.
 
 ---
 
