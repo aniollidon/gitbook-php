@@ -26,4 +26,4 @@ Implementa les següents funcionalitats, tot assegurant-te que el web funcioni:
 1. Implementa la llei D'Hondt i modifica la seva crida al fitxer `process.php` (**2 punts**).
     + Podeu utilitzar el fitxer `prova.php` per provar la funcionalitat aïllada.
 1. Modifiqueu els fitxers `parlament.php` i `demarcacio.php` per tal de visualitzar correctament les dades. (**1,5 punts**)
-1. Desplegament a la màquina Isard (**1 punt**)
+1. Desplegament a la màquina Isard. El codi estarà disponible a `/var/www/html/eleccionsUF3` de la màquina Isard (**1 punt**)
