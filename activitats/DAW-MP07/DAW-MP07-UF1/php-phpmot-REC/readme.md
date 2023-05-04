@@ -17,17 +17,18 @@ Crea un joc Wordle en PHP similar al [joc del trobamot](https://jocs.ara.cat/tro
 1. A partir dels fitxers `index.php` i `style.css` dona-li al joc funcionalitat. De manera que les solucions no siguin visibles per l'usuari.
     + No poden aparèixer errors o warnings de PHP.
     + No hi ha d'haver funcionalitat repetida.
-2. Cal convertir el codi HTML per enviar el text introduït en forma de POST.
-3. Cal utilitzar el patró PGR en la implementació tal com vam veure al [següent exercici](/activitats/DAW-MP07/DAW-MP07-UF1/php-el-patro-pgr-postredirectget).
+1. Cal convertir el codi HTML per enviar el text introduït en forma de POST.
+1. Cal utilitzar el patró PGR en la implementació tal com vam veure al [següent exercici](/activitats/DAW-MP07/DAW-MP07-UF1/php-el-patro-pgr-postredirectget).
     + Crea el fitxer `process.php` i usa'l per calcular les solucions.
-4. S'ha de fer ús de sessions per tal de mantenir l'estat actual del joc durant tot el dia.
-5. La solució s'ha de generar automàticament quan la sessió no estigui activa i aquesta ha de dependre de la data d'avui. 
+1. S'ha de fer ús de sessions per tal de mantenir l'estat actual del joc durant tot el dia.
+1. La solució s'ha de generar automàticament quan la sessió no estigui activa i aquesta ha de dependre de la data d'avui. 
     + Cada dia a les 12 de la nit s'esborraran les respostes i es generarà una nova solució.
     + La paraula a endeviniar cada dia és diferent. Dona un cop d'ull a la funció [srand](https://www.php.net/manual/en/function.srand.php).
-7. Cal afegir els mètodes GET: `data`, `sol`, `neteja`. Per generar la data d'un joc diferent del d'avui, mostrar les solucions, i per netejar les respostes.
-8. Cal mostrar els següents errors:
+1. Cal afegir els mètodes GET: `data`, `sol`, `neteja`. Per generar la data d'un joc diferent del d'avui, mostrar les solucions, i per netejar les respostes.
+1. Cal mostrar els següents errors:
     + Paraula no trobada.
     + Hi falten lletres.
+1. Cal fer desplegament a la màquina Isard. El codi estarà disponible a `/var/www/html/phpmotUF1`.
 
 ---
 
