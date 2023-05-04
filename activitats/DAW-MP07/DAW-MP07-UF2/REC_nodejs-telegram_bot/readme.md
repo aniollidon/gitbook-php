@@ -14,7 +14,7 @@
     + Amb la comanda `/log` el robot ens compartirà la carpeta on podem trobar tots els documents del grup de xat des d'on s'ha executat.
 + El codi ha de seguir les bones pràctiques i ser llegible i ben estructurat. (1 punt)
 + Cal preparar un document que expliqui el funcionament del bot, s'expliqui com afegir-lo a un grup de telegram, s'enllaci la carpeta al drive amb tots els registres i ens expliqui les comandes disponibles. (1 punt)
-+ Cal desplegar l'aplicació a la màquina isard assignada de manera que quan la màquina estigui encesa el bot funcionarà de forma autònoma. El codi ha d'estar disponible  (/home/isard/telegramUF2) de la màquina isard.(1 punt)
++ Cal desplegar l'aplicació a la màquina isard assignada de manera que quan la màquina estigui encesa el bot funcionarà de forma autònoma. El codi ha d'estar disponible  (`/home/isard/telegramUF2`) de la màquina isard.(1 punt)
 
 **La pràctica es presentarà a la màquina isard facilitada pel professor i s'enviarà l'enllaç de Github al classroom**. Podeu fer el desenvolupament en local i pujar-ho a a la màquina remota.
 
