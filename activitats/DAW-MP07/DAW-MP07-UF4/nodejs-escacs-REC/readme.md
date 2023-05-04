@@ -48,7 +48,7 @@ GET /api/v1/jugadors/[ID]/partides?posicio=[WHITE|BLACK]&data=[DATA] // Combinar
 Per fer la pràctica caldrà seguir el [tutorial de bones pràctiques](https://www.freecodecamp.org/news/rest-api-design-best-practices-build-a-rest-api). 
 
 **A tenir en compte**:
-1. La pràctica es presentarà a la màquina isard facilitada pel professor. Podeu fer el desenvolupament en local i pujar-ho a a la màquina remota. 
+1. **La pràctica es presentarà a la màquina isard facilitada pel professor i s'enviarà l'enllaç de Github al classroom**. Podeu fer el desenvolupament en local i pujar-ho a a la màquina remota. 
 1. S'ha d'afegir un fitxer insomnia o postman on **es provi la funcionalitat esperada** de cada una de les rutes. (hi ha d'haver més d'una prova per ruta). Aquest fitxer es trobarà a `/home/isard/escacsUF2`
 1. Es pot fer servir el gestor de base de dades que es desitgi, es recomana fer servir [SQLite](https://www.sqlitetutorial.net/) (així no caldrà instal·lar res al servidor). Assegureu-vos que la base de dades estigui en blanc.
 1. El professor posarà NOMÉS la comanda `npm start` al home (`/home/isard/escacsUF2`) de la màquina isard. Assegureu-vos que el vostre codi estigui en aquella ruta. 
